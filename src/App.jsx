@@ -16,6 +16,9 @@ import CareerDetails from '../pages/CareerDetails';
 import EnrollDetails from "../pages/EnrollDetails";
 import OrderDetails from "../pages/OrderDetails";
 import ContactDetails from '../pages/ContactDetails';
+import UserDetails from '../pages/UserDetails';
+import Alert from '../pages/Alert.jsx';
+
 import "typeface-teko";
 // import Header from './components/Header/Header';
 function App() {
@@ -33,6 +36,9 @@ function App() {
         <Route path='/enrolls' element={<EnrollDetails/>}/>
         <Route path='/orders' element={<OrderDetails/>}/>
         <Route path='/contacts' element={<ContactDetails/>}/>
+        <Route path='/userDetails' element={<UserDetails/>}/>
+        <Route path='/alerts'  element={<Alert/>}/>
+
       </Routes>
     </BrowserRouter>
   )

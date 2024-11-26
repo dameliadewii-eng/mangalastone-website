@@ -1,4 +1,3 @@
-// import React,{useEffect} from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaQrcode, FaQuoteLeft,FaQuoteRight } from 'react-icons/fa';
@@ -10,11 +9,12 @@ import testimonials5 from "../../assets/img/testimonials/testimonials-5.jpg";
 import "swiper/swiper-bundle.min.css";
 import React,{useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
+import developer from '../../assets/img/team/developer.png'
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const Testimonials = () => {
   useEffect(() => {
@@ -23,7 +23,6 @@ const Testimonials = () => {
       duration: 600,
       easing: 'ease-out'
     });
-    // setCurrentProjects(projects);
   }, []);
   return (
     <section id="testimonials" className="testimonials">
@@ -33,7 +32,10 @@ const Testimonials = () => {
           data-aos="fade-up"
           data-aos-delay="100"
           pagination={{ clickable: true }}
-          autoplay={true}
+          autoplay={{
+            delay: 1000, // Adjust delay as needed
+            disableOnInteraction: false, // Keep autoplay even after user interaction
+          }}
           speed={400}
         >
           <SwiperSlide>
@@ -54,6 +56,22 @@ const Testimonials = () => {
                 just work. It turns out that designs that just work are much
                 harder to produce that designs that assemble long lists of
                 features.
+                <i className="bx bxs-quote-alt-right"><FaQuoteRight/></i>
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial-item">
+              <img
+                src={developer}
+                className="testimonial-img"
+                alt=""
+              />
+              <h3>Shoaib Ur Rehman</h3>
+              <h4>Software Engineer</h4>
+              <p>
+                <i className="bx bxs-quote-alt-left"><FaQuoteLeft/></i> 
+                Software engineering is the art of transforming complex ideas into elegant solutions, building bridges between imagination and reality through the power of code.
                 <i className="bx bxs-quote-alt-right"><FaQuoteRight/></i>
               </p>
             </div>
@@ -140,3 +158,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

@@ -7,10 +7,13 @@ import "aos/dist/aos.css";
 import AdminFooter from "../src/components/AdminFooter/AdminFooter";
 import fileDownload from "js-file-download";
 import { useNavigate } from "react-router-dom";
+import Modal from 'react-modal';
 const ContactDetails = () =>{
     let navigate = useNavigate();
 
     const [contacts,setContacts] = useState([]);
+    const [contactToDelete, setContactToDelete] = useState(null);
+    const [deleteModal,setDeleteModalOpen] = useState(false);
     useEffect(() => {
         AOS.init({
           once: true,
@@ -25,14 +28,18 @@ const ContactDetails = () =>{
             console.log(res.data);
             setContacts(res.data.contacts);
         }).catch((err)=>{
+            console.log(err)
             alert('got an error');
         })
     },[]);
-
-    const removeContact = (contactId) => {
-        axios.delete('http://localhost:3000/contacts/remove',{contactId:contactId}).then((res)=>{
+    const removeContact= (contactId) =>{
+        setContactToDelete(contactId);
+        setDeleteModalOpen(true);
+    }
+    const confirmDelete = () => {
+        axios.delete('http://localhost:3000/contacts/remove',{contactId:contactToDelete}).then((res)=>{
             let filteredContacts = contacts.filter((contact)=>{
-                return contact._id != contactId;
+                return contact._id != contactToDelete;
             });
             setContacts(filteredContacts);
             console.log('contact has been removed');
@@ -97,7 +104,7 @@ const ContactDetails = () =>{
                                     <tbody>
 
                                   {
-                                    contacts.map((contact,index) =>{
+                                   contacts &&  contacts.map((contact,index) =>{
                                         return <tr key={index}>
                                             <td>{index}</td>
                                             <td>{contact.name}</td>
@@ -119,7 +126,40 @@ const ContactDetails = () =>{
                                     </tbody>
                                 </table>
                             </div>
-    </main>
+
+    </main><Modal
+          isOpen={deleteModal}
+          onRequestClose={() => setDeleteModalOpen(false)}
+          contentLabel="Confirm Delete"
+          style={{
+            content: {
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              marginRight: "-50%",
+              transform: "translate(-50%, -50%)",
+            },
+          }}
+        >
+          <h2>Confirm Delete</h2>
+          <p>Are you sure you want to delete this contact?</p>
+          <div style={{display:'flex', justifyContent:'space-between',height:'50px'}}>
+          <button onClick={() =>{
+            confirmDelete();
+            setDeleteModalOpen(true);
+            }} className="btn" style={{backgroundColor:'red',color:'white'}}>
+            Yes
+          </button>
+          <button
+            onClick={() => setDeleteModalOpen(false)}
+            className="btn btn-secondary"
+          >
+            No
+          </button>
+          </div>
+         
+        </Modal>
     <AdminFooter/>
         </>
     )

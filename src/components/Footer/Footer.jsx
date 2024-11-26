@@ -1,9 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaChevronRight, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa';
-
+import Map from '../Map/Map'
 function Footer() {
   return (
     <footer id="footer">
+      <Map/>
       <div className="footer-top">
         <Container>
           <Row>

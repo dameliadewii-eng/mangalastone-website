@@ -7,11 +7,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import fileDownload from "js-file-download";
 import { useNavigate } from "react-router-dom";
+import Modal from 'react-modal';
+
 const OrderDetails = () =>{
     let navigate = useNavigate();
 
-    let[orders,setOrders] =useState([]);
-
+    const [orders,setOrders] =useState([]);
+    const [orderToDelete, setOrderToDelete] = useState(null);
+    const [deleteModal,setDeleteModalOpen] = useState(false);
     useEffect(() => {
         AOS.init({
           once: true,
@@ -29,11 +32,15 @@ const OrderDetails = () =>{
             alert('got an error');
         });
     },[]);
-    
-    const removeOrder = (orderId) => {
-        axios.delete('http://localhost:3000/orders/remove',{orderId}).then((res)=>{
+    const removeOrder = (orderId) =>{
+        setOrderToDelete(orderId);
+        setDeleteModalOpen(true);
+    }
+    const confirmDelete = () => {
+      setDeleteModalOpen(false);
+        axios.delete('http://localhost:3000/orders/remove',{orderId:orderToDelete}).then((res)=>{
             let filteredOrders = orders.filter((order)=>{
-                return order._id != orderId;
+                return order._id != orderToDelete;
             });
             setOrders(filteredOrders);
             console.log('order has been removed');
@@ -91,7 +98,7 @@ const OrderDetails = () =>{
                                 </thead>
                                 <tbody>
                                 {
-                                orders.map((order,index) =>{
+                                orders && orders.map((order,index) =>{
                                return  <tr key={index}>
                                 <td>{index}</td>
                                 <td>{order.name}</td>
@@ -113,7 +120,38 @@ const OrderDetails = () =>{
                                 </tbody>
                             </table>
                         </div>
-</main>
+</main><Modal
+          isOpen={deleteModal}
+          onRequestClose={() => setDeleteModalOpen(false)}
+          contentLabel="Confirm Delete"
+          style={{
+            content: {
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              marginRight: "-50%",
+              transform: "translate(-50%, -50%)",
+            },
+          }}
+        >
+          <h2>Confirm Delete</h2>
+          <p>Are you sure you want to delete this Order?</p>
+          <div style={{display:'flex', justifyContent:'space-between',height:'50px'}}>
+          <button onClick={() =>{
+            confirmDelete();
+            }} className="btn" style={{backgroundColor:'red',color:'white'}}>
+            Yes
+          </button>
+          <button
+            onClick={() => setDeleteModalOpen(false)}
+            className="btn btn-secondary"
+          >
+            No
+          </button>
+          </div>
+         
+        </Modal>
 <AdminFooter/>
         </>
     )

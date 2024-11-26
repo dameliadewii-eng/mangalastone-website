@@ -3,15 +3,15 @@ import AdminHeader from "../src/components/AdminHeader/AdminHeader";
 import AdminFooter from "../src/components/AdminFooter/AdminFooter";
 import { FaFileDownload, FaTrash } from "react-icons/fa";
 import axios from "axios";
-import { data } from "jquery";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import fileDownload from "js-file-download";
-
+import Modal from 'react-modal';
 const CareerDetails = () =>{
 
     const [careers,setCareers] = useState([]);
-
+    const [deleteModal,setDeleteModalOpen] = useState(false);
+    const [careerToDelete,setCareerToDelete] = useState(null);
     useEffect(() => {
         AOS.init({
           once: true,
@@ -27,10 +27,15 @@ const CareerDetails = () =>{
             setCareers(res.data.careers);
         });
     },[]);
-    const removeCareer = (careerId) => {
-        axios.delete('http://localhost:3000/careers/remove',{careerId:careerId}).then((res)=>{
+
+    const removeCareer = (careerId) =>{
+        setCareerToDelete(careerId);
+        setDeleteModalOpen(true);
+    }
+    const confirmDelete = () => {
+        axios.delete('http://localhost:3000/careers/remove',{careerId:careerToDelete}).then((res)=>{
             let filteredCareers = careers.filter((career)=>{
-                return career._id != careerId;
+                return career._id != careerToDelete;
             });
             setCareers(filteredCareers);
             console.log('career has been removed');
@@ -89,7 +94,7 @@ const CareerDetails = () =>{
                                 <tbody>
 
                                 {
-                                    careers.map((career,index)=>{
+                                    careers && careers.map((career,index)=>{
                                         return <tr key={index}>
                                         <td>{index}</td>
                                         <td>{career.name}</td>
@@ -99,12 +104,13 @@ const CareerDetails = () =>{
                                         <td>{career.description}</td>
                                         <td>{career.date + ' ' + career.time}</td>
                                         <td className="text-center"><a className="text-warning"><i className="fas fa-file-download"><FaFileDownload onClick={(event,cv=career.cv)=>{
-                                            event.preventDefault();
+                                           console.log(career.cv)
+                                           event.preventDefault();
                                             handleDownload(cv);
                                         }}/></i></a></td>
                                         <td className="text-center"><a className="text-danger"><i className="fas fa-trash"><FaTrash onClick={(event,careerId=career._id)=>{
                                             event.preventDefault();
-                                            removeCareer(careerId);
+                                            removeCareer(career._id);
                                         }}/></i></a></td>
                                     </tr>
                                      })
@@ -113,7 +119,38 @@ const CareerDetails = () =>{
                                 </tbody>
                             </table>
                         </div>
-
+        <Modal 
+            isOpen = {deleteModal}
+            onRequestClose={() => setDeleteModalOpen(false)}
+            contentLabel="Confirm Delete"
+            style={{
+                content:{
+                    top:"50%",
+                    left:"50%",
+                    right:'auto',
+                    bottom:'auto',
+                    marginRight: "-150%",
+                    transform: "translate(-50%,-50%)"
+                }
+            }}
+        >
+            <h1>Confirm Delete</h1>
+            <p>Are you sure you want to delete this application?</p>
+            <div  style={{display:'flex',justifyContent:'space-between',height:'50px'}}>
+            <button onClick={()=>{
+                confirmDelete();
+                setDeleteModalOpen(false);
+            }} className="btn" style={{backgroundColor:'red',color:'white'}}>
+            Yes
+          </button>
+          <button
+            onClick={() => setDeleteModalOpen(false)}
+            className="btn btn-secondary"
+          >
+            No
+          </button>
+            </div>
+                </Modal>                        
 </main>
 <AdminFooter/>
         </>

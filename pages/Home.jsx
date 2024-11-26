@@ -10,7 +10,7 @@ import BoardOfDirectors from "../src/components/Team/Team";
 import ContactUs from "../src/components/ContactUs/ContactUs";
 import Testimonials from "../src/components/Slider/Slider";
 import Footer from "../src/components/Footer/Footer";
-// import Map from "../src/components/Map/Map";
+import Map from "../src/components/Map/Map";
 const Home = () =>{
     
     return  <>
@@ -24,10 +24,6 @@ const Home = () =>{
         <BoardOfDirectors/>
         <ContactUs/>
         <Testimonials/>
-        {/*
-        <div className="container">
-            <Map/>
-        </div>*/}
         <Footer/>
     </>
 }
