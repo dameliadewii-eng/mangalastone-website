@@ -186,7 +186,7 @@ function ContactUs() {
                 <Form.Label htmlFor="cv" style={{ marginTop: '10px' }}>
                   Attach File : <span>(upload only PDF File)</span>{' '}
                 </Form.Label>
-                <Form.Control value={cv} onChange={(event)=>{
+                <Form.Control  onChange={(event)=>{
                   // event.preventDefault();
                   if(event.target.files){
                     console.dir(event.target.files[0]);

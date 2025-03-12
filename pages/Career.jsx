@@ -143,7 +143,7 @@ const Career = () => {
             </div>
           </div>
 
-          <button style={{marginLeft:'20px'}} onClick={() => setShowAlerts(!showAlerts)}>Alerts</button>
+          <button className="btn btn-primary" style={{marginLeft:'20px'}} onClick={() => setShowAlerts(!showAlerts)}>Alerts</button>
           {
             showAlerts && <Alerts />
           }
