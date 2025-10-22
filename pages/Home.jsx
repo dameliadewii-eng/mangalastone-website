@@ -104,7 +104,7 @@ const Home = () => {
           </div>
 
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t("nav.home")}</a>
+            <Link to="home" className="nav-link">{t("nav.home")}</Link>
 
             <div className="nav-dropdown">
               <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
@@ -117,8 +117,8 @@ const Home = () => {
               </div>
             </div>
 
-            <a href="about" className="nav-link">{t("nav.about")}</a>
-            <a href="contact" className="nav-link">{t("nav.contact")}</a>
+            <Link to="about" className="nav-link">{t("nav.about")}</Link>
+            <Link to="contact" className="nav-link">{t("nav.contact")}</Link>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -244,9 +244,9 @@ const Home = () => {
           <div className="footer-col">
             <h3>{t("footer.follow")}</h3>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
-              <a href="#"><i className="fab fa-tiktok" /></a>
+              <Link to="#"><i className="fab fa-facebook-f" /></Link>
+              <Link to="#"><i className="fab fa-instagram" /></Link>
+              <Link to="#"><i className="fab fa-tiktok" /></Link>
             </div>
           </div>
 

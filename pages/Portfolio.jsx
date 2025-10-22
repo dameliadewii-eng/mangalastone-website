@@ -126,11 +126,11 @@ const Portfolio = () =>{
                         <li><a onClick={(event)=>{
                             event.preventDefault();
                             navigate('/');
-                        }}>Home</a></li>
+                        }}>Home</Link></li>
                         <li><a onClick={(event)=>{
                             event.preventDefault();
                             navigate('/portfolio');
-                        }}>Portfolio</a></li>
+                        }}>Portfolio</Link></li>
                     </ol>
                 </div>
             </div>
@@ -171,8 +171,8 @@ const Portfolio = () =>{
                         <div className="portfolio-info">
                             <h4>{project.name}</h4>
                             <p>{project.productType}</p>
-                            <a href={project.src} data-gallery="portfolioGallery "
-                             className="portfolio-lightbox preview-link "><i className="bx bx-plus "></i></a>
+                            <Link to={project.src} data-gallery="portfolioGallery "
+                             className="portfolio-lightbox preview-link "><i className="bx bx-plus "></i></Link>
                         </div>
                         </div>
                     })

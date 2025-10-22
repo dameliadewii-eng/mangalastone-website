@@ -144,9 +144,9 @@ const Contact = () => {
             aria-label="Main Navigation"
             data-aos="fade-down"
           >
-            <a href="home" className="nav-link">
+            <Link to="home" className="nav-link">
               Home
-            </a>
+            </Link>
 
             {/* Dropdown menu for product categories */}
             <div className="nav-dropdown">
@@ -170,12 +170,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <a href="about" className="nav-link">
+            <Link to="about" className="nav-link">
               About Us
-            </a>
-            <a href="contact" className="nav-link">
+            </Link>
+            <Link to="contact" className="nav-link">
               Contact Us
-            </a>
+            </Link>
           </nav>
 
           <div className="header-actions" data-aos="fade-left">
@@ -242,15 +242,15 @@ const Contact = () => {
           <div className="footer-col">
             <h3>FOLLOW US</h3>
             <div className="social-icons">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-facebook-f" />
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <i className="fab fa-instagram" />
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <i className="fab fa-tiktok" />
-              </a>
+              </Link>
             </div>
           </div>
 

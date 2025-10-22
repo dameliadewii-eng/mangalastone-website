@@ -29,7 +29,7 @@ href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
 className="glightbox btn-watch-video">
 <i className="bi bi-play-circle"><FaPlayCircle/></i>
 <span>Watch Video</span>
-</a>
+</Link>
 </div>
 </Col>
 <Col lg={6} md={6} sm={6}>

@@ -42,19 +42,19 @@ function Footer() {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Andesite Stone</a>
+                  <Link to="#">Andesite Stone</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Palem Sandstone</a>
+                  <Link to="#">Palem Sandstone</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Wall Cladding</a>
+                  <Link to="#">Wall Cladding</Link>
                 </li>
                 <li>
                   {/* <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '} */}
-                  {/* <a href="#">Graphic Design</a> */}
+                  {/* <Link to="#">Graphic Design</Link> */}
                 </li>
               </ul>
             </Col>
@@ -69,7 +69,7 @@ function Footer() {
                   className="twitter"
                 >
                   <FaTwitter/>
-                </a>
+                </Link>
                 <a
                   href="https://www.facebook.com/WATU MANGLAs/"
                   target="_blank"
@@ -77,7 +77,7 @@ function Footer() {
                   className="facebook"
                 >
                   <FaFacebook/>
-                </a>
+                </Link>
                 <a
                   href="https://www.instagram.com/WATU MANGLAs/"
                   target="_blank"
@@ -85,7 +85,7 @@ function Footer() {
                   className="instagram"
                 >
                   <FaInstagram/>
-                </a>
+                </Link>
 
                 <a
                   href="https://www.linkedin.com/in/WATU MANGLA-t-1a2966202/"
@@ -94,7 +94,7 @@ function Footer() {
                   className="linkedin"
                 >
                   <FaLinkedin/>
-                </a>
+                </Link>
               </div>
             </Col>
           </Row>

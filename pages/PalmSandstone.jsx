@@ -138,21 +138,21 @@ const PalemStone = () => {
           </div>
 
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t.navHome}</a>
+            <Link to="home" className="nav-link">{t.navHome}</Link>
 
             <div className="nav-dropdown">
               <button className="nav-dropbtn">
                 {t.navProducts} ▾
               </button>
               <div className="nav-dropdown-menu">
-                <a href="andesite">{t.product1}</a>
-                <a href="palm-sandstone">{t.product2}</a>
-                <a href="wall-cladding">{t.product3}</a>
+                <Link to="andesite">{t.product1}</Link>
+                <Link to="palm-sandstone">{t.product2}</Link>
+                <Link to="wall-cladding">{t.product3}</Link>
               </div>
             </div>
 
-            <a href="about" className="nav-link">{t.navAbout}</a>
-            <a href="contact" className="nav-link">{t.navContact}</a>
+            <Link to="about" className="nav-link">{t.navAbout}</Link>
+            <Link to="contact" className="nav-link">{t.navContact}</Link>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -232,9 +232,9 @@ const PalemStone = () => {
           <div className="footer-col">
             <h3>{t.follow}</h3>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
-              <a href="#"><i className="fab fa-tiktok" /></a>
+              <Link to="#"><i className="fab fa-facebook-f" /></Link>
+              <Link to="#"><i className="fab fa-instagram" /></Link>
+              <Link to="#"><i className="fab fa-tiktok" /></Link>
             </div>
           </div>
 

@@ -40,7 +40,7 @@ const Header = () => {
           className=""
         >
           <img src={logo} height="70px" width="125px" alt="Logo" />
-        </a>
+        </Link>
 
         {/* Navbar */}
         <nav id="navbar" className="navbar blue" style={{ cursor: 'pointer' }}>
@@ -55,7 +55,7 @@ const Header = () => {
                 }}
               >
                 Home
-              </a>
+              </Link>
             </li>
 
             {/* Products Dropdown */}
@@ -71,7 +71,7 @@ const Header = () => {
                 onClick={(e) => e.preventDefault()}
               >
                 Products <i className="bi bi-chevron-down"></i>
-              </a>
+              </Link>
 
               <ul className="dropdown-menu">
                 <li>
@@ -83,7 +83,7 @@ const Header = () => {
                     className={activeLink === 'Andesite Stone' ? 'active' : ''}
                   >
                     Andesite Stone
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -94,7 +94,7 @@ const Header = () => {
                     className={activeLink === 'Palm Sandstone' ? 'active' : ''}
                   >
                     Palm Sandstone
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -105,7 +105,7 @@ const Header = () => {
                     className={activeLink === 'Wall Cladding' ? 'active' : ''}
                   >
                     Wall Cladding
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -120,7 +120,7 @@ const Header = () => {
                 }}
               >
                 Services
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -133,7 +133,7 @@ const Header = () => {
                 }}
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -146,7 +146,7 @@ const Header = () => {
                 }}
               >
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
