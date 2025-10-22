@@ -7,42 +7,6 @@ import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-
-<nav
-  className="nav-area"
-  aria-label="Main Navigation"
-  data-aos="fade-down"
->
-  <Link to="/home" className="nav-link">
-    Home
-  </Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn" aria-haspopup="true">
-      Products ▾
-    </button>
-    <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/andesite">
-        Andesite Stone
-      </Link>
-      <Link role="menuitem" to="/palm-sandstone">
-        Palem Sandstone
-      </Link>
-      <Link role="menuitem" to="/wall-cladding">
-        Wall Cladding
-      </Link>
-    </div>
-  </div>
-
-  <Link to="/about" className="nav-link">
-    About Us
-  </Link>
-
-  <Link to="/contact" className="nav-link">
-    Contact Us
-  </Link>
-</nav>
 
 // ---------- Imported Images ----------
 import heroBg from "@/assets/webimg/hero-bg.png";
@@ -104,7 +68,7 @@ const Home = () => {
           </div>
 
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="home" className="nav-link">{t("nav.home")}</Link>
+            <a href="home" className="nav-link">{t("nav.home")}</a>
 
             <div className="nav-dropdown">
               <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
@@ -117,8 +81,8 @@ const Home = () => {
               </div>
             </div>
 
-            <Link to="about" className="nav-link">{t("nav.about")}</Link>
-            <Link to="contact" className="nav-link">{t("nav.contact")}</Link>
+            <a href="about" className="nav-link">{t("nav.about")}</a>
+            <a href="contact" className="nav-link">{t("nav.contact")}</a>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -244,9 +208,9 @@ const Home = () => {
           <div className="footer-col">
             <h3>{t("footer.follow")}</h3>
             <div className="social-icons">
-              <Link to="#"><i className="fab fa-facebook-f" /></Link>
-              <Link to="#"><i className="fab fa-instagram" /></Link>
-              <Link to="#"><i className="fab fa-tiktok" /></Link>
+              <a href="#"><i className="fab fa-facebook-f" /></a>
+              <a href="#"><i className="fab fa-instagram" /></a>
+              <a href="#"><i className="fab fa-tiktok" /></a>
             </div>
           </div>
 

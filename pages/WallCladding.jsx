@@ -3,42 +3,6 @@ import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-
-<nav
-  className="nav-area"
-  aria-label="Main Navigation"
-  data-aos="fade-down"
->
-  <Link to="/home" className="nav-link">
-    Home
-  </Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn" aria-haspopup="true">
-      Products ▾
-    </button>
-    <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/andesite">
-        Andesite Stone
-      </Link>
-      <Link role="menuitem" to="/palm-sandstone">
-        Palem Sandstone
-      </Link>
-      <Link role="menuitem" to="/wall-cladding">
-        Wall Cladding
-      </Link>
-    </div>
-  </div>
-
-  <Link to="/about" className="nav-link">
-    About Us
-  </Link>
-
-  <Link to="/contact" className="nav-link">
-    Contact Us
-  </Link>
-</nav>
 
 // ===== Images =====
 import header_andesite_stone2 from "@/assets/img/header_andesite_stone2.png";
@@ -158,17 +122,17 @@ const WallCladdingStone = () => {
           </div>
 
           <nav className="nav-area" data-aos="fade-down">
-            <Link to="home" className="nav-link">{t("nav_home")}</Link>
+            <a href="home" className="nav-link">{t("nav_home")}</a>
             <div className="nav-dropdown">
               <button className="nav-dropbtn">Products ▾</button>
               <div className="nav-dropdown-menu">
-                <Link to="andesite">{t("nav_andesite")}</Link>
-                <Link to="palm-sandstone">{t("nav_palem")}</Link>
-                <Link to="wall-cladding">{t("nav_wall")}</Link>
+                <a href="andesite">{t("nav_andesite")}</a>
+                <a href="palm-sandstone">{t("nav_palem")}</a>
+                <a href="wall-cladding">{t("nav_wall")}</a>
               </div>
             </div>
-            <Link to="about" className="nav-link">{t("nav_about")}</Link>
-            <Link to="contact" className="nav-link">{t("nav_contact")}</Link>
+            <a href="about" className="nav-link">{t("nav_about")}</a>
+            <a href="contact" className="nav-link">{t("nav_contact")}</a>
           </nav>
 
           <div className="actions-area">
@@ -256,9 +220,9 @@ const WallCladdingStone = () => {
           <div className="footer-col">
             <h3>{t("footer_follow")}</h3>
             <div className="social-icons">
-              <Link to="#"><i className="fab fa-facebook-f" /></Link>
-              <Link to="#"><i className="fab fa-instagram" /></Link>
-              <Link to="#"><i className="fab fa-tiktok" /></Link>
+              <a href="#"><i className="fab fa-facebook-f" /></a>
+              <a href="#"><i className="fab fa-instagram" /></a>
+              <a href="#"><i className="fab fa-tiktok" /></a>
             </div>
           </div>
 

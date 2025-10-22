@@ -2,42 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-
-<nav
-  className="nav-area"
-  aria-label="Main Navigation"
-  data-aos="fade-down"
->
-  <Link to="/home" className="nav-link">
-    Home
-  </Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn" aria-haspopup="true">
-      Products ▾
-    </button>
-    <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/andesite">
-        Andesite Stone
-      </Link>
-      <Link role="menuitem" to="/palm-sandstone">
-        Palem Sandstone
-      </Link>
-      <Link role="menuitem" to="/wall-cladding">
-        Wall Cladding
-      </Link>
-    </div>
-  </div>
-
-  <Link to="/about" className="nav-link">
-    About Us
-  </Link>
-
-  <Link to="/contact" className="nav-link">
-    Contact Us
-  </Link>
-</nav>
 
 // Images
 import header_andesite_stone1 from "@/assets/img/header_andesite_stone1.png";
@@ -138,21 +102,21 @@ const PalemStone = () => {
           </div>
 
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="home" className="nav-link">{t.navHome}</Link>
+            <a href="home" className="nav-link">{t.navHome}</a>
 
             <div className="nav-dropdown">
               <button className="nav-dropbtn">
                 {t.navProducts} ▾
               </button>
               <div className="nav-dropdown-menu">
-                <Link to="andesite">{t.product1}</Link>
-                <Link to="palm-sandstone">{t.product2}</Link>
-                <Link to="wall-cladding">{t.product3}</Link>
+                <a href="andesite">{t.product1}</a>
+                <a href="palm-sandstone">{t.product2}</a>
+                <a href="wall-cladding">{t.product3}</a>
               </div>
             </div>
 
-            <Link to="about" className="nav-link">{t.navAbout}</Link>
-            <Link to="contact" className="nav-link">{t.navContact}</Link>
+            <a href="about" className="nav-link">{t.navAbout}</a>
+            <a href="contact" className="nav-link">{t.navContact}</a>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -232,9 +196,9 @@ const PalemStone = () => {
           <div className="footer-col">
             <h3>{t.follow}</h3>
             <div className="social-icons">
-              <Link to="#"><i className="fab fa-facebook-f" /></Link>
-              <Link to="#"><i className="fab fa-instagram" /></Link>
-              <Link to="#"><i className="fab fa-tiktok" /></Link>
+              <a href="#"><i className="fab fa-facebook-f" /></a>
+              <a href="#"><i className="fab fa-instagram" /></a>
+              <a href="#"><i className="fab fa-tiktok" /></a>
             </div>
           </div>
 

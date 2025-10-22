@@ -2,42 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-
-<nav
-  className="nav-area"
-  aria-label="Main Navigation"
-  data-aos="fade-down"
->
-  <Link to="/home" className="nav-link">
-    Home
-  </Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn" aria-haspopup="true">
-      Products ▾
-    </button>
-    <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/andesite">
-        Andesite Stone
-      </Link>
-      <Link role="menuitem" to="/palm-sandstone">
-        Palem Sandstone
-      </Link>
-      <Link role="menuitem" to="/wall-cladding">
-        Wall Cladding
-      </Link>
-    </div>
-  </div>
-
-  <Link to="/about" className="nav-link">
-    About Us
-  </Link>
-
-  <Link to="/contact" className="nav-link">
-    Contact Us
-  </Link>
-</nav>
 
 // ====== Images ======
 import about from "@/assets/img/about.png";
@@ -144,9 +108,9 @@ const Contact = () => {
             aria-label="Main Navigation"
             data-aos="fade-down"
           >
-            <Link to="home" className="nav-link">
+            <a href="home" className="nav-link">
               Home
-            </Link>
+            </a>
 
             {/* Dropdown menu for product categories */}
             <div className="nav-dropdown">
@@ -170,12 +134,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <Link to="about" className="nav-link">
+            <a href="about" className="nav-link">
               About Us
-            </Link>
-            <Link to="contact" className="nav-link">
+            </a>
+            <a href="contact" className="nav-link">
               Contact Us
-            </Link>
+            </a>
           </nav>
 
           <div className="header-actions" data-aos="fade-left">
@@ -242,15 +206,15 @@ const Contact = () => {
           <div className="footer-col">
             <h3>FOLLOW US</h3>
             <div className="social-icons">
-              <Link to="#">
+              <a href="#">
                 <i className="fab fa-facebook-f" />
-              </Link>
-              <Link to="#">
+              </a>
+              <a href="#">
                 <i className="fab fa-instagram" />
-              </Link>
-              <Link to="#">
+              </a>
+              <a href="#">
                 <i className="fab fa-tiktok" />
-              </Link>
+              </a>
             </div>
           </div>
 
