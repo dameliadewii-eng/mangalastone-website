@@ -16,7 +16,7 @@ import stoneAndesite from "../src/assets/webimg/stone-andesite.png";
 import stoneLimestone from "../src/assets/webimg/stone-limestone.png";
 import stonePumice from "../src/assets/webimg/stone-pumice.png";
 import guaranteeBg from "../src/assets/webimg/guarantee-bg.png";
-import logo from "H:/mywebSite/frontend/src/assets/img/logo.png";
+import logo from "../src/assets/img/logo.png";
 
 const Home = () => {
   const { t, i18n } = useTranslation();

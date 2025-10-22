@@ -5,31 +5,31 @@ import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 
 // ===== Images =====
-import header_andesite_stone2 from "H:/mywebSite/frontend/src/assets/img/header_andesite_stone2.png";
-import logo from "H:/mywebSite/frontend/src/assets/img/logo.png";
+import header_andesite_stone2 from "../src/assets/img/header_andesite_stone2.png";
+import logo from "../src/assets/img/logo.png";
 
 // ===== Andesite Wall Stone Images =====
-import wall1 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall1.png";
-import wall2 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall2.png";
-import wall3 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall3.png";
-import wall4 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall4.png";
-import wall5 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall5.png";
-import wall6 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall6.png";
-import wall7 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall7.png";
-import wall8 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall8.png";
-import wall9 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall9.png";
-import wall10 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall10.png";
-import wall11 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall11.png";
-import wall12 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall12.png";
-import wall13 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall13.png";
-import wall14 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall14.png";
-import wall15 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall15.png";
-import wall16 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall16.png";
-import wall17 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall17.png";
-import wall18 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall18.png";
-import wall19 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall19.png";
-import wall20 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall20.png";
-import wall21 from "H:/mywebSite/frontend/src/assets/Andesite/Wall Stone/wall21.png";
+import wall1 from "../src/assets/Andesite/Wall Stone/wall1.png";
+import wall2 from "../src/assets/Andesite/Wall Stone/wall2.png";
+import wall3 from "../src/assets/Andesite/Wall Stone/wall3.png";
+import wall4 from "../src/assets/Andesite/Wall Stone/wall4.png";
+import wall5 from "../src/assets/Andesite/Wall Stone/wall5.png";
+import wall6 from "../src/assets/Andesite/Wall Stone/wall6.png";
+import wall7 from "../src/assets/Andesite/Wall Stone/wall7.png";
+import wall8 from "../src/assets/Andesite/Wall Stone/wall8.png";
+import wall9 from "../src/assets/Andesite/Wall Stone/wall9.png";
+import wall10 from "../src/assets/Andesite/Wall Stone/wall10.png";
+import wall11 from "../src/assets/Andesite/Wall Stone/wall11.png";
+import wall12 from "../src/assets/Andesite/Wall Stone/wall12.png";
+import wall13 from "../src/assets/Andesite/Wall Stone/wall13.png";
+import wall14 from "../src/assets/Andesite/Wall Stone/wall14.png";
+import wall15 from "../src/assets/Andesite/Wall Stone/wall15.png";
+import wall16 from "../src/assets/Andesite/Wall Stone/wall16.png";
+import wall17 from "../src/assets/Andesite/Wall Stone/wall17.png";
+import wall18 from "../src/assets/Andesite/Wall Stone/wall18.png";
+import wall19 from "../src/assets/Andesite/Wall Stone/wall19.png";
+import wall20 from "../src/assets/Andesite/Wall Stone/wall20.png";
+import wall21 from "../src/assets/Andesite/Wall Stone/wall21.png";
 
 const WallCladdingStone = () => {
   const { t, i18n } = useTranslation();

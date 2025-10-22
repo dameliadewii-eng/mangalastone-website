@@ -11,15 +11,12 @@ import Home from '../pages/Home';
 
 import About from '../pages/About';
 
-
 // 🪨 Import your new product pages
 import AndesiteStone from '../pages/AndesiteStone';
 import PalmSandstone from '../pages/PalmSandstone';
 import WallCladding from '../pages/WallCladding';
 import Contact from '../pages/Contact';
 import "./i18n";
-
-
 
 function App() {
   return (

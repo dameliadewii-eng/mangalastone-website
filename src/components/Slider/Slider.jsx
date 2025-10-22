@@ -1,9 +1,9 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import andesite from "H:/mywebSite/frontend/src/assets/img/team/andesite.png";
-import palmSandStone from "H:/mywebSite/frontend/src/assets/img/team/palmSandStone.png";
-import wallCludding from "H:/mywebSite/frontend/src/assets/img/team/wallCludding.png";
+import andesite from "../src/assets/img/team/andesite.png";
+import palmSandStone from "../src/assets/img/team/palmSandStone.png";
+import wallCludding from "../src/assets/img/team/wallCludding.png";
 
 import directors from "../../assets/img/team/directors.jpeg";
 import unknown from "../../assets/img/testimonials/unknown.jpg";

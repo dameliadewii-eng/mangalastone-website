@@ -4,13 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Images
-import header_andesite_stone1 from "H:/mywebSite/frontend/src/assets/img/header_andesite_stone1.png";
-import logo from "H:/mywebSite/frontend/src/assets/img/logo.png";
+import header_andesite_stone1 from "../src/assets/img/header_andesite_stone1.png";
+import logo from "../src/assets/img/logo.png";
 
 // Palm Stone Images
-import palm1 from "H:/mywebSite/frontend/src/assets/Andesite/Palm Stone/palm1.png";
-import palm2 from "H:/mywebSite/frontend/src/assets/Andesite/Palm Stone/palm2.png";
-import palm3 from "H:/mywebSite/frontend/src/assets/Andesite/Palm Stone/palm3.png";
+import palm1 from "../src/assets/Andesite/Palm Stone/palm1.png";
+import palm2 from "../src/assets/Andesite/Palm Stone/palm2.png";
+import palm3 from "../src/assets/Andesite/Palm Stone/palm3.png";
 
 // Translations
 const translations = {
