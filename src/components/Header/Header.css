@@ -1,65 +1,140 @@
 .blue {
-    padding: 0;
+  padding: 0;
 }
 
 .blue ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .blue li {
-    position: relative;
+  position: relative;
 }
 
-.blue>ul>li {
-    white-space: nowrap;
-    padding: 10px 0 10px 28px;
+.blue > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
 }
 
 .blue a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3px;
-    font-size: 18px;
-    font-family: "Teko";
-    letter-spacing: 2px;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 18px;
+  font-family: "Teko";
+  letter-spacing: 2px;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  color: #000;
+  text-decoration: none;
 }
 
 .blue a i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
 }
 
-.blue>ul>li>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: #9723c9;
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
+.blue > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #9723c9;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .blue a:hover:before,
-.blue li:hover>a:before,
+.blue li:hover > a:before,
 .blue .active:before {
-    visibility: visible;
-    width: 100%;
+  visibility: visible;
+  width: 100%;
 }
 
 .blue a:hover,
 .blue .active,
-.blue li:hover>a {
-    color: #9723c9;
+.blue li:hover > a {
+  color: #9723c9;
+}
+
+/* ---------------------- */
+/* 🔽 Dropdown Menu Style */
+/* ---------------------- */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Teko";
+  letter-spacing: 1px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f7f4fa;
+  color: #9723c9;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: highlight active dropdown link */
+.dropdown-menu li a.active {
+  color: #9723c9;
+  font-weight: bold;
+}
+
+/* For smoother UX on mobile */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 15px;
+  }
+
+  .blue ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -9,14 +9,16 @@ return (
 <Container data-aos="zoom-out" data-aos-delay="100">
 <Row>
 <Col lg={6} md={6} sm={6}>
-<h1>TECHNOLOGY</h1>
-<h2 style={{ marginTop: '6px' }}>BUILD YOUR OWN BUSINESS</h2>
+<h1>MANGALA STONE</h1>
+<h2 style={{ marginTop: '30px' }}>Indonesia Stone Company</h2>
 <p style={{ textAlign: 'justify' }}>
-Kingitsol turns your business idea into a launched product by guiding your journey through mobile app,
-website, graphic arts and software development customized to meet your goals. We design and build
-platforms and digital experiences that cut to the heart of what your organization needs to grow to the
-next level. Whether you require a SaaS platform, social networking mobile application, an internal
-dashboard, or a sleek digital experience to engage with your audience — we’ve got you covered.
+At MANGALA STONE, we bring the natural beauty of stone into everyday spaces. Specializing in premium stone tiles, we design surfaces that redefine interiors and exteriors with elegance, durability, and timeless style.
+
+From modern offices to warm, welcoming homes and iconic buildings, our stone tiles offer a perfect balance of functionality and artistry. Each piece is carefully crafted to highlight nature’s textures and tones, giving architects, designers, and homeowners the freedom to create spaces that inspire.
+
+With a wide variety of colors, finishes, and patterns, MANGALA STONE delivers more than stone—we deliver character, comfort, and beauty that lasts for generations.
+
+At MANGALA STONE, we don’t just decorate spaces—we transform them into works of art.
 </p>
 <div className="d-flex" style={{ marginTop: '10px', padding: '10px',justifyContent:'center',alignItems:'center',columnGap:'5px' }}>
 <Button href="#contact" className="btn-get-started scrollto">
@@ -31,7 +33,7 @@ className="glightbox btn-watch-video">
 </div>
 </Col>
 <Col lg={6} md={6} sm={6}>
-<img src={UIweb} width="80%" style={{ display: 'block', margin: 'auto' }} />
+<img src={UIweb} width="50%" style={{ display: 'block', margin: 'auto' }} />
 </Col>
 </Row>
 </Container>

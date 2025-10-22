@@ -1,0 +1,307 @@
+/* ===== General ===== */
+.andesite-stone {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #00525E;
+}
+
+button {
+  background: linear-gradient(135deg, #00525E, #00525E);
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Header ===== */
+.andesite-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(44, 120, 108, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 100;
+}
+.andesite-logo {
+  height: 45px;
+  margin-right: 10px;
+}
+.logo-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+.andesite-nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.andesite-nav a:hover {
+  color: #ffd700;
+}
+.lang-switch select {
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* ===== Hero Section ===== */
+.andesite-hero {
+  height: 72vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif; /* ✅ Set font */
+}
+
+.andesite-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.andesite-hero-content {
+  z-index: 1;
+  color: #ffffff; /* ✅ All text white */
+}
+
+/* ✅ Heading */
+.andesite-hero-content h1 {
+  font-size: 80px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* ✅ Subheading */
+.andesite-hero-content h2 {
+  font-size: 23px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* ✅ Paragraph */
+.andesite-hero-content p {
+  font-size: 43px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* ✅ Button */
+.andesite-hero-content button {
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.andesite-hero-content button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+/* ===== Intro Text Section ===== */
+.andesite-intro-text {
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff, #f4f9f8);
+  padding: 80px 15%;
+  border-bottom: 2px solid #e0f2ef;
+}
+.andesite-intro-text h2 {
+  color: #00525E;
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+.andesite-intro-text p {
+  font-family: Arial, sans-serif; /* ✅ Set to Arial only for <p> */
+  font-size: 20px; /* ✅ Increased text size to 20px */
+  color: #020202;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+    text-align: justify;
+}
+
+/* ===== Stones Grid ===== */
+.andesite-stones {
+  padding: 100px 10%;
+  background: #f9f9f9;
+}
+.andesite-stone-group {
+  margin-bottom: 80px;
+}
+.andesite-stone-group-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #00525E;
+  margin-bottom: 30px;
+}
+.andesite-stone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+.andesite-stone-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+.andesite-stone-card:hover {
+  transform: translateY(-6px);
+}
+.andesite-stone-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.andesite-stone-description {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+   text-align: center;
+}
+
+/* ===== Fullscreen Image Popup ===== */
+.fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background: #ff5555;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* ===== Guarantee Section ===== */
+.andesite-guarantee {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 10%;
+}
+.andesite-guarantee .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.andesite-guarantee-content {
+  position: relative;
+  z-index: 1;
+}
+/* 🌿 WhatsApp Floating Action Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #1ebd5a;
+}
+
+.whatsapp-float i {
+  margin-top: 2px;
+}
+/* ===== Footer ===== */
+.andesite-footer {
+  background: #2c786c;
+  color: white;
+  padding: 60px 10%;
+}
+.andesite-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}
+.andesite-footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.andesite-social-icon {
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.andesite-social-icon:hover {
+  background: white;
+  color: #2c786c;
+}
+.andesite-footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 20px;
+  font-size: 14px;
+}

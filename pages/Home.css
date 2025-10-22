@@ -1,65 +1,742 @@
-.blue {
-    padding: 0;
+/* ===========================================================
+   Home.css — Clean, Professional, Commented Version
+   -----------------------------------------------------------
+   Includes short + detailed comments for every section.
+   All content remains identical — only improved readability.
+=========================================================== */
+
+
+/* ---------------------------------------
+   🌿 VARIABLES — Color, Spacing, Theme
+----------------------------------------*/
+:root {
+  --accent: #ff6e6e;          /* Accent color (used for highlights) */
+  --brand: #00525E;           /* Primary brand green */
+  --dark: #122026;            /* Main dark text color */
+  --muted: #6b6b6b;           /* Muted gray for secondary text */
+  --bg: #f7f8f8;              /* Page background color */
+  --card: #ffffff;            /* Card background */
+  --max-w: 100px;             /* Max container width (seems placeholder) */
+  --radius: 14px;             /* Rounded corner base */
 }
 
-.blue ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
+
+/* ---------------------------------------
+   🧩 RESET & BASE STYLES
+   - Sets font, base color, spacing, etc.
+----------------------------------------*/
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--dark);
+  -webkit-font-smoothing: antialiased;
 }
 
-.blue li {
-    position: relative;
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+
+/* ---------------------------------------
+   🧱 CONTAINER HELPER — Reusable Wrapper
+----------------------------------------*/
+.hm-container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 20px;
+  
 }
 
-.blue>ul>li {
-    white-space: nowrap;
-    padding: 10px 0 10px 28px;
+
+/* ---------------------------------------
+   🧭 HEADER — Sticky Navigation Bar
+   - Includes logo, brand text, navigation links
+----------------------------------------*/
+.hm-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(18, 32, 38, 0.04);
 }
 
-.blue a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3px;
-    font-size: 18px;
-    font-family: "Teko";
-    letter-spacing: 2px;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
+/* Header layout container */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 20px;
 }
 
-.blue a i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
+/* Logo area (icon + brand text) */
+.logo-area { display: flex; align-items: center; gap: 12px; }
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(22, 46, 42, 0.06);
 }
 
-.blue>ul>li>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: #9723c9;
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
+/* Brand title + subtitle */
+.brand-text {
+  display: flex;
+  flex-direction: column;
 }
 
-.blue a:hover:before,
-.blue li:hover>a:before,
-.blue .active:before {
-    visibility: visible;
-    width: 100%;
+.brand-title {
+  font-weight: 800;
+  color: var(--brand);
+  letter-spacing: 0.6px;
+  font-size: 25px;
 }
 
-.blue a:hover,
-.blue .active,
-.blue li:hover>a {
-    color: #9723c9;
+.brand-sub {
+  font-size: 12px !important; /* ✅ Forces it to apply */
+  color: var(--muted);
+}
+
+
+/* ---------------------------------------
+   🔗 NAVIGATION LINKS & DROPDOWNS
+   - Hover transitions + dropdown menus
+----------------------------------------*/
+.nav-area { display: flex; align-items: center; gap: 8px; }
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--dark);
+  transition: all 0.18s ease;
+}
+.nav-link:hover {
+  color: var(--brand);
+  transform: translateY(-2px);
+}
+
+/* Dropdown */
+.nav-dropdown { position: relative; }
+.nav-dropbtn {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--dark);
+}
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--card);
+  box-shadow: 0 14px 40px rgba(11, 22, 20, 0.08);
+  border-radius: 12px;
+  padding: 8px;
+  display: none;
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--brand);
+  border-radius: 8px;
+  margin: 4px 0;
+}
+.nav-dropdown-menu a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+
+/* ---------------------------------------
+   ⚙️ HEADER ACTIONS — Language, Buttons
+----------------------------------------*/
+.actions-area { display: flex; align-items: center; gap: 12px; }
+
+.lang-select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(18, 32, 38, 0.06);
+  background: #fff;
+}
+
+.btn-ghost {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(44, 120, 108, 0.12);
+  color: var(--brand);
+  font-weight: 700;
+}
+
+
+/* ---------------------------------------
+   🏔️ HERO SECTION
+   - Large background image with heading + text overlay
+----------------------------------------*/
+.hm-hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 60px 0;
+  margin-top: 6px;
+  font-family: Arial, sans-serif;
+}
+
+/* Dark overlay for readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 20, 20, 0.28), rgba(10, 20, 20, 0.46));
+  border-radius: 0;
+}
+
+/* Centered hero content */
+.hero-inner {
+  text-align: center;
+  color: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero headings */
+.hero-inner h1 {
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0 0 8px;
+  color: #fff;
+}
+.hero-inner h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+/* Supporting text */
+.hero-lead {
+  font-family: Arial, sans-serif;
+  max-width: 820px;
+  margin: 0 auto 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+/* ---------------------------------------
+   🎨 BUTTON STYLES — Reusable CTA buttons
+----------------------------------------*/
+.btn-primary {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--brand), #174b3f);
+  color: #fff;
+  box-shadow: 0 14px 40px rgba(24, 80, 69, 0.12);
+  transition: transform 0.18s ease;
+}
+.btn-primary:hover { transform: translateY(-4px); }
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 28px;
+  font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  margin-left: 8px;
+}
+
+
+/* ---------------------------------------
+   📄 SECTION BASE
+   - Used for consistent section spacing
+----------------------------------------*/
+.hm-section { padding: 56px 0; }
+
+.section-head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.section-head h4 { color: var(--brand); margin: 0; font-weight: 700; }
+.section-head h2 { margin: 8px 0 0; font-size: 28px; }
+
+/* ---------------------------------------
+   🧱 PROJECT INTRO (Split Layout)
+   - Image + Text with fade animation
+----------------------------------------*/
+.split-grid {
+  display: flex;
+  align-items: center;               /* Align vertically */
+  justify-content: space-between;    /* Spread full width */
+  gap: 60px;
+  padding: 50px 8%;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: Arial, sans-serif;    /* ✅ Global Arial */
+}
+
+/* Image side */
+.media-img {
+  flex: 0 0 48%;
+  height: 850px;
+  /* ✅ Increased from 450px to 650px */
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 14px 40px rgba(12, 12, 12, 0.1);
+  overflow: hidden;
+  transition: background-image 1s ease-in-out;
+}
+.media-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+/* Text side */
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;            /* ✅ All text justified */
+  font-family: Arial, sans-serif; /* ✅ Ensure Arial */
+}
+
+/* Headings */
+.text h2, .text h4 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+  color: #00525E;                 /* ✅ First heading color */
+  font-size: 48px;
+  text-align: justify;            /* ✅ Justify heading too */
+}
+
+/* Paragraphs */
+.rich-text {
+  color: #000;                    /* ✅ Black text */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;            /* ✅ Justify paragraph */
+}
+
+/* Animation */
+@keyframes fadeZoom {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+
+
+/* ---------------------------------------
+   🪨 STONES GRID SECTION
+   - Product cards (Andesite, Granite, etc.)
+   - Text: Arial, Black; Uniform grid
+----------------------------------------*/
+/* ---------------------------------------
+   Stones Grid Section
+   - 3-column responsive grid
+   - Text: black, Arial
+   - Images untouched
+---------------------------------------- */
+/* ---------------------------------------
+   Section Head — Our Products
+   - Larger black text for titles
+   - Clean center alignment
+---------------------------------------- */
+.section-head {
+  text-align: center;
+  margin-bottom: 28px;
+  font-family: Arial, sans-serif;
+  color: #000; /* ✅ All text black */
+}
+
+.section-head h4 {
+  font-size: 50px; /* ✅ Increased size */
+  font-weight: 700;
+  color: #00525E; /* ✅ Black */
+  margin: 0 0 12px;
+}
+
+.section-head h2 {
+  font-size: 40px; /* ✅ Increased size */
+  font-weight: 800;
+  color: #000; /* ✅ Black */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* ---------------------------------------
+   Stones Grid Section
+   - 3-column responsive grid
+   - Text: black, Arial
+   - Images untouched
+---------------------------------------- */
+.stone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 28px;
+  font-family: Arial, sans-serif; /* ✅ Text uses Arial */
+  color: #000; /* ✅ All text black */
+  font-size: 40px; /* ✅ Large section text */
+}
+
+/* Individual stone card */
+.stone-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(12, 22, 18, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Centers content horizontally */
+  text-align: center;  /* ✅ Ensures text inside is centered */
+}
+
+/* Stone image — unchanged dimensions */
+.stone-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* ✅ Keeps natural proportions */
+  border-radius: 10px;
+}
+
+/* Stone text content */
+.stone-card h3,
+.stone-card p {
+  color: #000; /* ✅ Black text */
+  font-family: Arial, sans-serif;
+}
+
+/* Hover animation */
+.stone-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------------------------------------
+   🛡️ GUARANTEE SECTION
+   - Dark overlay + white text CTA
+----------------------------------------*/
+/* Guarantee Section */
+.guarantee {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: #fff; /* ✅ Text color white */
+  padding: 64px 0;
+  margin: 50px 0;
+  font-family: Arial, sans-serif; /* ✅ All text Arial */
+  overflow: hidden;
+}
+
+.guarantee-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8,18,16,0.5), rgba(8,18,16,0.68));
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.guarantee-inner {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: #fff; /* ✅ Ensure inner text is white */
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif; /* ✅ Inner text Arial */
+}
+
+.guarantee-inner h2 {
+  color: #fff;
+  font-size: 43px; /* ✅ Title size */
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  font-family: Arial, sans-serif; /* ✅ Title Arial */
+}
+
+.guarantee-inner p {
+  color: #fff;
+  font-size: 20px; /* ✅ Paragraph size */
+  margin-bottom: 28px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif; /* ✅ Paragraph Arial */
+}
+
+/* Beautiful Gradient Button */
+.btn-outline-light {
+  display: inline-block;
+  padding: 14px 28px; /* ✅ Larger padding for better look */
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(135deg, var(--brand), #000000); /* ✅ Gradient background */
+  color: #fff; /* ✅ White text */
+  border: none; /* ✅ Clean style */
+  box-shadow: 0 14px 40px rgba(24, 80, 69, 0.2); /* ✅ Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  font-family: Arial, sans-serif; /* ✅ Button Arial */
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-4px); /* ✅ Hover lift */
+  box-shadow: 0 20px 50px rgba(24, 80, 69, 0.3); /* ✅ Hover shadow */
+  filter: brightness(1.05); /* ✅ Slight glow effect */
+  cursor: pointer;
+}
+
+/* ---------------------------------------
+   🧩 BEST OPTION SECTION — Feature Cards
+----------------------------------------*/
+.best-option h2 {
+  font-size: 50px; /* ✅ Increased size */
+  font-weight: 700;
+  color: #00525E; /* ✅ Black */
+  margin: 0 0 12px;
+  text-align: center;  /* ✅ Consistent font */
+}
+
+.best-option .option-grid {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.option-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  min-width: 230px;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 12px 34px rgba(12,22,18,0.04);
+  transition: transform 0.22s ease;
+  font-family: Arial, sans-serif; /* ✅ All text Arial */
+}
+
+/* ✅ h3 font size + color */
+.option-card h3 {
+  color: #00525E;
+  font-size: 30px;   /* ✅ h3 size */
+  font-family: Arial, sans-serif;
+  margin-bottom: 12px;
+}
+
+/* ✅ p font size + Arial + black */
+.option-card p {
+  color: #000;
+  font-size: 20px;    /* ✅ p size */
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+.option-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(12,22,18,0.06);
+}
+
+
+/* ---------------------------------------
+   🌱 SUSTAINABLE SECTION
+   - Image + text layout for eco message
+----------------------------------------*/
+.sustainable-wrap {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.sustainable-text {
+  flex: 1;
+  font-family: Arial, sans-serif; /* ✅ All text Arial */
+}
+
+.sustainable-text h2 {
+  color: #00525E; /* ✅ Only heading color changed */
+}
+
+.sustainable-text p {
+  color: #000; /* ✅ Paragraph stays black or default */
+}
+
+.sustainable-img {
+  flex: 0 0 320px;
+}
+
+/* 🌿 WhatsApp Floating Action Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #1ebd5a;
+}
+
+.whatsapp-float i {
+  margin-top: 2px;
+}
+
+
+/* ---------------------------------------
+   ⚫ FOOTER SECTION
+   - Gradient background, 3-column grid
+----------------------------------------*/
+.footer {
+  background: #fff;
+  padding: 50px 0 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ✅ First Column (Logo + Name) Centered */
+.footer-col:first-child {
+  text-align: center;
+}
+
+/* ✅ Logo */
+.footer-logo {
+  width: 110px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ✅ Brand text (under logo) */
+.brand-text {
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+.brand-title {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  color: #00525E;  /* ✅ Updated color */
+}
+
+.brand-sub {
+  display: block;
+  font-size: 20px;
+  color: black;
+}
+
+/* ✅ Headings */
+.footer-col h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #00525E;
+}
+
+/* ✅ All paragraph text */
+.footer-col p {
+  margin: 6px 0;
+  font-size: 20px;
+  color: black;
+}
+
+/* ✅ Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: black;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.6;
+}
+
+/* ✅ Bottom Copy */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

@@ -25,7 +25,7 @@ let projects = [
         src:lohariFood,
     },
     {   id:2,
-        name:"Technology Website",
+        name:"MANGALA STONE Website",
         productType:"Web",
         src:web1
     },

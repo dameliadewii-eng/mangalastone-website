@@ -1,0 +1,330 @@
+/* ============================================
+   🌿 BASE STYLES
+============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* ============================================
+   🧭 HEADER SECTION
+============================================ */
+.header {
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.brand-title {
+  font-weight: 700;
+  color: #00525e;
+  display: block;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #00525e;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #00525e;
+  color: #fff;
+}
+
+/* ============================================
+   🏞️ HERO SECTION
+============================================ */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-inner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-inner h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+/* =====================================================
+   🌐 CONTACT INFO SECTION STYLES
+===================================================== */
+
+.contact-info-section {
+  background: #f9f9f9;
+  padding: 80px 10%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #00525E;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Info Grid Layout */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Info Item Box */
+.info-item {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 40px 25px;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  text-align: center; /* ✅ centers all text inside */
+  display: flex;      /* ✅ centers content vertically and horizontally */
+  flex-direction: column;
+  align-items: justify;
+  justify-content: center;
+}
+
+/* Icon */
+.info-icon {
+  font-size: 42px;
+  color: #00525E;
+  margin-bottom: 18px;
+}
+
+/* Headings */
+.info-content h3 {
+  font-size: 24px;
+  color: #00525E;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: justify; /* ✅ ensure h3 is centered */
+}
+
+/* Paragraphs */
+.info-content p {
+  font-size: 160px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify; /* ✅ ensure paragraphs are centered */
+  margin: 4px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info-item {
+    padding: 30px 20px;
+  }
+
+  .info-content h3 {
+    font-size: 20px;
+  }
+
+  .info-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-item {
+    max-width: 100%;
+  }
+
+
+  .info-grid {
+    gap: 25px;
+  }
+
+  .info-item {
+    max-width: 100%;
+  }
+}
+/* 🌿 WhatsApp Floating Action Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #1ebd5a;
+}
+
+.whatsapp-float i {
+  margin-top: 2px;
+}
+/* ============================================
+   🦶 FOOTER SECTION
+============================================ */
+.footer {
+  background: #fff;
+  padding: 50px 10% 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-col h3 {
+  color: #00525e;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.social-icons a {
+  color: #00525e;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ============================================
+   📱 RESPONSIVE DESIGN
+============================================ */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .info-content p {
+    font-size: 16px;
+  }
+
+  .hero-inner h1 {
+    font-size: 36px;
+  }
+}

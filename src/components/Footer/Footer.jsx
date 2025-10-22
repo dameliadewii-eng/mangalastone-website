@@ -9,52 +9,52 @@ function Footer() {
         <Container>
           <Row>
             <Col lg={4} md={6} className="footer-contact">
-              <h3>King IT Sols<span>.</span></h3>
+              <h3>Watu Mangala Stone<span>.</span></h3>
               <p>
-                M9F Block A Military Accounts Society College Road <br />
-                Lahore<br /> Pakistan <br />
+                Jl. Nyi Ageng Serang, Lengkong Kulon, Kec. Sindangwangi, Kabupaten Majalengka,  <br />
+               Jawa Barat 45474<br /> Indonesia <br />
                 <br />
                 <strong>
                   <i className="fas fa-phone-alt"><FaPhoneAlt/></i>
                 </strong>{' '}
-                +92 320 7545617<br />
+                +62 *** ******<br />
                 <strong>
                   <i className="fas fa-phone-alt"><FaPhoneAlt/></i>
                 </strong>{' '}
-                +92 300 6521781<br />
+                +62 *** ******<br />
                 <strong>
                   <i className="fas fa-envelope"><FaEnvelope/></i>
                 </strong>{' '}
-                info@kingitsol.com<br />
+                info@WATU MANGLA.com<br />
                 <strong>
                   <i className="fas fa-envelope"><FaEnvelope/></i>
                 </strong>{' '}
-                order@kingitsol.com<br />
+                order@WATU MANGLA.com<br />
                 <strong>
                   <i className="fas fa-envelope"><FaEnvelope/></i>
                 </strong>{' '}
-                career@kingitsol.com<br />
+                career@WATU MANGLA.com<br />
               </p>
             </Col>
 
             <Col lg={4} md={6} className="footer-links">
-              <h3>Our Services</h3>
+              <h3>Our Products</h3>
               <ul>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Game Development</a>
+                  <a href="#">Andesite Stone</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Web Development</a>
+                  <a href="#">Palem Sandstone</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">App Development</a>
+                  <a href="#">Wall Cladding</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '}
-                  <a href="#">Graphic Design</a>
+                  {/* <i className="bx bx-chevron-right "><FaChevronRight/></i>{' '} */}
+                  {/* <a href="#">Graphic Design</a> */}
                 </li>
               </ul>
             </Col>
@@ -63,7 +63,7 @@ function Footer() {
               <h3>Our Social Networks</h3>
               <div className="social-links mt-3">
                 <a
-                  href="https://twitter.com/kingitsol"
+                  href="https://twitter.com/WATU MANGLA"
                   target="_blank"
                   rel="noreferrer"
                   className="twitter"
@@ -71,7 +71,7 @@ function Footer() {
                   <FaTwitter/>
                 </a>
                 <a
-                  href="https://www.facebook.com/kingitsols/"
+                  href="https://www.facebook.com/WATU MANGLAs/"
                   target="_blank"
                   rel="noreferrer"
                   className="facebook"
@@ -79,7 +79,7 @@ function Footer() {
                   <FaFacebook/>
                 </a>
                 <a
-                  href="https://www.instagram.com/kingitsols/"
+                  href="https://www.instagram.com/WATU MANGLAs/"
                   target="_blank"
                   rel="noreferrer"
                   className="instagram"
@@ -88,7 +88,7 @@ function Footer() {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/kingitsol-t-1a2966202/"
+                  href="https://www.linkedin.com/in/WATU MANGLA-t-1a2966202/"
                   target="_blank"
                   rel="noreferrer"
                   className="linkedin"
