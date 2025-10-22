@@ -7,6 +7,42 @@ import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+<nav
+  className="nav-area"
+  aria-label="Main Navigation"
+  data-aos="fade-down"
+>
+  <Link to="/home" className="nav-link">
+    Home
+  </Link>
+
+  <div className="nav-dropdown">
+    <button className="nav-dropbtn" aria-haspopup="true">
+      Products ▾
+    </button>
+    <div className="nav-dropdown-menu" role="menu">
+      <Link role="menuitem" to="/andesite">
+        Andesite Stone
+      </Link>
+      <Link role="menuitem" to="/palm-sandstone">
+        Palem Sandstone
+      </Link>
+      <Link role="menuitem" to="/wall-cladding">
+        Wall Cladding
+      </Link>
+    </div>
+  </div>
+
+  <Link to="/about" className="nav-link">
+    About Us
+  </Link>
+
+  <Link to="/contact" className="nav-link">
+    Contact Us
+  </Link>
+</nav>
 
 // ---------- Imported Images ----------
 import heroBg from "@/assets/webimg/hero-bg.png";

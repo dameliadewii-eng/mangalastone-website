@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './', // ✅ ensures proper relative paths for SPA on Vercel
   plugins: [react()],
   resolve: {
     alias: {
