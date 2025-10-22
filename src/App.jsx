@@ -8,10 +8,7 @@ import "typeface-teko";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from '../pages/Home';
-
 import About from '../pages/About';
-
-// 🪨 Import your new product pages
 import AndesiteStone from '../pages/AndesiteStone';
 import PalmSandstone from '../pages/PalmSandstone';
 import WallCladding from '../pages/WallCladding';
@@ -22,23 +19,25 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* ✅ Default route (for /) */}
+        <Route path="/" element={<Home />} />
+
         {/* Main Routes */}
-        <Route path='/home' element={<Home />} />
+        <Route path="/home" element={<Home />} />
 
+        {/* About Page */}
+        <Route path="/about" element={<About />} />
 
-        {/* ✅ About Route */}
-        <Route path='/about' element={<About />} />
+        {/* Product Pages */}
+        <Route path="/andesite" element={<AndesiteStone />} />
+        <Route path="/palm-sandstone" element={<PalmSandstone />} />
+        <Route path="/wall-cladding" element={<WallCladding />} />
 
-        {/* 🪨 Product Routes */}
-        <Route path='/contact' element={<Contact />} />
-
-        <Route path='/andesite' element={<AndesiteStone />} />
-        <Route path='/palm-sandstone' element={<PalmSandstone />} />
-        <Route path='/wall-cladding' element={<WallCladding />} />
+        {/* Contact Page */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
