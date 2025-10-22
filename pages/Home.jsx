@@ -1,12 +1,12 @@
 // -----------------------------------------
-// Home.jsx — Main Landing Page
+// Home.jsx — Main Landing Page (Fixed Navigation)
 // -----------------------------------------
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 // ---------- Imported Images ----------
 import heroBg from "@/assets/webimg/hero-bg.png";
@@ -15,7 +15,6 @@ import projectTiles from "@/assets/webimg/project-tiles.png";
 import stoneAndesite from "@/assets/webimg/stone-andesite.png";
 import stoneLimestone from "@/assets/webimg/stone-limestone.png";
 import stonePumice from "@/assets/webimg/stone-pumice.png";
-import guaranteeBg from "@/assets/webimg/guarantee-bg.png";
 import logo from "@/assets/img/logo.png";
 
 const Home = () => {
@@ -23,19 +22,16 @@ const Home = () => {
   const [language, setLanguage] = useState("en");
   const navigate = useNavigate();
 
-  // Initialize AOS
   useEffect(() => {
     AOS.init({ duration: 900, once: true, mirror: false });
   }, []);
 
-  // Language switcher
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
     setLanguage(newLang);
     i18n.changeLanguage(newLang);
   };
 
-  // Hero slider
   const images = [heroBg, heroBg2];
   const [currentImage, setCurrentImage] = useState(0);
   useEffect(() => {
@@ -45,7 +41,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // WhatsApp
   const whatsappNumber = "6285797895798";
   const whatsappMessage = "Hello! I’d like to know more about Mangala Stone.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -68,21 +63,33 @@ const Home = () => {
           </div>
 
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t("nav.home")}</a>
+            <Link to="/" className="nav-link">
+              {t("nav.home")}
+            </Link>
 
             <div className="nav-dropdown">
-              <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
+              <button className="nav-dropbtn" aria-haspopup="true">
                 {t("nav.products")} ▾
               </button>
               <div className="nav-dropdown-menu" role="menu">
-                <a role="menuitem" href="andesite">{t("products.andesite")}</a>
-                <a role="menuitem" href="palm-sandstone">{t("products.palm")}</a>
-                <a role="menuitem" href="wall-cladding">{t("products.cladding")}</a>
+                <Link role="menuitem" to="/andesite">
+                  {t("products.andesite")}
+                </Link>
+                <Link role="menuitem" to="/palm-sandstone">
+                  {t("products.palm")}
+                </Link>
+                <Link role="menuitem" to="/wall-cladding">
+                  {t("products.cladding")}
+                </Link>
               </div>
             </div>
 
-            <a href="about" className="nav-link">{t("nav.about")}</a>
-            <a href="contact" className="nav-link">{t("nav.contact")}</a>
+            <Link to="/about" className="nav-link">
+              {t("nav.about")}
+            </Link>
+            <Link to="/contact" className="nav-link">
+              {t("nav.contact")}
+            </Link>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -226,7 +233,6 @@ const Home = () => {
         </div>
       </footer>
 
-      {/* WhatsApp Floating Button */}
       <a
         href={whatsappUrl}
         className="whatsapp-float"
