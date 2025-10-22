@@ -1,20 +1,20 @@
 import React,{useEffect, useState} from "react";
-import Header from "../src/components/Header/Header";
+import Header from "@/components/Header/Header";
 import "./Portfolio.css";
-import lohariFood from "../src/assets/img/portfolio/lahori food.jpg";
-import web1 from "../src/assets/img/portfolio/web1.jpg";
-import iphone from "../src/assets/img/portfolio/iphone.jpg";
-import pizza from "../src/assets/img/portfolio/pizzaa.jpg";
-import mobiStylers from "../src/assets/img/portfolio/mobi_stylers.jpg";
-import portfolio from "../src/assets/img/portfolio/portfolio.jpg";
-import mantoMart from "../src/assets/img/portfolio/manto mart.jpg";
-import pink from "../src/assets/img/portfolio/pink.jpeg";
-import mobimovers from "../src/assets/img/portfolio/mobi_movers.jpg";
-import xota from "../src/assets/img/portfolio/96xota.jpg";
+import lohariFood from "@/assets/img/portfolio/lahori food.jpg";
+import web1 from "@/assets/img/portfolio/web1.jpg";
+import iphone from "@/assets/img/portfolio/iphone.jpg";
+import pizza from "@/assets/img/portfolio/pizzaa.jpg";
+import mobiStylers from "@/assets/img/portfolio/mobi_stylers.jpg";
+import portfolio from "@/assets/img/portfolio/portfolio.jpg";
+import mantoMart from "@/assets/img/portfolio/manto mart.jpg";
+import pink from "@/assets/img/portfolio/pink.jpeg";
+import mobimovers from "@/assets/img/portfolio/mobi_movers.jpg";
+import xota from "@/assets/img/portfolio/96xota.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { event } from "jquery";
-import Footer from "../src/components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
 let projects = [

@@ -4,16 +4,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // ====== Images ======
-import about from "../src/assets/img/about.png";
-import about1 from "../src/assets/img/about1.png";
-import about2 from "../src/assets/img/about2.png";
-import about3 from "../src/assets/img/about3.png";
-import about4 from "../src/assets/img/about4.png";
-import about5 from "../src/assets/img/about5.png";
-import about6 from "../src/assets/img/about6.png";
-import about7 from "../src/assets/img/about7.png";
+import about from "@/assets/img/about.png";
+import about1 from "@/assets/img/about1.png";
+import about2 from "@/assets/img/about2.png";
+import about3 from "@/assets/img/about3.png";
+import about4 from "@/assets/img/about4.png";
+import about5 from "@/assets/img/about5.png";
+import about6 from "@/assets/img/about6.png";
+import about7 from "@/assets/img/about7.png";
 
-import logo from "../src/assets/img/logo.png";
+import logo from "@/assets/img/logo.png";
 
 const Contact = () => {
   const [language, setLanguage] = useState("en");

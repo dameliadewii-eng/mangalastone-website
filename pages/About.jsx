@@ -4,18 +4,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // ====== Images ======
-import about from "../src/assets/img/about.png";
-import about1 from "../src/assets/img/about1.png";
-import about2 from "../src/assets/img/about2.png";
-import about3 from "../src/assets/img/about3.png";
-import about4 from "../src/assets/img/about4.png";
-import about5 from "../src/assets/img/about5.png";
-import about6 from "../src/assets/img/about6.png";
-import logo from "../src/assets/img/logo.png";
+import about from "@/assets/img/about.png";
+import about1 from "@/assets/img/about1.png";
+import about2 from "@/assets/img/about2.png";
+import about3 from "@/assets/img/about3.png";
+import about4 from "@/assets/img/about4.png";
+import about5 from "@/assets/img/about5.png";
+import about6 from "@/assets/img/about6.png";
+import logo from "@/assets/img/logo.png";
 
 // ====== Translations ======
-import en from "../src/locales/en.json";
-import id from "../src/locales/id.json";
+import en from "@/locales/en.json";
+import id from "@/locales/id.json";
 
 const About = () => {
   const [language, setLanguage] = useState("en");

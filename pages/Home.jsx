@@ -9,14 +9,14 @@ import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
 // ---------- Imported Images ----------
-import heroBg from "../src/assets/webimg/hero-bg.png";
-import heroBg2 from "../src/assets/webimg/hero-bg2.png";
-import projectTiles from "../src/assets/webimg/project-tiles.png";
-import stoneAndesite from "../src/assets/webimg/stone-andesite.png";
-import stoneLimestone from "../src/assets/webimg/stone-limestone.png";
-import stonePumice from "../src/assets/webimg/stone-pumice.png";
-import guaranteeBg from "../src/assets/webimg/guarantee-bg.png";
-import logo from "../src/assets/img/logo.png";
+import heroBg from "@/assets/webimg/hero-bg.png";
+import heroBg2 from "@/assets/webimg/hero-bg2.png";
+import projectTiles from "@/assets/webimg/project-tiles.png";
+import stoneAndesite from "@/assets/webimg/stone-andesite.png";
+import stoneLimestone from "@/assets/webimg/stone-limestone.png";
+import stonePumice from "@/assets/webimg/stone-pumice.png";
+import guaranteeBg from "@/assets/webimg/guarantee-bg.png";
+import logo from "@/assets/img/logo.png";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
