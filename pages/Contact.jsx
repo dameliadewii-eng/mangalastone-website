@@ -183,7 +183,7 @@ const Contact = () => {
           <div className="footer-col">
             <h3>CONTACT US</h3>
             <p>info@mangalastone.com</p>
-            <p>+62 8579 7895 798</p>
+            <p>+62 8579 7895 798000</p>
           </div>
 
           <div className="footer-col">
