@@ -49,62 +49,90 @@ const Home = () => {
 
   return (
     <div className="hm-root">
-      {/* ---------------- HEADER ---------------- */}
-      <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">
-                Natural Stone Manufacturer & Distributor
-              </span>
-            </div>
-          </div>
+     {/* ---------------- HEADER ---------------- */}
+<header className="hm-header" role="banner">
+  <div className="hm-container header-inner">
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+      <div className="brand-text">
+        <span className="brand-title">MANGALA STONE</span>
+        <span className="brand-sub">
+          Natural Stone Manufacturer & Distributor
+        </span>
+      </div>
+    </div>
 
-          <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="/" className="nav-link">
-              {t("nav.home")}
-            </Link>
+    {/* ===== Hamburger for Mobile ===== */}
+    <div
+      className="hamburger"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Toggle navigation menu"
+    >
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
+    </div>
 
-            <div className="nav-dropdown">
-              <button className="nav-dropbtn" aria-haspopup="true">
-                {t("nav.products")} ▾
-              </button>
-              <div className="nav-dropdown-menu" role="menu">
-                <Link role="menuitem" to="/andesite">
-                  {t("products.andesite")}
-                </Link>
-                <Link role="menuitem" to="/palm-sandstone">
-                  {t("products.palm")}
-                </Link>
-                <Link role="menuitem" to="/wall-cladding">
-                  {t("products.cladding")}
-                </Link>
-              </div>
-            </div>
+    {/* ===== Desktop / Mobile Menu ===== */}
+    <nav
+      className={`nav-area ${menuOpen ? "open" : ""}`}
+      aria-label="Main Navigation"
+      data-aos="fade-down"
+    >
+      <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>
+        {t("nav.home")}
+      </Link>
 
-            <Link to="/about" className="nav-link">
-              {t("nav.about")}
-            </Link>
-            <Link to="/contact" className="nav-link">
-              {t("nav.contact")}
-            </Link>
-          </nav>
-
-          <div className="actions-area" data-aos="fade-left">
-            <select
-              value={language}
-              onChange={handleLanguageChange}
-              aria-label="Select language"
-              className="lang-select"
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
+      <div className="nav-dropdown">
+        <button className="nav-dropbtn" aria-haspopup="true">
+          {t("nav.products")} ▾
+        </button>
+        <div className="nav-dropdown-menu" role="menu">
+          <Link role="menuitem" to="/andesite" onClick={() => setMenuOpen(false)}>
+            {t("products.andesite")}
+          </Link>
+          <Link role="menuitem" to="/palm-sandstone" onClick={() => setMenuOpen(false)}>
+            {t("products.palm")}
+          </Link>
+          <Link role="menuitem" to="/wall-cladding" onClick={() => setMenuOpen(false)}>
+            {t("products.cladding")}
+          </Link>
         </div>
-      </header>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>
+        {t("nav.about")}
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>
+        {t("nav.contact")}
+      </Link>
+
+      <div className="mobile-lang">
+        <select
+          value={language}
+          onChange={handleLanguageChange}
+          aria-label="Select language"
+          className="lang-select"
+        >
+          <option value="en">English</option>
+          <option value="id">Indonesian</option>
+        </select>
+      </div>
+    </nav>
+
+    <div className="actions-area desktop-only" data-aos="fade-left">
+      <select
+        value={language}
+        onChange={handleLanguageChange}
+        aria-label="Select language"
+        className="lang-select"
+      >
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
+    </div>
+  </div>
+</header>
 
       {/* ---------------- HERO ---------------- */}
       <section
