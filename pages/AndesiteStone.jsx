@@ -1,14 +1,15 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link"; // ✅ Use Next.js routing
 
 // Images
 import header_andesite_stone from "@/assets/img/header_andesite_stone.png";
 import logo from "@/assets/img/logo.png";
-import guaranteeBg from "@/assets/webimg/guarantee-bg.png";
 
-// Andesite Images (1–36)
+// Andesite Images
 import and1 from "@/assets/Andesite/Andesite Central Napoli/and1.png";
 import and2 from "@/assets/Andesite/Andesite Central Napoli/and2.png";
 import and3 from "@/assets/Andesite/Andesite Central Napoli/and3.png";
@@ -46,7 +47,7 @@ import and34 from "@/assets/Andesite/Andesite Worm/and34.png";
 import and35 from "@/assets/Andesite/Andesite Worm/and35.png";
 import and36 from "@/assets/Andesite/Andesite Worm/and36.png";
 
-// translations (simple JSON method)
+// Translations
 import en from "@/locales/en.json";
 import id from "@/locales/id.json";
 
@@ -54,7 +55,6 @@ const AndesiteStone = () => {
   const [language, setLanguage] = useState("en");
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
-  // translations object and quick accessor
   const translations = { en, id };
   const t = translations[language].andesitePage;
 
@@ -64,7 +64,6 @@ const AndesiteStone = () => {
 
   const handleLanguageChange = (e) => setLanguage(e.target.value);
 
-  // stones array (image srcs unchanged). Titles/descriptions drawn from translation JSON.
   const stones = [
     { key: "centralNapoli", title: "Andesite Central Napoli", imgs: [and1, and2, and3] },
     { key: "chess", title: "Andesite Chess", imgs: [and4, and5, and6] },
@@ -80,19 +79,15 @@ const AndesiteStone = () => {
     { key: "worm", title: "Andesite Worm", imgs: [and34, and35, and36] },
   ];
 
-  // WhatsApp link (unchanged)
-  const whatsappNumber = "6285797895798"; // without +
+  const whatsappNumber = "6285797895798";
   const whatsappMessage = "Hello! I’d like to know more about Mangala Stone.";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    whatsappMessage
-  )}`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="hm-root">
-      {/* ------------------------------ HEADER ------------------------------ */}
+      {/* HEADER */}
       <header className="hm-header" role="banner">
         <div className="hm-container header-inner">
-          {/* Logo */}
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
             <div className="brand-text">
@@ -101,26 +96,25 @@ const AndesiteStone = () => {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* ✅ Fixed Navigation with <Link> */}
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t.nav.home}</a>
+            <Link href="/" className="nav-link">{t.nav.home}</Link>
 
             <div className="nav-dropdown">
-              <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
+              <button className="nav-dropbtn" aria-haspopup="true">
                 {t.nav.products} ▾
               </button>
               <div className="nav-dropdown-menu" role="menu">
-                <a role="menuitem" href="andesite">{t.nav.andesite}</a>
-                <a role="menuitem" href="palm-sandstone">{t.nav.palm}</a>
-                <a role="menuitem" href="wall-cladding">{t.nav.cladding}</a>
+                <Link href="/andesite" className="nav-link">{t.nav.andesite}</Link>
+                <Link href="/palm-sandstone" className="nav-link">{t.nav.palm}</Link>
+                <Link href="/wall-cladding" className="nav-link">{t.nav.cladding}</Link>
               </div>
             </div>
 
-            <a href="about" className="nav-link">{t.nav.about}</a>
-            <a href="contact" className="nav-link">{t.nav.contact}</a>
+            <Link href="/about" className="nav-link">{t.nav.about}</Link>
+            <Link href="/contact" className="nav-link">{t.nav.contact}</Link>
           </nav>
 
-          {/* Language selector (keeps same position and behavior) */}
           <div className="actions-area" data-aos="fade-left">
             <select
               value={language}
@@ -135,27 +129,26 @@ const AndesiteStone = () => {
         </div>
       </header>
 
-      {/* ===== Hero Section ===== */}
-      <section className="andesite-hero" id="andesite" style={{ backgroundImage: `url(${header_andesite_stone})` }}>
+      {/* HERO */}
+      <section className="andesite-hero" style={{ backgroundImage: `url(${header_andesite_stone})` }}>
         <div className="overlay"></div>
         <div className="andesite-hero-content" data-aos="zoom-in">
           <h1>{t.heroTitle}</h1>
         </div>
       </section>
 
-      {/* ===== Introductory Sentence ===== */}
+      {/* INTRO TEXT */}
       <section className="andesite-intro-text" data-aos="fade-up">
         <h2>{t.introHeading}</h2>
         <p>{t.introText}</p>
       </section>
 
-      {/* ===== Stone Sections (images + descriptions) ===== */}
+      {/* STONES */}
       <section className="andesite-stones">
         {stones.map((group, idx) => {
-          // fetch translations for this group (fallback to original title if missing)
           const groupTrans = (t.stones && t.stones[group.key]) || null;
-          const groupTitle = groupTrans && groupTrans.title ? groupTrans.title : group.title;
-          const groupDescriptions = groupTrans && groupTrans.descriptions ? groupTrans.descriptions : [];
+          const groupTitle = groupTrans?.title || group.title;
+          const groupDescriptions = groupTrans?.descriptions || [];
 
           return (
             <div key={idx} className="andesite-stone-group" data-aos="fade-up">
@@ -168,10 +161,8 @@ const AndesiteStone = () => {
                     onClick={() => setFullscreenImage(imgSrc)}
                   >
                     <img src={imgSrc} alt={`${groupTitle}-${i + 1}`} />
-                    {/* description from translations (three lines per image) */}
                     <p className="andesite-stone-description">
-                      {/* if description available for this image index, show it; else blank */}
-                      {groupDescriptions[i] ? groupDescriptions[i] : ""}
+                      {groupDescriptions[i] || ""}
                     </p>
                   </div>
                 ))}
@@ -181,7 +172,7 @@ const AndesiteStone = () => {
         })}
       </section>
 
-      {/* ===== Fullscreen Image Popup ===== */}
+      {/* FULLSCREEN POPUP */}
       {fullscreenImage && (
         <div className="fullscreen-overlay" onClick={() => setFullscreenImage(null)}>
           <img src={fullscreenImage} alt="Fullscreen" className="fullscreen-image" />
@@ -189,8 +180,8 @@ const AndesiteStone = () => {
         </div>
       )}
 
-      {/* ===== Footer ===== */}
-      <footer className="footer" id="contact">
+      {/* FOOTER */}
+      <footer className="footer">
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
@@ -198,13 +189,11 @@ const AndesiteStone = () => {
               <span className="brand-title">MANGALA STONE</span>
             </div>
           </div>
-
           <div className="footer-col">
             <h3>{t.footer.contact}</h3>
             <p>info@mangalastone.com</p>
             <p>+62 8579 7895 798</p>
           </div>
-
           <div className="footer-col">
             <h3>{t.footer.follow}</h3>
             <div className="social-icons">
@@ -213,21 +202,25 @@ const AndesiteStone = () => {
               <a href="#"><i className="fab fa-tiktok" /></a>
             </div>
           </div>
-
           <div className="footer-col">
             <h3>{t.footer.about}</h3>
             <p>About Mangala Stone</p>
             <p>Our Products</p>
           </div>
         </div>
-
         <div className="footer-bottom">
           <p>{t.footer.rights}</p>
         </div>
       </footer>
 
-      {/* WhatsApp Floating Button */}
-      <a href={whatsappUrl} className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      {/* WhatsApp Button */}
+      <a
+        href={whatsappUrl}
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
         <i className="fab fa-whatsapp"></i>
       </a>
     </div>

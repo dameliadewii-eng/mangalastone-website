@@ -3,6 +3,7 @@ import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 // ===== Images =====
 import header_andesite_stone2 from "@/assets/img/header_andesite_stone2.png";
@@ -122,17 +123,17 @@ const WallCladdingStone = () => {
           </div>
 
           <nav className="nav-area" data-aos="fade-down">
-            <a href="home" className="nav-link">{t("nav_home")}</a>
+            <Link to="/home" className="nav-link">{t("nav_home")}</Link>
             <div className="nav-dropdown">
               <button className="nav-dropbtn">Products ▾</button>
               <div className="nav-dropdown-menu">
-                <a href="andesite">{t("nav_andesite")}</a>
-                <a href="palm-sandstone">{t("nav_palem")}</a>
-                <a href="wall-cladding">{t("nav_wall")}</a>
+                <Link to="/andesite">{t("nav_andesite")}</Link>
+                <Link to="/palm-sandstone">{t("nav_palem")}</Link>
+                <Link to="/wall-cladding">{t("nav_wall")}</Link>
               </div>
             </div>
-            <a href="about" className="nav-link">{t("nav_about")}</a>
-            <a href="contact" className="nav-link">{t("nav_contact")}</a>
+            <Link to="/about" className="nav-link">{t("nav_about")}</Link>
+            <Link to="/contact" className="nav-link">{t("nav_contact")}</Link>
           </nav>
 
           <div className="actions-area">
