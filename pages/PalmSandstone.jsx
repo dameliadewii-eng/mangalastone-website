@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -70,6 +69,7 @@ const translations = {
 const PalemStone = () => {
   const [language, setLanguage] = useState("en");
   const [fullscreenImage, setFullscreenImage] = useState(null);
+
   const t = translations[language];
 
   useEffect(() => {
@@ -90,7 +90,7 @@ const PalemStone = () => {
 
   return (
     <div className="hm-root">
-      {/* ---------------- HEADER ---------------- */}
+      {/* ------------------------------ HEADER ------------------------------ */}
       <header className="hm-header" role="banner">
         <div className="hm-container header-inner">
           <div className="logo-area" data-aos="fade-right">
@@ -101,27 +101,22 @@ const PalemStone = () => {
             </div>
           </div>
 
-          {/* ✅ React Router Navigation */}
           <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="/home" className="nav-link">
-              {t.navHome}
-            </Link>
+            <a href="home" className="nav-link">{t.navHome}</a>
 
             <div className="nav-dropdown">
-              <button className="nav-dropbtn">{t.navProducts} ▾</button>
+              <button className="nav-dropbtn">
+                {t.navProducts} ▾
+              </button>
               <div className="nav-dropdown-menu">
-                <Link to="/andesite">{t.product1}</Link>
-                <Link to="/palm-sandstone">{t.product2}</Link>
-                <Link to="/wall-cladding">{t.product3}</Link>
+                <a href="andesite">{t.product1}</a>
+                <a href="palm-sandstone">{t.product2}</a>
+                <a href="wall-cladding">{t.product3}</a>
               </div>
             </div>
 
-            <Link to="/about" className="nav-link">
-              {t.navAbout}
-            </Link>
-            <Link to="/contact" className="nav-link">
-              {t.navContact}
-            </Link>
+            <a href="about" className="nav-link">{t.navAbout}</a>
+            <a href="contact" className="nav-link">{t.navContact}</a>
           </nav>
 
           <div className="actions-area" data-aos="fade-left">
@@ -137,7 +132,7 @@ const PalemStone = () => {
         </div>
       </header>
 
-      {/* ---------------- HERO ---------------- */}
+      {/* ------------------------------ HERO SECTION ------------------------------ */}
       <section
         className="andesite-hero"
         style={{ backgroundImage: `url(${header_andesite_stone1})` }}
@@ -148,13 +143,13 @@ const PalemStone = () => {
         </div>
       </section>
 
-      {/* ---------------- INTRO ---------------- */}
+      {/* ------------------------------ INTRO ------------------------------ */}
       <section className="andesite-intro-text" data-aos="fade-up">
         <h2>{t.introHeading}</h2>
         <p>{t.introText}</p>
       </section>
 
-      {/* ---------------- STONE GALLERY ---------------- */}
+      {/* ------------------------------ STONE SECTION ------------------------------ */}
       <section className="andesite-stones">
         <div className="andesite-stone-group" data-aos="fade-up">
           <div className="andesite-stone-grid">
@@ -172,7 +167,7 @@ const PalemStone = () => {
         </div>
       </section>
 
-      {/* ---------------- FULLSCREEN IMAGE ---------------- */}
+      {/* ------------------------------ FULLSCREEN IMAGE ------------------------------ */}
       {fullscreenImage && (
         <div className="fullscreen-overlay" onClick={() => setFullscreenImage(null)}>
           <img src={fullscreenImage} alt="Fullscreen" className="fullscreen-image" />
@@ -182,7 +177,7 @@ const PalemStone = () => {
         </div>
       )}
 
-      {/* ---------------- FOOTER ---------------- */}
+      {/* ------------------------------ FOOTER ------------------------------ */}
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
@@ -219,7 +214,7 @@ const PalemStone = () => {
         </div>
       </footer>
 
-      {/* ---------------- WHATSAPP ---------------- */}
+      {/* ------------------------------ WHATSAPP BUTTON ------------------------------ */}
       <a
         href={whatsappUrl}
         className="whatsapp-float"

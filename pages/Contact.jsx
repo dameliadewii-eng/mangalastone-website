@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link for client-side navigation
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,6 +12,7 @@ import about4 from "@/assets/img/about4.png";
 import about5 from "@/assets/img/about5.png";
 import about6 from "@/assets/img/about6.png";
 import about7 from "@/assets/img/about7.png";
+
 import logo from "@/assets/img/logo.png";
 
 const Contact = () => {
@@ -20,6 +20,7 @@ const Contact = () => {
   const [fullscreenImage, setFullscreenImage] = useState(null);
   const [currentImage, setCurrentImage] = useState(0);
 
+  // ====== AOS Animation Init ======
   useEffect(() => {
     AOS.init({ duration: 900, once: true });
   }, []);
@@ -33,12 +34,14 @@ const Contact = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // ====== Stones Data ======
   const stones = [
     {
       imgs: [about4, about5, about6],
     },
   ];
 
+  // ====== Translations ======
   const translations = {
     en: {
       contact_hero_title: "CONTACT US",
@@ -74,6 +77,7 @@ const Contact = () => {
 
   const t = translations[language];
 
+  // ---------- WhatsApp Chat Link ----------
   const whatsappNumber = "6285797895798";
   const whatsappMessage = "Hello! I’d like to know more about Mangala Stone.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -82,9 +86,12 @@ const Contact = () => {
 
   return (
     <div className="hm-root">
-      {/* ---------- HEADER ---------- */}
+      {/* ------------------------------
+          HEADER SECTION
+      ------------------------------ */}
       <header className="hm-header" role="banner">
         <div className="hm-container header-inner">
+          {/* --- Logo and Brand --- */}
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
             <div className="brand-text">
@@ -95,16 +102,17 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* ✅ Updated Navigation Links using <Link> */}
+          {/* --- Navigation Links --- */}
           <nav
             className="nav-area"
             aria-label="Main Navigation"
             data-aos="fade-down"
           >
-            <Link to="/" className="nav-link">
+            <a href="home" className="nav-link">
               Home
-            </Link>
+            </a>
 
+            {/* Dropdown menu for product categories */}
             <div className="nav-dropdown">
               <button
                 className="nav-dropbtn"
@@ -114,24 +122,24 @@ const Contact = () => {
                 Products ▾
               </button>
               <div className="nav-dropdown-menu" role="menu">
-                <Link role="menuitem" to="/andesite">
+                <a role="menuitem" href="andesite">
                   Andesite Stone
-                </Link>
-                <Link role="menuitem" to="/palm-sandstone">
+                </a>
+                <a role="menuitem" href="palm-sandstone">
                   Palem Sandstone
-                </Link>
-                <Link role="menuitem" to="/wall-cladding">
+                </a>
+                <a role="menuitem" href="wall-cladding">
                   Wall Cladding
-                </Link>
+                </a>
               </div>
             </div>
 
-            <Link to="/about" className="nav-link">
+            <a href="about" className="nav-link">
               About Us
-            </Link>
-            <Link to="/contact" className="nav-link active">
+            </a>
+            <a href="contact" className="nav-link">
               Contact Us
-            </Link>
+            </a>
           </nav>
 
           <div className="header-actions" data-aos="fade-left">
@@ -147,7 +155,7 @@ const Contact = () => {
         </div>
       </header>
 
-      {/* ---------- HERO SECTION ---------- */}
+      {/* ====== HERO SECTION ====== */}
       <section className="hero" style={{ backgroundImage: `url(${about7})` }}>
         <div className="hero-overlay" />
         <div className="hero-inner" data-aos="zoom-in">
@@ -155,14 +163,16 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ---------- CONTACT INFO ---------- */}
+      {/* ===== Introductory Sentence ===== */}
       <section className="andesite-intro-text" data-aos="fade-up">
         <h1>{t.contact_heading1}</h1>
         <h2>{t.contact_heading2}</h2>
       </section>
 
+      {/* ====== FACTORY INFO ====== */}
       <section className="andesite-intro-text" data-aos="fade-up">
         <h1>{t.factory_title}</h1>
+
         <p>{t.factory_1}</p>
         <p>{t.factory_2}</p>
         <p className="rich-text">{t.phone}</p>
@@ -170,20 +180,27 @@ const Contact = () => {
         <p className="rich-text">{t.hours}</p>
       </section>
 
-      {/* ---------- FOOTER ---------- */}
+      {/* ====== ABOUT CONTENT SECTION ====== */}
+      <section className="content-section" data-aos="fade-up">
+        <div className="container split reverse-on-mobile">
+          <div className="text" data-aos="fade-left"></div>
+        </div>
+      </section>
+
+      {/* ===== Footer ===== */}
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
             <div className="brand-text">
-              <span className="brand-title">MANGALA STONE1</span>
+              <span className="brand-title">MANGALA STONE</span>
             </div>
           </div>
 
           <div className="footer-col">
             <h3>CONTACT US</h3>
             <p>info@mangalastone.com</p>
-            <p>+62 8579 7895 798000</p>
+            <p>+62 8579 7895 798</p>
           </div>
 
           <div className="footer-col">
