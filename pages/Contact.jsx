@@ -176,7 +176,7 @@ const Contact = () => {
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
             <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
+              <span className="brand-title">MANGALA STONE1</span>
             </div>
           </div>
 
