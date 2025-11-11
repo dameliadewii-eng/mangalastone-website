@@ -1,5 +1,5 @@
 // -----------------------------------------
-// Home.jsx — Main Landing Page (Fixed Navigation)
+// Home.jsx — Main Landing Page (Responsive Mobile Menu)
 // -----------------------------------------
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from "react";
@@ -20,6 +20,7 @@ import logo from "@/assets/img/logo.png";
 const Home = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("en");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -62,8 +63,22 @@ const Home = () => {
             </div>
           </div>
 
-          <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="/" className="nav-link">
+          {/* Hamburger Button */}
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+
+          {/* Navigation */}
+          <nav
+            className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+            aria-label="Main Navigation"
+            data-aos="fade-down"
+          >
+            <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
               {t("nav.home")}
             </Link>
 
@@ -72,37 +87,53 @@ const Home = () => {
                 {t("nav.products")} ▾
               </button>
               <div className="nav-dropdown-menu" role="menu">
-                <Link role="menuitem" to="/andesite">
+                <Link
+                  role="menuitem"
+                  to="/andesite"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   {t("products.andesite")}
                 </Link>
-                <Link role="menuitem" to="/palm-sandstone">
+                <Link
+                  role="menuitem"
+                  to="/palm-sandstone"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   {t("products.palm")}
                 </Link>
-                <Link role="menuitem" to="/wall-cladding">
+                <Link
+                  role="menuitem"
+                  to="/wall-cladding"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   {t("products.cladding")}
                 </Link>
               </div>
             </div>
 
-            <Link to="/about" className="nav-link">
+            <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
               {t("nav.about")}
             </Link>
-            <Link to="/contact" className="nav-link">
+            <Link
+              to="/contact"
+              className="nav-link"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               {t("nav.contact")}
             </Link>
-          </nav>
 
-          <div className="actions-area" data-aos="fade-left">
-            <select
-              value={language}
-              onChange={handleLanguageChange}
-              aria-label="Select language"
-              className="lang-select"
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
+            <div className="actions-area">
+              <select
+                value={language}
+                onChange={handleLanguageChange}
+                aria-label="Select language"
+                className="lang-select"
+              >
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+              </select>
+            </div>
+          </nav>
         </div>
       </header>
 
@@ -202,7 +233,7 @@ const Home = () => {
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
             <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
+              <span className="brand-title">MANGALA STONE Amelia</span>
             </div>
           </div>
 
