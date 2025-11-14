@@ -44,6 +44,13 @@ img { max-width: 100%; display: block; }
 /* ---------------------------------------
    🧭 HEADER — Sticky Navigation Bar
 ----------------------------------------*/
+
+/* ❌ This will cause error:
+@import must be at the very top */
+
+/* ✅ Correct way: place @import at the very top of the file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 .hm-header {
   position: sticky;
   top: 0;
@@ -51,7 +58,9 @@ img { max-width: 100%; display: block; }
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(18, 32, 38, 0.04);
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat to header */
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -59,7 +68,13 @@ img { max-width: 100%; display: block; }
   gap: 18px;
   padding: 14px 20px;
 }
-.logo-area { display: flex; align-items: center; gap: 12px; }
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo-img {
   width: 56px;
   height: 56px;
@@ -67,21 +82,27 @@ img { max-width: 100%; display: block; }
   border-radius: 8px;
   box-shadow: 0 8px 22px rgba(22, 46, 42, 0.06);
 }
+
 .brand-text {
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .brand-title {
   font-weight: 800;
   color: var(--brand);
   letter-spacing: 0.6px;
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .brand-sub {
   font-size: 12px !important;
   color: var(--muted);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
 }
-
 /* ---------------------------------------
    🔗 NAVIGATION LINKS & DROPDOWNS
 ----------------------------------------*/
@@ -181,6 +202,8 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   letter-spacing: 0.6px;
   margin: 0 0 8px;
+  color: #fff;
+
 }
 .hero-inner h2 {
   font-size: 20px;
@@ -288,19 +311,76 @@ img { max-width: 100%; display: block; }
 .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0px 4px 12px rgba(0,0,0,0.4); background-color: #1ebd5a; }
 .whatsapp-float i { margin-top: 2px; }
 
+/* Import Montserrat font — MUST be first */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 /* ---------------------------------------
    ⚫ FOOTER SECTION
 ----------------------------------------*/
-.footer { background: #fff; padding: 50px 0 20px; border-top: 1px solid #e5e5e5; }
-.footer-container { max-width: 1200px; margin: auto; padding: 0 20px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: flex-start; gap: 40px; }
-.footer-col:first-child { text-align: center; }
-.footer-logo { width: 110px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
-.footer-col h3 { font-size: 30px; font-weight: 600; margin-bottom: 14px; color: #00525E; }
-.footer-col p { margin: 6px 0; font-size: 20px; color: black; }
-.social-icons { display: flex; gap: 12px; }
-.social-icons a { font-size: 24px; color: black; transition: 0.3s; }
-.social-icons a:hover { opacity: 0.6; }
-.footer-bottom { text-align: center; margin-top: 30px; font-size: 20px; color: black; }
+
+.footer {
+  background: #fff;
+  padding: 60px 20px 30px;
+  border-top: 1px solid #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-col:first-child {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 110px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.footer-col h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #00525E;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00525E;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #1a1a1a;
+}
 
 /* ======================================
    MOBILE RESPONSIVE FIXES

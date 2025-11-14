@@ -16,6 +16,7 @@ import stoneAndesite from "@/assets/webimg/stone-andesite.png";
 import stoneLimestone from "@/assets/webimg/stone-limestone.png";
 import stonePumice from "@/assets/webimg/stone-pumice.png";
 import logo from "@/assets/img/logo.png";
+import guaranteeBg from "@/assets/webimg/guarantee-bg.png"; 
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -35,6 +36,7 @@ const Home = () => {
 
   const images = [heroBg, heroBg2];
   const [currentImage, setCurrentImage] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
@@ -49,19 +51,21 @@ const Home = () => {
   )}`;
 
   return (
-    <div className="hm-root">
-      {/* ---------------- HEADER ---------------- */}
-      <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">
-                Natural Stone Manufacturer & Distributor
-              </span>
-            </div>
-          </div>
+<div className="hm-root">
+  {/* ---------------- HEADER ---------------- */}
+  <header className="hm-header" role="banner">
+    <div className="hm-container header-inner">
+      <div className="logo-area" data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+        <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+        <div className="brand-text" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <span className="brand-title" style={{ fontWeight: "700", fontSize: "1.5rem" }}>
+            MANGALA STONE
+          </span>
+          <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
+            I N D O N E S I A
+          </span>
+        </div>
+      </div>
 
           {/* Hamburger Button */}
           <button
@@ -87,25 +91,13 @@ const Home = () => {
                 {t("nav.products")} ▾
               </button>
               <div className="nav-dropdown-menu" role="menu">
-                <Link
-                  role="menuitem"
-                  to="/andesite"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
+                <Link role="menuitem" to="/andesite" onClick={() => setMobileMenuOpen(false)}>
                   {t("products.andesite")}
                 </Link>
-                <Link
-                  role="menuitem"
-                  to="/palm-sandstone"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
+                <Link role="menuitem" to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
                   {t("products.palm")}
                 </Link>
-                <Link
-                  role="menuitem"
-                  to="/wall-cladding"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
+                <Link role="menuitem" to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
                   {t("products.cladding")}
                 </Link>
               </div>
@@ -114,11 +106,8 @@ const Home = () => {
             <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
               {t("nav.about")}
             </Link>
-            <Link
-              to="/contact"
-              className="nav-link"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+
+            <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
               {t("nav.contact")}
             </Link>
 
@@ -145,8 +134,6 @@ const Home = () => {
           backgroundImage: `url(${images[currentImage]})`,
           transition: "background-image 1s ease-in-out",
         }}
-        role="region"
-        aria-label="Hero"
       >
         <div className="hero-overlay" />
         <div className="hm-container hero-inner" data-aos="zoom-in">
@@ -161,7 +148,7 @@ const Home = () => {
       </section>
 
       {/* ---------------- PROJECT INTRO ---------------- */}
-      <section className="hm-section project-intro" aria-labelledby="project-heading">
+      <section className="hm-section project-intro">
         <div className="hm-container split-grid">
           <div className="media" data-aos="fade-right">
             <img src={projectTiles} alt="Project Tiles" className="media-img" />
@@ -178,19 +165,18 @@ const Home = () => {
       </section>
 
       {/* ---------------- PRODUCTS ---------------- */}
-      <section className="hm-section stones" id="products" aria-label="Products">
+      <section className="hm-section stones" id="products">
         <div className="hm-container">
           <div className="section-head" data-aos="fade-up">
             <h4>{t("products.heading")}</h4>
             <h2>{t("products.subheading")}</h2>
           </div>
 
-          <div className="stone-grid" data-aos="fade-up" data-aos-delay="120">
+          <div className="stone-grid">
             <div
               className="stone-card"
               data-aos="flip-left"
               onClick={() => navigate("/andesite")}
-              style={{ cursor: "pointer" }}
             >
               <img src={stoneAndesite} alt="Andesite Stone" />
               <div className="stone-body">
@@ -203,7 +189,6 @@ const Home = () => {
               data-aos="flip-left"
               data-aos-delay="80"
               onClick={() => navigate("/palm-sandstone")}
-              style={{ cursor: "pointer" }}
             >
               <img src={stoneLimestone} alt="Palm Sandstone" />
               <div className="stone-body">
@@ -216,7 +201,6 @@ const Home = () => {
               data-aos="flip-left"
               data-aos-delay="40"
               onClick={() => navigate("/wall-cladding")}
-              style={{ cursor: "pointer" }}
             >
               <img src={stonePumice} alt="Wall Cladding" />
               <div className="stone-body">
@@ -227,13 +211,210 @@ const Home = () => {
         </div>
       </section>
 
+
+{/* ---------------- TESTIMONIALS (STATIC, PROFESSIONAL STYLE) ---------------- */}
+<section
+  id="testimonials"
+  className="testimonials hm-section"
+  style={{
+    backgroundImage: `url(${guaranteeBg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "100px 0",
+    color: "#fff",
+  }}
+>
+  <div className="hm-container" data-aos="fade-up">
+    <h2
+      style={{
+        textAlign: "center",
+        marginBottom: "40px",
+        fontSize: "2.5rem",
+        fontWeight: "700",
+        letterSpacing: "1px",
+        lineHeight: "1.3",
+        color: "#fff",
+      }}
+    >
+      Indonesia’s Trusted Source for Premium Natural Stones
+    </h2>
+
+    <p
+      style={{
+        textAlign: "center",
+        maxWidth: "780px",
+        margin: "0 auto 60px auto",
+        fontSize: "1.1rem",
+        lineHeight: "1.7",
+        color: "#e0e0e0",
+      }}
+    >
+      With more than a decade of experience, Mangala Stone delivers Andesite Stone,
+      Palem Sandstone, and Wall Cladding that embody enduring quality and natural
+      beauty.
+    </p>
+
+    {/* Optional: Add a small accent line or icon for visual appeal */}
+    <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <span
+        style={{
+          display: "inline-block",
+          width: "60px",
+          height: "3px",
+          backgroundColor: "#f2c94c",
+          borderRadius: "2px",
+        }}
+      ></span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ {/* ---------------- NEW — WHY CHOOSE MANGALA STONE ---------------- */}
+<section className="hm-section why-choose" style={{ padding: "60px 0" }}>
+  <div className="hm-container">
+
+    {/* <h4
+      style={{
+        textAlign: "center",
+        color: "#7a8c7a",
+        letterSpacing: "5px",
+        marginBottom: "10px",
+      }}
+    >
+      PROMISE
+    </h4> */}
+
+    <h2
+      style={{
+        textAlign: "center",
+        marginBottom: "50px",
+        fontWeight: "600",
+      }}
+    >
+      Why Choose Mangala Stone?
+    </h2>
+
+    <div
+      className="why-grid"
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        gap: "30px",
+        flexWrap: "wrap",
+      }}
+    >
+      {/* Experienced */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-award"
+            style={{
+              fontSize: "40px",
+              color: "#4CAF50", // green tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Experienced</h3>
+        <p style={{ color: "#555" }}>
+          With over a decade of expertise since 2014, we specialize in
+          manufacturing and supplying high-quality natural stone.
+        </p>
+      </div>
+
+      {/* Competitive Price */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="80"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-tags"
+            style={{
+              fontSize: "40px",
+              color: "#FF9800", // orange tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+        <p style={{ color: "#555" }}>
+          As a self-owned manufacturer, we offer the best value with
+          competitive prices while maintaining high quality.
+        </p>
+      </div>
+
+      {/* On-Time Delivery */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="160"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-truck"
+            style={{
+              fontSize: "40px",
+              color: "#2196F3", // blue tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+        <p style={{ color: "#555" }}>
+          Our streamlined processes ensure your orders are delivered on
+          schedule, every time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       {/* ---------------- FOOTER ---------------- */}
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
             <div className="brand-text">
-              <span className="brand-title">MANGALA STONE Amelia</span>
+              <span className="brand-title">MANGALA STONE</span>
+                       <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
+            I N D O N E S I A
+          </span>
             </div>
           </div>
 
@@ -269,7 +450,6 @@ const Home = () => {
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
       >
         <i className="fab fa-whatsapp"></i>
       </a>
