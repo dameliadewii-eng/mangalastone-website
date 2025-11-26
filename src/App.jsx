@@ -25,8 +25,7 @@ function App() {
         {/* Main Routes */}
         <Route path="/home" element={<Home />} />
 
-        {/* About Page */}
-        <Route path="/about" element={<About />} />
+
 
         {/* Product Pages */}
         <Route path="/andesite" element={<AndesiteStone />} />
@@ -35,6 +34,8 @@ function App() {
 
         {/* Contact Page */}
         <Route path="/contact" element={<Contact />} />
+                {/* About Page */}
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

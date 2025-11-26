@@ -152,6 +152,137 @@ const Contact = () => {
         <p className="rich-text">{t.hours}</p>
       </section>
 
+
+
+ {/* ---------------- NEW — WHY CHOOSE MANGALA STONE ---------------- */}
+<section className="hm-section why-choose" style={{ padding: "60px 0" }}>
+  <div className="hm-container">
+
+    {/* <h4
+      style={{
+        textAlign: "center",
+        color: "#7a8c7a",
+        letterSpacing: "5px",
+        marginBottom: "10px",
+      }}
+    >
+      PROMISE
+    </h4> */}
+
+    <h2
+      style={{
+        textAlign: "center",
+        marginBottom: "50px",
+        fontWeight: "600",
+      }}
+    >
+      Why Choose Mangala Stone?
+    </h2>
+
+    <div
+      className="why-grid"
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        gap: "30px",
+        flexWrap: "wrap",
+      }}
+    >
+      {/* Experienced */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-award"
+            style={{
+              fontSize: "40px",
+              color: "#4CAF50", // green tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Experienced</h3>
+        <p style={{ color: "#555" }}>
+          With over a decade of expertise since 2014, we specialize in
+          manufacturing and supplying high-quality natural stone.
+        </p>
+      </div>
+
+      {/* Competitive Price */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="80"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-tags"
+            style={{
+              fontSize: "40px",
+              color: "#FF9800", // orange tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+        <p style={{ color: "#555" }}>
+          As a self-owned manufacturer, we offer the best value with
+          competitive prices while maintaining high quality.
+        </p>
+      </div>
+
+      {/* On-Time Delivery */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="160"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-truck"
+            style={{
+              fontSize: "40px",
+              color: "#2196F3", // blue tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+        <p style={{ color: "#555" }}>
+          Our streamlined processes ensure your orders are delivered on
+          schedule, every time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* ===== Footer ===== */}
       <footer className="footer" id="contact">
         <div className="footer-container">
