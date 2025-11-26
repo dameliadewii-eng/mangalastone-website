@@ -8,17 +8,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate, Link } from "react-router-dom";
 
-// ---------- Imported Images ----------
-import about from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/img/about.png";
-import about1 from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/img/about1.png";
-import about2 from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/img/about2.png";
-import about3 from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/img/about3.png";
-import about4 from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/img/about4.png";
+// ---------- Imported Images (FIXED) ----------
+import about from "@/assets/img/about.png";
+import about1 from "@/assets/img/about1.png";
+import about2 from "@/assets/img/about2.png";
+import about3 from "@/assets/img/about3.png";
+import about4 from "@/assets/img/about4.png";
 
-import heroBg2 from "/Users/meteology/Desktop/Amelia Dewi/MangalaStoneReady1/frontend/src/assets/webimg/factory2.png";
+import heroBg2 from "@/assets/webimg/factory2.png";
 import logo from "@/assets/img/logo.png";
-import guaranteeBg from "@/assets/webimg/guarantee-bg.png"; 
-
+import guaranteeBg from "@/assets/webimg/guarantee-bg.png";
 const About = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("en");
