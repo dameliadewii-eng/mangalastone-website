@@ -230,6 +230,197 @@ const About = () => {
         </div>
       )}
 
+{/* ---------------- TESTIMONIALS (STATIC, PROFESSIONAL STYLE) ---------------- */}
+<section
+  id="testimonials"
+  className="testimonials hm-section"
+  style={{
+    backgroundImage: `url(${guaranteeBg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "100px 0",
+    color: "#fff",
+  }}
+>
+  <div className="hm-container" data-aos="fade-up">
+    <h2
+      style={{
+        textAlign: "center",
+        marginBottom: "40px",
+        fontSize: "2.5rem",
+        fontWeight: "700",
+        letterSpacing: "1px",
+        lineHeight: "1.3",
+        color: "#fff",
+      }}
+    >
+      Indonesia’s Trusted Source for Premium Natural Stones
+    </h2>
+
+    <p
+      style={{
+        textAlign: "center",
+        maxWidth: "780px",
+        margin: "0 auto 60px auto",
+        fontSize: "1.1rem",
+        lineHeight: "1.7",
+        color: "#e0e0e0",
+      }}
+    >
+      With more than a decade of experience, Mangala Stone delivers Andesite Stone,
+      Palem Sandstone, and Wall Cladding that embody enduring quality and natural
+      beauty.
+    </p>
+
+    {/* Optional: Add a small accent line or icon for visual appeal */}
+    <div style={{ textAlign: "center", marginBottom: "20px" }}>
+      <span
+        style={{
+          display: "inline-block",
+          width: "60px",
+          height: "3px",
+          backgroundColor: "#f2c94c",
+          borderRadius: "2px",
+        }}
+      ></span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+ {/* ---------------- NEW — WHY CHOOSE MANGALA STONE ---------------- */}
+<section className="hm-section why-choose" style={{ padding: "60px 0" }}>
+  <div className="hm-container">
+
+    {/* <h4
+      style={{
+        textAlign: "center",
+        color: "#7a8c7a",
+        letterSpacing: "5px",
+        marginBottom: "10px",
+      }}
+    >
+      PROMISE
+    </h4> */}
+
+    <h2
+      style={{
+        textAlign: "center",
+        marginBottom: "50px",
+        fontWeight: "600",
+      }}
+    >
+      Why Choose Mangala Stone?
+    </h2>
+
+    <div
+      className="why-grid"
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        gap: "30px",
+        flexWrap: "wrap",
+      }}
+    >
+      {/* Experienced */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-award"
+            style={{
+              fontSize: "40px",
+              color: "#4CAF50", // green tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Experienced</h3>
+        <p style={{ color: "#555" }}>
+          With over a decade of expertise since 2014, we specialize in
+          manufacturing and supplying high-quality natural stone.
+        </p>
+      </div>
+
+      {/* Competitive Price */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="80"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-tags"
+            style={{
+              fontSize: "40px",
+              color: "#FF9800", // orange tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+        <p style={{ color: "#555" }}>
+          As a self-owned manufacturer, we offer the best value with
+          competitive prices while maintaining high quality.
+        </p>
+      </div>
+
+      {/* On-Time Delivery */}
+      <div
+        className="why-box"
+        data-aos="fade-up"
+        data-aos-delay="160"
+        style={{
+          flex: "1",
+          minWidth: "280px",
+          background: "#ffffff",
+          padding: "25px",
+          borderRadius: "12px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+          textAlign: "center",
+        }}
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+          <i
+            className="fas fa-truck"
+            style={{
+              fontSize: "40px",
+              color: "#2196F3", // blue tone
+            }}
+          ></i>
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+        <p style={{ color: "#555" }}>
+          Our streamlined processes ensure your orders are delivered on
+          schedule, every time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* ---------------- FOOTER ---------------- */}
       <footer className="footer" id="contact">
         <div className="footer-container">
@@ -258,8 +449,8 @@ const About = () => {
 
           <div className="footer-col">
             <h3>{t("footer.about")}</h3>
-            <p>About Mangala Stone ALi</p>
-            <p>Our Products ALi</p>
+            <p>About Mangala Stone</p>
+            <p>Our Products</p>
           </div>
         </div>
 
