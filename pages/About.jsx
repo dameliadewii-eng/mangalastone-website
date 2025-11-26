@@ -258,8 +258,8 @@ const About = () => {
 
           <div className="footer-col">
             <h3>{t("footer.about")}</h3>
-            <p>About Mangala Stone</p>
-            <p>Our Products</p>
+            <p>About Mangala Stone ALi</p>
+            <p>Our Products ALi</p>
           </div>
         </div>
 
