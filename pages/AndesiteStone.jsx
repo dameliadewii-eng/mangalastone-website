@@ -115,9 +115,9 @@ const AndesiteStone = () => {
     </button>
 
     <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/AndesiteStone">{t.nav.andesite}</Link>
-      <Link role="menuitem" to="/PalmSandstone">{t.nav.palm}</Link>
-      <Link role="menuitem" to="/WallCladding">{t.nav.cladding}</Link>
+      <Link role="menuitem" to="/andesite">{t.nav.andesite}</Link>
+      <Link role="menuitem" to="/palm-sandstone">{t.nav.palm}</Link>
+      <Link role="menuitem" to="/wall-cladding">{t.nav.cladding}</Link>
     </div>
   </div>
 

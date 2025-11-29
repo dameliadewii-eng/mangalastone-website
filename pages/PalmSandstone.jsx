@@ -110,9 +110,9 @@ const PalemStone = () => {
       {t.navProducts} ▾
     </button>
     <div className="nav-dropdown-menu">
-      <Link to="/AndesiteStone">{t.product1}</Link>
-      <Link to="/PalmSandstone">{t.product2}</Link>
-      <Link to="/WallCladding">{t.product3}</Link>
+      <Link to="/andesite">{t.product1}</Link>
+      <Link to="/palm-sandstone">{t.product2}</Link>
+      <Link to="/wall-cladding">{t.product3}</Link>
     </div>
   </div>
 

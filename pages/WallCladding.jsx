@@ -130,9 +130,9 @@ const WallCladdingStone = () => {
   <div className="nav-dropdown">
     <button className="nav-dropbtn">Products ▾</button>
     <div className="nav-dropdown-menu">
-      <Link to="/AndesiteStone">{t("nav_andesite")}</Link>
-      <Link to="/PalmSandstone">{t("nav_palem")}</Link>
-      <Link to="/WallCladding">{t("nav_wall")}</Link>
+      <Link to="/andesite">{t("nav_andesite")}</Link>
+      <Link to="/palm-sandstone">{t("nav_palem")}</Link>
+      <Link to="/wall-cladding">{t("nav_wall")}</Link>
     </div>
   </div>
 
