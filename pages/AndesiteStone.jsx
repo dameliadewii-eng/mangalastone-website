@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 
 // Images
 import header_andesite_stone from "@/assets/img/header_andesite_stone.png";
@@ -101,25 +103,28 @@ const AndesiteStone = () => {
             </div>
           </div>
 
-          {/* Navigation */}
-          <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t.nav.home}</a>
+ {/* Navigation  */}
+ 
+<nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
 
-            <div className="nav-dropdown">
-              <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
-                {t.nav.products} ▾
-              </button>
-              <div className="nav-dropdown-menu" role="menu">
-                <a role="menuitem" href="andesite">{t.nav.andesite}</a>
-                <a role="menuitem" href="palm-sandstone">{t.nav.palm}</a>
-                <a role="menuitem" href="wall-cladding">{t.nav.cladding}</a>
-              </div>
-            </div>
+  <Link to="/Home" className="nav-link">{t.nav.home}</Link>
 
-            <a href="about" className="nav-link">{t.nav.about}</a>
-            <a href="contact" className="nav-link">{t.nav.contact}</a>
-          </nav>
+  <div className="nav-dropdown">
+    <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
+      {t.nav.products} ▾
+    </button>
 
+    <div className="nav-dropdown-menu" role="menu">
+      <Link role="menuitem" to="/AndesiteStone">{t.nav.andesite}</Link>
+      <Link role="menuitem" to="/PalmSandstone">{t.nav.palm}</Link>
+      <Link role="menuitem" to="/WallCladding">{t.nav.cladding}</Link>
+    </div>
+  </div>
+
+  <Link to="/about" className="nav-link">{t.nav.about}</Link>
+  <Link to="/contact" className="nav-link">{t.nav.contact}</Link>
+
+</nav>
           {/* Language selector (keeps same position and behavior) */}
           <div className="actions-area" data-aos="fade-left">
             <select

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./AndesiteStone.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { Link } from "react-router-dom";
 // Images
 import header_andesite_stone1 from "@/assets/img/header_andesite_stone1.png";
 import logo from "@/assets/img/logo.png";
@@ -101,23 +101,24 @@ const PalemStone = () => {
             </div>
           </div>
 
-          <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <a href="home" className="nav-link">{t.navHome}</a>
+ {/* Navigation  */}
+<nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
+  <Link to="/Home" className="nav-link">{t.navHome}</Link>
 
-            <div className="nav-dropdown">
-              <button className="nav-dropbtn">
-                {t.navProducts} ▾
-              </button>
-              <div className="nav-dropdown-menu">
-                <a href="andesite">{t.product1}</a>
-                <a href="palm-sandstone">{t.product2}</a>
-                <a href="wall-cladding">{t.product3}</a>
-              </div>
-            </div>
+  <div className="nav-dropdown">
+    <button className="nav-dropbtn">
+      {t.navProducts} ▾
+    </button>
+    <div className="nav-dropdown-menu">
+      <Link to="/AndesiteStone">{t.product1}</Link>
+      <Link to="/PalmSandstone">{t.product2}</Link>
+      <Link to="/WallCladding">{t.product3}</Link>
+    </div>
+  </div>
 
-            <a href="about" className="nav-link">{t.navAbout}</a>
-            <a href="contact" className="nav-link">{t.navContact}</a>
-          </nav>
+  <Link to="/about" className="nav-link">{t.navAbout}</Link>
+  <Link to="/contact" className="nav-link">{t.navContact}</Link>
+</nav>
 
           <div className="actions-area" data-aos="fade-left">
             <select

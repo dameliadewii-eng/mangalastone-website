@@ -54,7 +54,16 @@ const Home = () => {
 <div className="hm-root">
   {/* ---------------- HEADER ---------------- */}
   <header className="hm-header" role="banner">
+    
     <div className="hm-container header-inner">
+           
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
       <div className="logo-area" data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
         <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
         <div className="brand-text" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
@@ -67,14 +76,14 @@ const Home = () => {
         </div>
       </div>
 
-          {/* Hamburger Button */}
+          {/* Hamburger Button
           <button
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             ☰
-          </button>
+          </button> */}
 
           {/* Navigation */}
           <nav
@@ -122,6 +131,13 @@ const Home = () => {
                 <option value="id">Indonesian</option>
               </select>
             </div>
+                      {/* <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button> */}
           </nav>
         </div>
       </header>

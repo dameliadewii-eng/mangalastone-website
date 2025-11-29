@@ -59,6 +59,13 @@ const About = () => {
       {/* ---------------- HEADER ---------------- */}
       <header className="hm-header" role="banner">
         <div className="hm-container header-inner">
+                    <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
             <div className="brand-text">
@@ -67,13 +74,13 @@ const About = () => {
             </div>
           </div>
 
-          <button
+          {/* <button
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             ☰
-          </button>
+          </button> */}
 
           <nav
             className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
