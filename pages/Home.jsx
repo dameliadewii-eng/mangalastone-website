@@ -176,6 +176,16 @@ const Home = () => {
             <p className="rich-text">{t("projectIntro.text2")}</p>
             <p className="rich-text">{t("projectIntro.text3")}</p>
             <p className="rich-text">{t("projectIntro.text4")}</p>
+{/* text add */}
+            <p className="rich-text">{t("projectIntro.text1")}</p>
+            <p className="rich-text">{t("projectIntro.text2")}</p>
+            <p className="rich-text">{t("projectIntro.text3")}</p>
+            <p className="rich-text">{t("projectIntro.text4")}</p>
+            {/* text add */}
+            <p className="rich-text">{t("projectIntro.text1")}</p>
+            <p className="rich-text">{t("projectIntro.text2")}</p>
+            <p className="rich-text">{t("projectIntro.text3")}</p>
+            <p className="rich-text">{t("projectIntro.text4")}</p>
           </div>
         </div>
       </section>
