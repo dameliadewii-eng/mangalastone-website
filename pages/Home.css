@@ -25,6 +25,7 @@
 * { box-sizing: border-box; }
 html, body, #root {
   height: 100%;
+<<<<<<< HEAD
   /* width: auto; */
   /* max-width: var(--max-w); */
 
@@ -32,6 +33,12 @@ html, body, #root {
   background: var(--bg);
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   /* color: var(--dark); */
+=======
+  margin: 0;
+  background: var(--bg);
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--dark);
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
@@ -59,7 +66,10 @@ img { max-width: 100%; display: block; }
 
 .hm-header {
   position: sticky;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.7);
@@ -70,8 +80,11 @@ img { max-width: 100%; display: block; }
 
 .header-inner {
   display: flex;
+<<<<<<< HEAD
   /* width: 156px; */
 
+=======
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   align-items: center;
   justify-content: space-between;
   gap: 18px;
@@ -85,11 +98,19 @@ img { max-width: 100%; display: block; }
 }
 
 .logo-img {
+<<<<<<< HEAD
   width: 356px;
   height: 56px;
   object-fit: contain;
   border-radius: 8px;
   /* box-shadow: 0 8px 22px rgba(22, 46, 42, 0.06); */
+=======
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(22, 46, 42, 0.06);
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 }
 
 .brand-text {
@@ -224,7 +245,10 @@ img { max-width: 100%; display: block; }
   margin: 0 auto 20px;
   line-height: 1.6;
 }
+<<<<<<< HEAD
   /* color: #00525E; */
+=======
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
 /* ---------------------------------------
    🎨 BUTTON STYLES
@@ -234,7 +258,11 @@ img { max-width: 100%; display: block; }
   padding: 12px 22px;
   border-radius: 28px;
   font-weight: 800;
+<<<<<<< HEAD
   background:  #00525E;
+=======
+  background: linear-gradient(135deg, var(--brand), #174b3f);
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   color: #fff;
   box-shadow: 0 14px 40px rgba(24, 80, 69, 0.12);
   transition: transform 0.18s ease;
@@ -258,13 +286,18 @@ img { max-width: 100%; display: block; }
   text-align: center;
   margin-bottom: 28px;
 }
+<<<<<<< HEAD
 .section-head h4 { color: #00525E; margin: 0; font-weight: 700; font-size: 2.5rem; }
+=======
+.section-head h4 { color: var(--brand); margin: 0; font-weight: 700; }
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .section-head h2 { margin: 8px 0 0; font-size: 28px; }
 
 /* ---------------------------------------
    🧱 PROJECT INTRO (Split Layout)
 ----------------------------------------*/
 .split-grid {
+<<<<<<< HEAD
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: space-between; */
@@ -282,6 +315,25 @@ img { max-width: 100%; display: block; }
   /* box-shadow: 0 14px 40px rgba(12, 12, 12, 0.1); */
   overflow: hidden;
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+=======
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 50px 8%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.media-img {
+  flex: 0 0 48%;
+  height: 850px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 40px rgba(12, 12, 12, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 }
 .media-img:hover { transform: scale(1.04); box-shadow: 0 25px 70px rgba(0,0,0,0.25); }
 .text {
@@ -292,7 +344,11 @@ img { max-width: 100%; display: block; }
   text-align: justify;
 }
 .text h2, .text h4 { font-weight: 500; line-height: 1.2; margin: 10px 0 20px; color: #00525E; font-size: 48px; text-align: justify; }
+<<<<<<< HEAD
 .rich-text { color: #333; line-height: 1.8; margin-bottom: 20px; font-size: 20px; text-align: justify; }
+=======
+.rich-text { color: #000; line-height: 1.8; margin-bottom: 20px; font-size: 20px; text-align: justify; }
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
 /* ------------------ NEW PROJECT INTRO CSS ------------------ */
 .project-intro {
@@ -326,11 +382,15 @@ img { max-width: 100%; display: block; }
 .project-intro .media-img:hover {
   transform: scale(1.03);
 }
+<<<<<<< HEAD
 .project-intro .text h4 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #00525E;
 }
+=======
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .project-intro .text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -350,7 +410,11 @@ img { max-width: 100%; display: block; }
 .stone-card {
   background: #fff;
   border-radius: 12px;
+<<<<<<< HEAD
   padding: 5px;
+=======
+  padding: 18px;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   box-shadow: 0 10px 30px rgba(12, 22, 18, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
@@ -360,8 +424,12 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .stone-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; }
+<<<<<<< HEAD
   
 .stone-card h3, .stone-card p { color: #000000; font-size: 1.5rem;   padding: 10px; }
+=======
+.stone-card h3, .stone-card p { color: #000; }
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .stone-card:hover { transform: translateY(-8px); box-shadow: 0 26px 60px rgba(0,0,0,0.08); }
 
 /* ---------------------------------------
@@ -374,10 +442,17 @@ img { max-width: 100%; display: block; }
 /* Import Montserrat font — MUST be first */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+<<<<<<< HEAD
 /* ================================
    FOOTER
 =============================== */
 footer {
+=======
+/* ---------------------------------------
+   ⚫ FOOTER SECTION
+----------------------------------------*/
+.footer {
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   background: #fff;
   padding: 60px 20px 30px;
   border-top: 1px solid #e5e5e5;
@@ -389,7 +464,11 @@ footer {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+<<<<<<< HEAD
   gap: 20px;
+=======
+  gap: 40px;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   align-items: flex-start;
 }
 
@@ -398,6 +477,7 @@ footer {
 }
 
 .footer-logo {
+<<<<<<< HEAD
   width: 100%;            /* large default logo size */
   max-width: 530px;          /* responsive scaling */
   height: auto;
@@ -411,6 +491,11 @@ footer {
 
 .footer-logo:hover {
   transform: scale(1.05);   /* gentle hover zoom effect */
+=======
+  width: 110px;
+  display: block;
+  margin: 0 auto 10px auto;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 }
 
 .footer-col h3 {
@@ -450,6 +535,10 @@ footer {
   font-size: 16px;
   color: #1a1a1a;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 /* ======================================
    MOBILE RESPONSIVE FIXES
 ====================================== */

@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom"; // ✅ use Link for navigation
 import Map from "@/components/Map/Map";
+=======
+import "./About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom"; // ✅ use Link for navigation
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 // ====== Images ======
 import about from "@/assets/img/about.png";
 import about1 from "@/assets/img/about1.png";
@@ -84,12 +92,20 @@ const Contact = () => {
           {/* --- Logo and Brand --- */}
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+<<<<<<< HEAD
             {/* <div className="brand-text">
+=======
+            <div className="brand-text">
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
               <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">
                 Natural Stone Manufacturer & Distributor
               </span>
+<<<<<<< HEAD
             </div> */}
+=======
+            </div>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
           {/* --- Navigation Links --- */}
@@ -129,6 +145,7 @@ const Contact = () => {
       </header>
 
       {/* ====== HERO SECTION ====== */}
+<<<<<<< HEAD
       <section 
         id="contact"
       
@@ -136,6 +153,12 @@ const Contact = () => {
        
         <div className="contact-hero-inner" data-aos="zoom-in">
           {/* <h2>{t.contact_hero_title}</h2> */}
+=======
+      <section className="hero" style={{ backgroundImage: `url(${about7})` }}>
+        <div className="hero-overlay" />
+        <div className="hero-inner" data-aos="zoom-in">
+          <h1>{t.contact_hero_title}</h1>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </section>
 
@@ -146,7 +169,10 @@ const Contact = () => {
       </section>
 
       {/* ====== FACTORY INFO ====== */}
+<<<<<<< HEAD
       
+=======
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       <section className="andesite-intro-text" data-aos="fade-up">
         <h1>{t.factory_title}</h1>
         <p>{t.factory_1}</p>
@@ -242,7 +268,11 @@ const Contact = () => {
             className="fas fa-tags"
             style={{
               fontSize: "40px",
+<<<<<<< HEAD
               color: "#4CAF50", // orange tone
+=======
+              color: "#FF9800", // orange tone
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             }}
           ></i>
         </div>
@@ -273,7 +303,11 @@ const Contact = () => {
             className="fas fa-truck"
             style={{
               fontSize: "40px",
+<<<<<<< HEAD
               color: "#4CAF50", // blue tone
+=======
+              color: "#2196F3", // blue tone
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             }}
           ></i>
         </div>
@@ -286,18 +320,28 @@ const Contact = () => {
     </div>
   </div>
 </section>
+<<<<<<< HEAD
 {/* ===== MAP SECTION ===== */}
 <section className="map-section" data-aos="fade-up" style={{ marginTop: "40px" }}>
   <Map />
 </section>
+=======
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       {/* ===== Footer ===== */}
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
+<<<<<<< HEAD
             {/* <div className="brand-text">
               <span className="brand-title">MANGALA STONE</span>
             </div> */}
+=======
+            <div className="brand-text">
+              <span className="brand-title">MANGALA STONE</span>
+            </div>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
           <div className="footer-col">
@@ -323,7 +367,11 @@ const Contact = () => {
         </div>
 
         <div className="footer-bottom">
+<<<<<<< HEAD
           <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
+=======
+          <p>© 2025 All rights reserved - Mangala Stone</p>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 

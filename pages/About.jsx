@@ -3,7 +3,11 @@
 // -----------------------------------------
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import "./About.css";
+=======
+import "./Home.css";
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate, Link } from "react-router-dom";
@@ -14,12 +18,17 @@ import about1 from "@/assets/img/about1.png";
 import about2 from "@/assets/img/about2.png";
 import about3 from "@/assets/img/about3.png";
 import about4 from "@/assets/img/about4.png";
+<<<<<<< HEAD
 import about5 from "@/assets/img/about5.png";
 import about6 from "@/assets/img/about6.png";
 
 import projectTiles from "@/assets/webimg/project-tiles.png";
 
 // import heroBg2 from "@/assets/webimg/factory2.png";
+=======
+
+import heroBg2 from "@/assets/webimg/factory2.png";
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 import logo from "@/assets/img/logo.png";
 import guaranteeBg from "@/assets/webimg/guarantee-bg.png"; 
 
@@ -40,7 +49,11 @@ const About = () => {
     i18n.changeLanguage(newLang);
   };
 
+<<<<<<< HEAD
   const images = [about];
+=======
+  const images = [about, heroBg2];
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -56,19 +69,28 @@ const About = () => {
     whatsappMessage
   )}`;
 
+<<<<<<< HEAD
   const galleryImages = [about1, about2, about3, about4,about5, about6];
+=======
+  const galleryImages = [about1, about2, about3, about4];
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
   return (
     <div className="hm-root">
       {/* ---------------- HEADER ---------------- */}
       <header className="hm-header" role="banner">
         <div className="hm-container header-inner">
+<<<<<<< HEAD
                     {/* <button
+=======
+                    <button
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             ☰
+<<<<<<< HEAD
           </button> */}
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
@@ -76,6 +98,15 @@ const About = () => {
               <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">I N D O N E S I A</span>
             </div> */}
+=======
+          </button>
+          <div className="logo-area" data-aos="fade-right">
+            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+            <div className="brand-text">
+              <span className="brand-title">MANGALA STONE</span>
+              <span className="brand-sub">I N D O N E S I A</span>
+            </div>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
           {/* <button
@@ -136,7 +167,11 @@ const About = () => {
       {/* ---------------- HERO ---------------- */}
       <section
         id="about"
+<<<<<<< HEAD
         className="about-hero"
+=======
+        className="hm-hero"
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         style={{
           backgroundImage: `url(${images[currentImage]})`,
           transition: "background-image 1s ease-in-out",
@@ -150,11 +185,15 @@ const About = () => {
 
       {/* ---------------- About Us Text ---------------- */}
       <section className="hm-section project-intro">
+<<<<<<< HEAD
         
         <div className="hm-container split-grid">
                 <div className="media2" data-aos="fade-right">
                       <img src={about1} alt="Project Tiles" className="media-img" />
                     </div>
+=======
+        <div className="hm-container split-grid">
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           <div className="text" data-aos="fade-left">
             <h2>{t("about_heading1")}</h2>
             <h1>{t("about_heading2")}</h1>
@@ -190,7 +229,11 @@ const About = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* ---------------- FULLSCREEN IMAGE POPUP ----------------
+=======
+      {/* ---------------- FULLSCREEN IMAGE POPUP ---------------- */}
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       {fullscreenImage && (
         <div
           className="fullscreen"
@@ -243,10 +286,17 @@ const About = () => {
             </button>
           </div>
         </div>
+<<<<<<< HEAD
       )} */}
 
 {/* ---------------- TESTIMONIALS (STATIC, PROFESSIONAL STYLE) ---------------- */}
 {/* <section
+=======
+      )}
+
+{/* ---------------- TESTIMONIALS (STATIC, PROFESSIONAL STYLE) ---------------- */}
+<section
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   id="testimonials"
   className="testimonials hm-section"
   style={{
@@ -256,8 +306,13 @@ const About = () => {
     padding: "100px 0",
     color: "#fff",
   }}
+<<<<<<< HEAD
 > */}
   {/* <div className="hm-container" data-aos="fade-up">
+=======
+>
+  <div className="hm-container" data-aos="fade-up">
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     <h2
       style={{
         textAlign: "center",
@@ -270,9 +325,15 @@ const About = () => {
       }}
     >
       Indonesia’s Trusted Source for Premium Natural Stones
+<<<<<<< HEAD
     </h2> */}
 
     {/* <p
+=======
+    </h2>
+
+    <p
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       style={{
         textAlign: "center",
         maxWidth: "780px",
@@ -285,9 +346,15 @@ const About = () => {
       With more than a decade of experience, Mangala Stone delivers Andesite Stone,
       Palem Sandstone, and Wall Cladding that embody enduring quality and natural
       beauty.
+<<<<<<< HEAD
     </p> */}
 
     {/* Optional: Add a small accent line or icon for visual appeal
+=======
+    </p>
+
+    {/* Optional: Add a small accent line or icon for visual appeal */}
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     <div style={{ textAlign: "center", marginBottom: "20px" }}>
       <span
         style={{
@@ -300,7 +367,11 @@ const About = () => {
       ></span>
     </div>
   </div>
+<<<<<<< HEAD
 </section> */}
+=======
+</section>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
 
 
@@ -308,7 +379,11 @@ const About = () => {
 
 
  {/* ---------------- NEW — WHY CHOOSE MANGALA STONE ---------------- */}
+<<<<<<< HEAD
 {/* <section className="hm-section why-choose" style={{ padding: "60px 0" }}>
+=======
+<section className="hm-section why-choose" style={{ padding: "60px 0" }}>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   <div className="hm-container">
 
     {/* <h4
@@ -322,7 +397,11 @@ const About = () => {
       PROMISE
     </h4> */}
 
+<<<<<<< HEAD
     {/* <h2
+=======
+    <h2
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       style={{
         textAlign: "center",
         marginBottom: "50px",
@@ -330,8 +409,13 @@ const About = () => {
       }}
     >
       Why Choose Mangala Stone?
+<<<<<<< HEAD
     </h2> */}
 {/* 
+=======
+    </h2>
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     <div
       className="why-grid"
       style={{
@@ -340,9 +424,15 @@ const About = () => {
         gap: "30px",
         flexWrap: "wrap",
       }}
+<<<<<<< HEAD
     > */}
       {/* Experienced */}
       {/* <div
+=======
+    >
+      {/* Experienced */}
+      <div
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         className="why-box"
         data-aos="fade-up"
         style={{
@@ -354,8 +444,13 @@ const About = () => {
           boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
           textAlign: "center",
         }}
+<<<<<<< HEAD
       > */}
         {/* <div className="why-icon" style={{ marginBottom: "20px" }}>
+=======
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           <i
             className="fas fa-award"
             style={{
@@ -369,10 +464,17 @@ const About = () => {
           With over a decade of expertise since 2014, we specialize in
           manufacturing and supplying high-quality natural stone.
         </p>
+<<<<<<< HEAD
       </div> */}
 
       {/* Competitive Price */}
       {/* <div
+=======
+      </div>
+
+      {/* Competitive Price */}
+      <div
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         className="why-box"
         data-aos="fade-up"
         data-aos-delay="80"
@@ -385,8 +487,13 @@ const About = () => {
           boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
           textAlign: "center",
         }}
+<<<<<<< HEAD
       > */}
         {/* <div className="why-icon" style={{ marginBottom: "20px" }}>
+=======
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           <i
             className="fas fa-tags"
             style={{
@@ -394,16 +501,28 @@ const About = () => {
               color: "#FF9800", // orange tone
             }}
           ></i>
+<<<<<<< HEAD
         </div> */}
         {/* <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+=======
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         <p style={{ color: "#555" }}>
           As a self-owned manufacturer, we offer the best value with
           competitive prices while maintaining high quality.
         </p>
+<<<<<<< HEAD
       </div> */}
 
       {/* On-Time Delivery */}
       {/* <div
+=======
+      </div>
+
+      {/* On-Time Delivery */}
+      <div
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         className="why-box"
         data-aos="fade-up"
         data-aos-delay="160"
@@ -416,8 +535,13 @@ const About = () => {
           boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
           textAlign: "center",
         }}
+<<<<<<< HEAD
       > */}
         {/* <div className="why-icon" style={{ marginBottom: "20px" }}>
+=======
+      >
+        <div className="why-icon" style={{ marginBottom: "20px" }}>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           <i
             className="fas fa-truck"
             style={{
@@ -425,26 +549,43 @@ const About = () => {
               color: "#2196F3", // blue tone
             }}
           ></i>
+<<<<<<< HEAD
         </div> */}
         {/* <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+=======
+        </div>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         <p style={{ color: "#555" }}>
           Our streamlined processes ensure your orders are delivered on
           schedule, every time.
         </p>
       </div>
     </div>
+<<<<<<< HEAD
   </div> */}
 {/* </section>  */}
+=======
+  </div>
+</section>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
       {/* ---------------- FOOTER ---------------- */}
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
+<<<<<<< HEAD
             {/* <div className="brand-text">
               <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">I N D O N E S I A</span>
             </div> */}
+=======
+            <div className="brand-text">
+              <span className="brand-title">MANGALA STONE</span>
+              <span className="brand-sub">I N D O N E S I A</span>
+            </div>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
           <div className="footer-col">
@@ -470,9 +611,13 @@ const About = () => {
         </div>
 
         <div className="footer-bottom">
+<<<<<<< HEAD
           <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
 
           {/* <p>© 2025 {t("footer.rights")}</p> */}
+=======
+          <p>© 2025 {t("footer.rights")}</p>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 

@@ -12,7 +12,11 @@
   },
   "projectIntro": {
     "heading": "Your Project Starts Here",
+<<<<<<< HEAD
     "text1": "Mangala Stone is your trusted source for premium natural stones, including Andesite Stone, Palem Sandstone, and Wall Cladding which perfect for elevating both modern and traditional designs.",
+=======
+    "text1": "Mangala Stone is your trusted source for premium natural stones, including Andesite Stone, Palem Sandstone, and Wall Cladding.",
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     "text2": "With two manufacturing sites located in Cirebon and Majalengka, we ensure high quality products and reliable delivery.",
     "text3": "Whether you are building elegant facades, stylish landscapes or timeless interiors, our stones combine authentic beauty and expert craftsmanship.",
     "text4": "Contact us today to learn more about how Mangala Stone can bring nature’s essence into your space."
@@ -49,15 +53,22 @@
       "centralNapoli": {
         "title": "Andesite Central Napoli",
         "descriptions": [
+<<<<<<< HEAD
          "Key Feature:⁠  ⁠Linear groove pattern,⁠  ⁠Structured texture with depth,⁠  ⁠Modern and durable design",
 
           "Cutting Size Available (cm): 10×20, 15×30, 20×40",
           "Application: Ideal for exterior wall cladding, facades, decorative panels, and landscaping elements. Also perfect for interior accent walls."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "chess": {
         "title": "Andesite Chess",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature: ⁠Checker pattern texture, ⁠Contrast of smooth and rough finishes, ⁠Dynamic and geometric design",
           "Cutting Size Available (cm): 10x20, 15x30, 20x40 ",
           "Application: Suitable for Exterior applications including wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
@@ -79,72 +90,141 @@
           "Key Feature: ⁠Flamed surface with natural spots, ⁠Slightly textured for grip, ⁠Elegant and modern finish",
           "Cutting Size Available (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Customization Available)",
           "Finishing: Sawn Cut Finish, Honed Finish, Flamed Finish"
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+        ]
+      },
+      "flamedPlain": {
+        "title": "Andesite Flamed Plain",
+        "descriptions": [
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+        ]
+      },
+      "flamedSpot": {
+        "title": "Andesite Flamed Spot",
+        "descriptions": [
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "fullNapoli": {
         "title": "Andesite Full Napoli",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature: ⁠Continuous horizontal grooves,⁠ ⁠Smooth and elegant texture,⁠ ⁠Perfect for minimalist styles",
           "Cutting Size Available (cm): 10×20, 15×30, 20×40 ",
           "Application: Suitable for exterior facades, wall cladding, and and interior surfaces."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "fullWorm": {
         "title": "Andesite Full Worm",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:⁠  ⁠Wave-like texture,  ⁠Layered relief adds depth,⁠  ⁠Elegant and contemporary look",
           "Cutting Size Available (cm):10x20, 15x30, 20x40 ",
           "Application: Ideal for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "naturalFlat": {
         "title": "Andesite Natural Flat",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:  ⁠Rugged split surface, ⁠Raw and natural stone look, ⁠Durable and weather-resistant",
           "Cutting Size Available (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Customization Available)",
           "Finishing: Rough Face Finish"
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "straight": {
         "title": "Andesite Straight",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:⁠  ⁠Even linear grooves,  ⁠Minimalist modern look,  ⁠Clean and precise texture",
           "Cutting Size Available (cm):10x20, 15x30, 20x40",
           "Application: Ideal for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "straightVariation": {
         "title": "Andesite Straight Variation",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:⁠  ⁠Alternating groove depths,⁠  ⁠Linear and dimensional texture,⁠  ⁠Smooth and modern design",
 
           "Cutting Size Available (cm): 10x20, 15x30, 20x40 ",
           "Application:Suitable for Exterior applications including wall cladding, facades, decorative elements, and landscaping, as well as Interior accent"
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "sun": {
         "title": "Andesite Sun",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:⁠  ⁠Diagonal and grid-cut relief,⁠  ⁠Geometric symmetry, and ⁠Bold and sculptural pattern",
 "Cutting Size Available (cm):10x20, 15x30, 20x40",
         
           "Application: Designed for Exterior applications such as wall cladding, facades, decorative features, and landscaping, as well as Interior accent."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "wave": {
         "title": "Andesite Wave",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature:⁠  ⁠Flowing wave pattern,⁠  ⁠Dynamic light and shadow play,⁠  ⁠Organic and sophisticated texture",
           "Cutting Size Available (cm): 15×30, 20×40 ",
           "Application: Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       },
       "worm": {
         "title": "Andesite Worm",
         "descriptions": [
+<<<<<<< HEAD
           "Key Feature: ⁠Linear and wavy grooves,⁠  ⁠Balanced movement and texture,⁠  ⁠Natural aesthetic for modern spaces",
           "Cutting Size Available (cm):10x20, 15x30, 20x40 ",
           "Application: Perfect for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+=======
+          "Flowing wave pattern, Dynamic light and shadow play, Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 (Customization Available)",
+          "Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         ]
       }
     },
@@ -193,6 +273,7 @@
   "footer_about_text2": "Our Products",
 
   "wall1_title": "Andesite Mosaic Wall Cladding",
+<<<<<<< HEAD
   "wall1_desc1": "Key features: Made from natural andesite stone with rugged hand-split texture, durable and weather-resistant.",
   "wall1_desc2": "Cutting Size Available (cm): 20×40.",
   "wall1_desc3": "Application: Ideal for both interior and exterior wall cladding applications.",
@@ -226,15 +307,57 @@
   "wall7_desc1": "Key features: Made from Palem Sandstone in warm tones with rich natural variation.",
   "wall7_desc2": "Cutting Size Available (cm): 20×40.",
   "wall7_desc3": "Application: Suitable for both interior and exterior stone designs.",
+=======
+  "wall1_desc1": "Made from natural andesite stone with rugged hand-split texture, durable and weather-resistant.",
+  "wall1_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall1_desc3": "Ideal for both interior and exterior wall cladding applications.",
+
+  "wall2_title": "Mosaic 2 Colors Wall Cladding",
+  "wall2_desc1": "Blend of Palem Sandstone and Andesite Stone, balanced tones with refined texture.",
+  "wall2_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall2_desc3": "Perfect for modern architectural facades and interiors.",
+
+  "wall3_title": "Mosaic 3 Colors Wall Cladding",
+  "wall3_desc1": "Soft mix of beige, gray, and muted rose hues adding warmth and sophistication.",
+  "wall3_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall3_desc3": "Ideal for interior and exterior applications.",
+
+  "wall4_title": "Mosaic Tofu Wall Cladding",
+  "wall4_desc1": "Crafted from Palem Sandstone with smooth natural variation and warm tone.",
+  "wall4_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall4_desc3": "Perfect for clean, minimalist architectural designs.",
+
+  "wall5_title": "Susun Sirih Wall Cladding",
+  "wall5_desc1": "Elegant texture with warm color tone and clean horizontal arrangement.",
+  "wall5_desc2": "Cutting Size Available (cm): 18×40.",
+  "wall5_desc3": "Excellent for interior feature walls and exterior facades.",
+
+  "wall6_title": "Susun Sirih Color Wall Cladding",
+  "wall6_desc1": "Combination of Palem Sandstone, Andesite, and Red Sandstone with balanced tones.",
+  "wall6_desc2": "Cutting Size Available (cm): 18×40.",
+  "wall6_desc3": "Adds depth and visual rhythm to modern architecture.",
+
+  "wall7_title": "Susun Sirih Combination Wall Cladding",
+  "wall7_desc1": "Made from Palem Sandstone in warm tones with rich natural variation.",
+  "wall7_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall7_desc3": "Suitable for both interior and exterior stone designs.",
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 
   
   "about_hero_title": "ABOUT US",
   "about_heading1": "About",
   "about_heading2": "MANGALA STONE",
+<<<<<<< HEAD
   "about_para1": "Mangala Stone is a trusted manufacturer and supplier of premium natural stone products, specializing in the production and supply of Andesite Stone, Palem Sandstone, and Wall Cladding for various applications.",
   "about_para2": "With over a decade of experience since 2014, we operate two manufacturing sites in Cirebon and Majalengka, West Java where a region renowned for its skilled artisans and rich heritage in stone craftsmanship. By seamlessly blending traditional techniques with modern innovations, we produce natural stones that meet the highest standards of durability, functionality, and aesthetics.",
   "about_para3": "At Mangala Stone, we believe that natural stone is more than just a building material, it is an essential element that enhances the beauty, longevity, and character of any space. Whether for flooring, wall cladding, landscaping, or bespoke design projects, our products bring elegance and timeless appeal to residential, commercial, and public spaces.",
   "about_para4": "We are committed to delivering exceptional quality and reliable service, ensuring our clients receive the finest natural stone solutions tailored to their needs. As we continue to grow, Mangala Stone remains dedicated to being a trusted partner in the world of natural stone craftsmanship.",
+=======
+  "about_para1": "Mangala Stone is a trusted manufacturer and distributor of premium natural stone products, specializing in the production and supply of Andesite Stone, Palem Sandstone, and Wall Cladding for various applications.",
+  "about_para2": "With over a decade of experience since 2014, we operate two manufacturing sites in Cirebon and Majalengka, West Java, a region renowned for its skilled artisans and rich heritage in stone craftsmanship.",
+  "about_para3": "By combining traditional techniques with modern innovation, we produce natural stones that meet the highest standards of durability, functionality, and aesthetics.",
+  "about_para4": "At Mangala Stone, we believe natural stone is more than just a building material — it is an essential element that enhances the beauty, longevity, and character of every space.",
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     "contact_hero_title": "CONTACT US",
   "contact_heading1": "Contact Us",
   "contact_heading2": "GET IN TOUCH",

@@ -1,4 +1,5 @@
 /* ============================================
+<<<<<<< HEAD
    🌿 ABOUT PAGE STYLES — Mangala Stone
    ============================================ */
 
@@ -132,6 +133,24 @@ body,
 
 /* ============================================
    🧭 HEADER SECTION 2
+=======
+   🌿 BASE STYLES
+============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* ============================================
+   🧭 HEADER SECTION
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 ============================================ */
 .header {
   width: 100%;
@@ -212,11 +231,16 @@ body,
 }
 
 .dropdown-content a:hover {
+<<<<<<< HEAD
   background: #ffffff;
+=======
+  background: #00525e;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   color: #fff;
 }
 
 /* ============================================
+<<<<<<< HEAD
    ===== CONTACT HERO (FULLY FIXED) =====
 ============================================ */
 .contact-hero {
@@ -254,6 +278,37 @@ body,
 
 }
 
+=======
+   🏞️ HERO SECTION
+============================================ */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-inner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-inner h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 /* =====================================================
    🌐 CONTACT INFO SECTION STYLES
 ===================================================== */
@@ -262,9 +317,17 @@ body,
   background: #f9f9f9;
   padding: 80px 10%;
   text-align: center;
+<<<<<<< HEAD
   color: #222;
 }
 
+=======
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Section Title */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .section-title {
   font-size: 38px;
   font-weight: 700;
@@ -274,6 +337,10 @@ body,
   letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
+=======
+/* Info Grid Layout */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -281,6 +348,10 @@ body,
   justify-items: center;
 }
 
+<<<<<<< HEAD
+=======
+/* Info Item Box */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .info-item {
   background: #ffffff;
   border-radius: 14px;
@@ -288,23 +359,39 @@ body,
   padding: 40px 25px;
   max-width: 500px;
   transition: all 0.3s ease;
+<<<<<<< HEAD
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+=======
+  text-align: center; /* ✅ centers all text inside */
+  display: flex;      /* ✅ centers content vertically and horizontally */
+  flex-direction: column;
+  align-items: justify;
+  justify-content: center;
+}
+
+/* Icon */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .info-icon {
   font-size: 42px;
   color: #00525E;
   margin-bottom: 18px;
 }
 
+<<<<<<< HEAD
+=======
+/* Headings */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .info-content h3 {
   font-size: 24px;
   color: #00525E;
   margin-bottom: 10px;
   font-weight: 600;
+<<<<<<< HEAD
 }
 
 .info-content p {
@@ -319,6 +406,30 @@ body,
   .info-content h3 {
     font-size: 20px;
   }
+=======
+  text-align: justify; /* ✅ ensure h3 is centered */
+}
+
+/* Paragraphs */
+.info-content p {
+  font-size: 160px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify; /* ✅ ensure paragraphs are centered */
+  margin: 4px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info-item {
+    padding: 30px 20px;
+  }
+
+  .info-content h3 {
+    font-size: 20px;
+  }
+
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   .info-content p {
     font-size: 15px;
   }
@@ -328,12 +439,26 @@ body,
   .info-item {
     max-width: 100%;
   }
+<<<<<<< HEAD
   .info-grid {
     gap: 25px;
   }
 }
 
 /* WhatsApp FAB */
+=======
+
+
+  .info-grid {
+    gap: 25px;
+  }
+
+  .info-item {
+    max-width: 100%;
+  }
+}
+/* 🌿 WhatsApp Floating Action Button */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -350,18 +475,32 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+<<<<<<< HEAD
+=======
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   background-color: #1ebd5a;
 }
 
 .whatsapp-float i {
   margin-top: 2px;
 }
+<<<<<<< HEAD
 
 /* FOOTER */
+=======
+/* ============================================
+   🦶 FOOTER SECTION
+============================================ */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 .footer {
   background: #fff;
   padding: 50px 10% 20px;
@@ -394,6 +533,14 @@ body,
   color: #00525e;
   font-size: 20px;
   margin-right: 10px;
+<<<<<<< HEAD
+=======
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #333;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 }
 
 .footer-bottom {
@@ -401,9 +548,18 @@ body,
   border-top: 1px solid #ddd;
   padding-top: 10px;
   font-size: 14px;
+<<<<<<< HEAD
 }
 
 /* Responsive */
+=======
+  color: #555;
+}
+
+/* ============================================
+   📱 RESPONSIVE DESIGN
+============================================ */
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -418,6 +574,7 @@ body,
     font-size: 16px;
   }
 
+<<<<<<< HEAD
   .contact-hero-inner h2 {
     font-size: 36px;
   }
@@ -434,3 +591,9 @@ body,
   color: #00525e;
 }
 }
+=======
+  .hero-inner h1 {
+    font-size: 36px;
+  }
+}
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641

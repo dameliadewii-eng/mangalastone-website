@@ -118,8 +118,13 @@ const WallCladdingStone = () => {
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
             <div className="brand-text">
+<<<<<<< HEAD
               {/* <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">{t("header_subtitle")}</span> */}
+=======
+              <span className="brand-title">MANGALA STONE</span>
+              <span className="brand-sub">{t("header_subtitle")}</span>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             </div>
           </div>
 
@@ -239,8 +244,12 @@ const WallCladdingStone = () => {
         </div>
 
         <div className="footer-bottom">
+<<<<<<< HEAD
                 <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
 
+=======
+          <p>© 2025 All rights reserved - Mangala Stone</p>
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 

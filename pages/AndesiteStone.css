@@ -131,13 +131,22 @@ button:hover {
 }
 .andesite-intro-text h2 {
   color: #00525E;
+<<<<<<< HEAD
   font-size: 40px;
+=======
+  font-size: 52px;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   margin-bottom: 15px;
 }
 .andesite-intro-text p {
   font-family: Arial, sans-serif; /* ✅ Set to Arial only for <p> */
+<<<<<<< HEAD
   font-size: 18px; /* ✅ Increased text size to 20px */
   color: #333;
+=======
+  font-size: 20px; /* ✅ Increased text size to 20px */
+  color: #020202;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
@@ -186,9 +195,15 @@ button:hover {
 }
 .andesite-stone-description {
   background: #ffffff;
+<<<<<<< HEAD
   color: #333;
   padding: 10px 0;
   font-size: 15px;
+=======
+  color: #000000;
+  padding: 10px 0;
+  font-size: 20px;
+>>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   font-weight: 500;
   font-family: Arial, sans-serif;
    text-align: center;
