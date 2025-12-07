@@ -57,34 +57,16 @@ const Home = () => {
     
     <div className="hm-container header-inner">
            
-<<<<<<< HEAD
 
       <div className="logo-area" data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
         <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
         <div className="brand-text" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           {/* <span className="brand-title" style={{ fontWeight: "700", fontSize: "1.5rem" }}>
-=======
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            ☰
-          </button>
-      <div className="logo-area" data-aos="fade-right" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-        <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-        <div className="brand-text" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <span className="brand-title" style={{ fontWeight: "700", fontSize: "1.5rem" }}>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             MANGALA STONE
           </span>
           <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
             I N D O N E S I A
-<<<<<<< HEAD
           </span> */}
-=======
-          </span>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </div>
 
@@ -143,27 +125,17 @@ const Home = () => {
                 <option value="id">Indonesian</option>
               </select>
             </div>
-<<<<<<< HEAD
                       <button
-=======
-                      {/* <button
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
             ☰
-<<<<<<< HEAD
           </button>
           </nav>
           
         </div>
  
-=======
-          </button> */}
-          </nav>
-        </div>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
       </header>
 
       {/* ---------------- HERO ---------------- */}
@@ -190,11 +162,7 @@ const Home = () => {
       {/* ---------------- PROJECT INTRO ---------------- */}
       <section className="hm-section project-intro">
         <div className="hm-container split-grid">
-<<<<<<< HEAD
           <div className="media2" data-aos="fade-right">
-=======
-          <div className="media" data-aos="fade-right">
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             <img src={projectTiles} alt="Project Tiles" className="media-img" />
           </div>
 
@@ -205,26 +173,15 @@ const Home = () => {
             <p className="rich-text">{t("projectIntro.text3")}</p>
             <p className="rich-text">{t("projectIntro.text4")}</p>
 {/* text add */}
-<<<<<<< HEAD
             {/* <p className="rich-text">{t("projectIntro.text1")}</p>
-=======
-            <p className="rich-text">{t("projectIntro.text1")}</p>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             <p className="rich-text">{t("projectIntro.text2")}</p>
             <p className="rich-text">{t("projectIntro.text3")}</p>
             <p className="rich-text">{t("projectIntro.text4")}</p>
             {/* text add */}
-<<<<<<< HEAD
             {/* <p className="rich-text">{t("projectIntro.text1")}</p>
             <p className="rich-text">{t("projectIntro.text2")}</p>
             <p className="rich-text">{t("projectIntro.text3")}</p>
             <p className="rich-text">{t("projectIntro.text4")}</p>  */}
-=======
-            <p className="rich-text">{t("projectIntro.text1")}</p>
-            <p className="rich-text">{t("projectIntro.text2")}</p>
-            <p className="rich-text">{t("projectIntro.text3")}</p>
-            <p className="rich-text">{t("projectIntro.text4")}</p>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
         </div>
       </section>
@@ -423,11 +380,7 @@ const Home = () => {
             className="fas fa-tags"
             style={{
               fontSize: "40px",
-<<<<<<< HEAD
               color: "#4CAF50", // orange tone
-=======
-              color: "#FF9800", // orange tone
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             }}
           ></i>
         </div>
@@ -458,11 +411,7 @@ const Home = () => {
             className="fas fa-truck"
             style={{
               fontSize: "40px",
-<<<<<<< HEAD
               color: "#4CAF50", // blue tone
-=======
-              color: "#2196F3", // blue tone
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             }}
           ></i>
         </div>
@@ -482,21 +431,12 @@ const Home = () => {
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
-<<<<<<< HEAD
             <img src={logo} alt="Mangala Logo" className="footer-logo" />
             <div className="brand-text">
               {/* <span className="brand-title">MANGALA STONE</span>
                        <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
             I N D O N E S I A
           </span> */}
-=======
-            <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-                       <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
-            I N D O N E S I A
-          </span>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             </div>
           </div>
 
@@ -523,12 +463,8 @@ const Home = () => {
         </div>
 
         <div className="footer-bottom">
-<<<<<<< HEAD
                    <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
 
-=======
-          <p>© 2025 {t("footer.rights")}</p>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 

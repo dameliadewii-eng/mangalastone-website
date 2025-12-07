@@ -18,7 +18,6 @@ const translations = {
     title: "PALEM STONE",
     introHeading: "Discover the Natural Beauty of Palem SandStone",
     introText:
-<<<<<<< HEAD
       "Palem Sandstone is a natural sandstone (sand rock) found in the Mountains located in Bobos, Cirebon Regency, Indonesia, This stone features a unique surface texture similar to Palimanan Stone but with a distinct color difference, While Palimanan Stone has a yellowish tone while Palem Sandstone is characterized by its warm brown hues, making it a preferred choice for natural and earthy aesthetics.",
     palm1:
       "Key feature: Soft cream and beige hues with subtle mineral streaks, Fine-grained texture evoking natural warmth, Versatile for both contemporary and classic styles.",
@@ -26,15 +25,6 @@ const translations = {
       "Cutting Size Available (cm): 10×20, 15×30, 20×20, 20×40, 40×40, 30×60 (Customization Available).",
     palm3:
       "Application: Perfect for exterior wall cladding, facades, pillars, and decorative features, Also ideal for interior flooring and accent walls.",
-=======
-      "Palem Sandstone is a natural sandstone (sand rock) found in the Mountains located in Bobos, Cirebon Regency, Indonesia. This stone features a unique surface texture similar to Palimanan Stone but with a distinct color difference. While Palimanan Stone has a yellowish tone while Palem Sandstone is characterized by its warm brown hues, making it a preferred choice for natural and earthy aesthetics.",
-    palm1:
-      "Soft cream and beige hues with subtle mineral streaks. Fine-grained texture evoking natural warmth. Versatile for both contemporary and classic styles.",
-    palm2:
-      "Cutting Size Available (cm): 10×20, 15×30, 20×20, 20×40, 40×40, 30×60 (Customization Available).",
-    palm3:
-      "Perfect for exterior wall cladding, facades, pillars, and decorative features. Also ideal for interior flooring and accent walls.",
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
     navHome: "Home",
     navProducts: "Products",
     navAbout: "About Us",
@@ -105,17 +95,10 @@ const PalemStone = () => {
         <div className="hm-container header-inner">
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-<<<<<<< HEAD
             {/* <div className="brand-text"> */}
               {/* <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">{t.brandSub}</span> */}
             {/* </div> */}
-=======
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">{t.brandSub}</span>
-            </div>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
  {/* Navigation  */}
@@ -200,15 +183,9 @@ const PalemStone = () => {
         <div className="footer-container">
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
-<<<<<<< HEAD
             {/* <div className="brand-text"> */}
               {/* <span className="brand-title">MANGALA STONE</span> */}
             {/* </div> */}
-=======
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-            </div>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
           </div>
 
           <div className="footer-col">
@@ -234,12 +211,8 @@ const PalemStone = () => {
         </div>
 
         <div className="footer-bottom">
-<<<<<<< HEAD
                     <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
 
-=======
-          <p>© 2025 All rights reserved - Mangala Stone</p>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 

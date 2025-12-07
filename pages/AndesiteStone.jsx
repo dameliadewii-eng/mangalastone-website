@@ -68,7 +68,6 @@ const AndesiteStone = () => {
 
   // stones array (image srcs unchanged). Titles/descriptions drawn from translation JSON.
   const stones = [
-<<<<<<< HEAD
       { key: "flamedPlain", title: "Andesite Plain", imgs: [and7, and8, and9] },
       { key: "flamedSpot", title: "Andesite Flamed Spot", imgs: [and10, and11, and12] },
         { key: "naturalFlat", title: "Andesite Natural Flat", imgs: [and19, and20, and21] },
@@ -86,20 +85,6 @@ const AndesiteStone = () => {
     { key: "sun", title: "Andesite Sun", imgs: [and28, and29, and30] },
 
     
-=======
-    { key: "centralNapoli", title: "Andesite Central Napoli", imgs: [and1, and2, and3] },
-    { key: "chess", title: "Andesite Chess", imgs: [and4, and5, and6] },
-    { key: "flamedPlain", title: "Andesite Flamed Plain", imgs: [and7, and8, and9] },
-    { key: "flamedSpot", title: "Andesite Flamed Spot", imgs: [and10, and11, and12] },
-    { key: "fullNapoli", title: "Andesite Full Napoli", imgs: [and13, and14, and15] },
-    { key: "fullWorm", title: "Andesite Full Worm", imgs: [and16, and17, and18] },
-    { key: "naturalFlat", title: "Andesite Natural Flat", imgs: [and19, and20, and21] },
-    { key: "straight", title: "Andesite Straight", imgs: [and22, and23, and24] },
-    { key: "straightVariation", title: "Andesite Straight Variation", imgs: [and25, and26, and27] },
-    { key: "sun", title: "Andesite Sun", imgs: [and28, and29, and30] },
-    { key: "wave", title: "Andesite Wave", imgs: [and31, and32, and33] },
-    { key: "worm", title: "Andesite Worm", imgs: [and34, and35, and36] },
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
   ];
 
   // WhatsApp link (unchanged)
@@ -118,13 +103,8 @@ const AndesiteStone = () => {
           <div className="logo-area" data-aos="fade-right">
             <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
             <div className="brand-text">
-<<<<<<< HEAD
               {/* <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">Natural Stone Manufacturer & Distributor</span> */}
-=======
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">Natural Stone Manufacturer & Distributor</span>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             </div>
           </div>
 
@@ -225,11 +205,7 @@ const AndesiteStone = () => {
           <div className="footer-col">
             <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
             <div className="brand-text">
-<<<<<<< HEAD
               {/* <span className="brand-title">MANGALA STONE</span> */}
-=======
-              <span className="brand-title">MANGALA STONE</span>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
             </div>
           </div>
 
@@ -256,12 +232,8 @@ const AndesiteStone = () => {
         </div>
 
         <div className="footer-bottom">
-<<<<<<< HEAD
                     <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
 
-=======
-          <p>{t.footer.rights}</p>
->>>>>>> 8231bf9282ba21ac61eb47c80046a0d69d9fb641
         </div>
       </footer>
 
