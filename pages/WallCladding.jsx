@@ -210,10 +210,15 @@ const WallCladdingStone = () => {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-col">
-            <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
-            <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-            </div>
+                  <img
+        src={logo}
+        alt="Mangala Logo"
+        className="footer-logo"
+        style={{ height: "47px", width: "auto" }} // logo size fixed
+      />
+            {/* <div className="brand-text"> */}
+              {/* <span className="brand-title">MANGALA STONE</span> */}
+            {/* </div> */}
           </div>
 
           <div className="footer-col">

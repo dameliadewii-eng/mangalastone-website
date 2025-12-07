@@ -426,47 +426,51 @@ const Home = () => {
 </section>
 
 
+{/* ---------------- FOOTER ---------------- */}
+<footer className="footer" id="contact">
+  <div className="footer-container">
+    <div className="footer-col">
+      <img
+        src={logo}
+        alt="Mangala Logo"
+        className="footer-logo"
+        style={{ height: "47px", width: "auto" }} // logo size fixed
+      />
 
-      {/* ---------------- FOOTER ---------------- */}
-      <footer className="footer" id="contact">
-        <div className="footer-container">
-          <div className="footer-col">
-            <img src={logo} alt="Mangala Logo" className="footer-logo" />
-            <div className="brand-text">
-              {/* <span className="brand-title">MANGALA STONE</span>
-                       <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
-            I N D O N E S I A
-          </span> */}
-            </div>
-          </div>
+      <div className="brand-text">
+        {/* <span className="brand-title">MANGALA STONE</span>
+           <span className="brand-sub" style={{ fontSize: "0.9rem", letterSpacing: "2px", marginTop: "4px" }}>
+          I N D O N E S I A
+        </span> */}
+      </div>
+    </div>
 
-          <div className="footer-col">
-            <h3>{t("footer.contact")}</h3>
-            <p>info@mangalastone.com</p>
-            <p>+62 8579 7895 798</p>
-          </div>
+    <div className="footer-col">
+      <h3>{t("footer.contact")}</h3>
+      <p>info@mangalastone.com</p>
+      <p>+62 8579 7895 798</p>
+    </div>
 
-          <div className="footer-col">
-            <h3>{t("footer.follow")}</h3>
-            <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
-              <a href="#"><i className="fab fa-tiktok" /></a>
-            </div>
-          </div>
+    <div className="footer-col">
+      <h3>{t("footer.follow")}</h3>
+      <div className="social-icons">
+        <a href="#"><i className="fab fa-facebook-f" /></a>
+        <a href="#"><i className="fab fa-instagram" /></a>
+        <a href="#"><i className="fab fa-tiktok" /></a>
+      </div>
+    </div>
 
-          <div className="footer-col">
-            <h3>{t("footer.about")}</h3>
-            <p>About Mangala Stone</p>
-            <p>Our Products</p>
-          </div>
-        </div>
+    <div className="footer-col">
+      <h3>{t("footer.about")}</h3>
+      <p>About Mangala Stone</p>
+      <p>Our Products</p>
+    </div>
+  </div>
 
-        <div className="footer-bottom">
-                   <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
-
-        </div>
-      </footer>
+  <div className="footer-bottom">
+    <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>
+  </div>
+</footer>
 
       <a
         href={whatsappUrl}

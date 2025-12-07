@@ -182,7 +182,12 @@ const PalemStone = () => {
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
-            <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
+               <img
+        src={logo}
+        alt="Mangala Logo"
+        className="footer-logo"
+        style={{ height: "47px", width: "auto" }} // logo size fixed
+      />
             {/* <div className="brand-text"> */}
               {/* <span className="brand-title">MANGALA STONE</span> */}
             {/* </div> */}

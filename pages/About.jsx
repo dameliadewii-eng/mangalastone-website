@@ -440,7 +440,12 @@ const About = () => {
       <footer className="footer" id="contact">
         <div className="footer-container">
           <div className="footer-col">
-            <img src={logo} alt="Watu Mangala Logo" className="footer-logo" />
+                  <img
+        src={logo}
+        alt="Mangala Logo"
+        className="footer-logo"
+        style={{ height: "47px", width: "auto" }} // logo size fixed
+      />
             {/* <div className="brand-text">
               <span className="brand-title">MANGALA STONE</span>
               <span className="brand-sub">I N D O N E S I A</span>
