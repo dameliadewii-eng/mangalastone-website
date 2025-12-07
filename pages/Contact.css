@@ -1,0 +1,436 @@
+/* ============================================
+   🌿 ABOUT PAGE STYLES — Mangala Stone
+   ============================================ */
+
+/* ===== 🎨 Base & Layout ===== */
+:root {
+  --accent: #ff6e6e;
+  --brand: #2c786c;
+  --dark: #1f1f1f;
+  --muted: #6b6b6b;
+  --bg: #f9f9f9;
+  --max-w: 1200px;
+  --highlight: #ffd700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--dark);
+  background: var(--bg);
+}
+
+/* ===== 📦 Container ===== */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================ 🧭 HEADER SECTION ============================================ */
+.site-header {
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 18px 20px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* Brand / Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(11, 11, 11, 0.06);
+}
+
+.brand-name {
+  display: block;
+  font-weight: 700;
+  color: var(--brand);
+  letter-spacing: 0.6px;
+}
+
+.brand-slogan {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Navigation */
+.site-nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: all 0.18s ease;
+}
+
+.site-nav a:hover {
+  color: var(--brand);
+  transform: translateY(-2px);
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header-actions select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.contact-cta {
+  background: transparent;
+  border: 1px solid rgba(44, 120, 108, 0.12);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+/* ============================================
+   🧭 HEADER SECTION 2
+============================================ */
+.header {
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.brand-title {
+  font-weight: 700;
+  color: #00525e;
+  display: block;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #00525e;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ffffff;
+  color: #fff;
+}
+
+/* ============================================
+   ===== CONTACT HERO (FULLY FIXED) =====
+============================================ */
+.contact-hero {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Black overlay */
+.contact-hero::after {
+  /* content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1; */
+}
+
+.contact-hero-inner {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.contact-hero-inner h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+
+}
+
+/* =====================================================
+   🌐 CONTACT INFO SECTION STYLES
+===================================================== */
+
+.contact-info-section {
+  background: #f9f9f9;
+  padding: 80px 10%;
+  text-align: center;
+  color: #222;
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #00525E;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.info-item {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 40px 25px;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-icon {
+  font-size: 42px;
+  color: #00525E;
+  margin-bottom: 18px;
+}
+
+.info-content h3 {
+  font-size: 24px;
+  color: #00525E;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.info-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-content h3 {
+    font-size: 20px;
+  }
+  .info-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-item {
+    max-width: 100%;
+  }
+  .info-grid {
+    gap: 25px;
+  }
+}
+
+/* WhatsApp FAB */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebd5a;
+}
+
+.whatsapp-float i {
+  margin-top: 2px;
+}
+
+/* FOOTER */
+.footer {
+  background: #fff;
+  padding: 50px 10% 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-col h3 {
+  color: #00525e;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.social-icons a {
+  color: #00525e;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .info-content p {
+    font-size: 16px;
+  }
+
+  .contact-hero-inner h2 {
+    font-size: 36px;
+  }
+  .contact-map-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.contact-map-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #00525e;
+}
+}

@@ -1,0 +1,264 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "MANGALA STONE",
+    "subtitle": "Bring the beauty of nature into your space with our premium natural stones",
+    "cta": "Contact Us"
+  },
+  "projectIntro": {
+    "heading": "Your Project Starts Here",
+    "text1": "Mangala Stone is your trusted source for premium natural stones, including Andesite Stone, Palem Sandstone, and Wall Cladding which perfect for elevating both modern and traditional designs.",
+    "text2": "With two manufacturing sites located in Cirebon and Majalengka, we ensure high quality products and reliable delivery.",
+    "text3": "Whether you are building elegant facades, stylish landscapes or timeless interiors, our stones combine authentic beauty and expert craftsmanship.",
+    "text4": "Contact us today to learn more about how Mangala Stone can bring nature’s essence into your space."
+  },
+  "products": {
+    "heading": "Our Products",
+    "subheading": "Our Natural Stone Collection",
+    "andesite": "Andesite Stone",
+    "palm": "Palem Sandstone",
+    "cladding": "Wall Cladding"
+  },
+  "footer": {
+    "contact": "CONTACT US",
+    "follow": "FOLLOW US",
+    "about": "ABOUT US",
+    "rights": "All rights reserved - Mangala Stone"
+  },
+  
+
+  "andesitePage": {
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "andesite": "Andesite Stone",
+      "palm": "Palem Sandstone",
+      "cladding": "Wall Cladding",
+      "about": "About Us",
+      "contact": "Contact Us"
+    },
+    "heroTitle": "ANDESITE STONE",
+    "introHeading": "Discover the Natural Beauty of Andesite Stone",
+    "introText": "Andesite Stone is a durable natural stone formed from volcanic activity, belonging to the family of extrusive igneous rocks. Originally named after the Andes Mountains in South America which the world’s longest mountain range. This stone is also abundantly found across Indonesia’s volcanic regions. Renowned for its strength, density, and timeless aesthetic, Andesite Stone is highly resistant to weathering, making it ideal for both interior and exterior applications. It is available in a range of natural colours and textures, with multiple surface finishes to suit diverse design preferences. From modern minimalistic projects to traditional architecture, Andesite Stone offers versatility and enduring beauty for paving, wall cladding, landscaping, and other architectural uses.",
+    "stones": {
+      "centralNapoli": {
+        "title": "Andesite Central Napoli",
+        "descriptions": [
+         "Key Feature:⁠  ⁠Linear groove pattern,⁠  ⁠Structured texture with depth,⁠  ⁠Modern and durable design",
+
+          "Cutting Size Available (cm): 10×20, 15×30, 20×40",
+          "Application: Ideal for exterior wall cladding, facades, decorative panels, and landscaping elements. Also perfect for interior accent walls."
+        ]
+      },
+      "chess": {
+        "title": "Andesite Chess",
+        "descriptions": [
+          "Key Feature: ⁠Checker pattern texture, ⁠Contrast of smooth and rough finishes, ⁠Dynamic and geometric design",
+          "Cutting Size Available (cm): 10x20, 15x30, 20x40 ",
+          "Application: Suitable for Exterior applications including wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+        ]
+      },
+      "flamedPlain": {
+        "title": "Andesite Plain",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Smooth flamed surface, ⁠Natural grey tone, ⁠High durability for exterior use",
+          "Cutting Size Available (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Customization Available).",
+          " Finishing: Sawn Cut Finish, Honed Finish, Flamed Finish"
+          
+         
+        ]
+      },
+      "flamedSpot": {
+        "title": "Andesite Spot",
+        "descriptions": [
+          "Key Feature: ⁠Flamed surface with natural spots, ⁠Slightly textured for grip, ⁠Elegant and modern finish",
+          "Cutting Size Available (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Customization Available)",
+          "Finishing: Sawn Cut Finish, Honed Finish, Flamed Finish"
+        ]
+      },
+      "fullNapoli": {
+        "title": "Andesite Full Napoli",
+        "descriptions": [
+          "Key Feature: ⁠Continuous horizontal grooves,⁠ ⁠Smooth and elegant texture,⁠ ⁠Perfect for minimalist styles",
+          "Cutting Size Available (cm): 10×20, 15×30, 20×40 ",
+          "Application: Suitable for exterior facades, wall cladding, and and interior surfaces."
+        ]
+      },
+      "fullWorm": {
+        "title": "Andesite Full Worm",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Wave-like texture,  ⁠Layered relief adds depth,⁠  ⁠Elegant and contemporary look",
+          "Cutting Size Available (cm):10x20, 15x30, 20x40 ",
+          "Application: Ideal for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+        ]
+      },
+      "naturalFlat": {
+        "title": "Andesite Natural Flat",
+        "descriptions": [
+          "Key Feature:  ⁠Rugged split surface, ⁠Raw and natural stone look, ⁠Durable and weather-resistant",
+          "Cutting Size Available (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Customization Available)",
+          "Finishing: Rough Face Finish"
+        ]
+      },
+      "straight": {
+        "title": "Andesite Straight",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Even linear grooves,  ⁠Minimalist modern look,  ⁠Clean and precise texture",
+          "Cutting Size Available (cm):10x20, 15x30, 20x40",
+          "Application: Ideal for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+        ]
+      },
+      "straightVariation": {
+        "title": "Andesite Straight Variation",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Alternating groove depths,⁠  ⁠Linear and dimensional texture,⁠  ⁠Smooth and modern design",
+
+          "Cutting Size Available (cm): 10x20, 15x30, 20x40 ",
+          "Application:Suitable for Exterior applications including wall cladding, facades, decorative elements, and landscaping, as well as Interior accent"
+        ]
+      },
+      "sun": {
+        "title": "Andesite Sun",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Diagonal and grid-cut relief,⁠  ⁠Geometric symmetry, and ⁠Bold and sculptural pattern",
+"Cutting Size Available (cm):10x20, 15x30, 20x40",
+        
+          "Application: Designed for Exterior applications such as wall cladding, facades, decorative features, and landscaping, as well as Interior accent."
+        ]
+      },
+      "wave": {
+        "title": "Andesite Wave",
+        "descriptions": [
+          "Key Feature:⁠  ⁠Flowing wave pattern,⁠  ⁠Dynamic light and shadow play,⁠  ⁠Organic and sophisticated texture",
+          "Cutting Size Available (cm): 15×30, 20×40 ",
+          "Application: Ideal for exterior facades, wall cladding, decorative features, and landscape elements. Also suitable for interior accent."
+        ]
+      },
+      "worm": {
+        "title": "Andesite Worm",
+        "descriptions": [
+          "Key Feature: ⁠Linear and wavy grooves,⁠  ⁠Balanced movement and texture,⁠  ⁠Natural aesthetic for modern spaces",
+          "Cutting Size Available (cm):10x20, 15x30, 20x40 ",
+          "Application: Perfect for Exterior applications such as wall cladding, facades, decorative elements, and landscaping, as well as Interior accent."
+        ]
+      }
+    },
+    "footer": {
+      "contact": "CONTACT US",
+      "follow": "FOLLOW US",
+      "about": "ABOUT US",
+      "rights": "© 2025 All rights reserved - Mangala Stone"
+    },
+    
+  "brand_sub": "Natural Stone Manufacturer & Distributor",
+  "nav_home": "Home",
+  "nav_products": "Products",
+  "andesite_stone": "Andesite Stone",
+  "palem_sandstone": "Palem Sandstone",
+  "wall_cladding": "Wall Cladding",
+  "nav_about": "About Us",
+  "nav_contact": "Contact Us",
+  "palem_stone_title": "PALEM STONE",
+  "palem_intro_title": "Discover the Natural Beauty of Palem SandStone",
+  "palem_intro_text": "Palem Sandstone is a natural sandstone ... earthy aesthetics.",
+  "palm1_desc": "Soft cream and beige hues ... classic styles.",
+  "palm2_desc": "Cutting Size Available (cm): 10×20 ...",
+  "palm3_desc": "Perfect for exterior wall cladding ... accent walls.",
+  "contact_us": "CONTACT US",
+  "follow_us": "FOLLOW US",
+  "about_us": "ABOUT US",
+  "about_mangala": "About Mangala Stone",
+  "our_products": "Our Products"
+},
+
+  "header_subtitle": "Natural Stone Manufacturer & Distributor",
+  "nav_home": "Home",
+  "nav_andesite": "Andesite Stone",
+  "nav_palem": "Palem Sandstone",
+  "nav_wall": "Wall Cladding",
+  "nav_about": "About Us",
+  "nav_contact": "Contact Us",
+  "hero_title": "WALL CLADDING",
+  "intro_heading": "Discover the Natural Beauty of Wall Cladding",
+  "intro_text": "Mangala’s wall cladding is crafted from high-quality natural stone such as andesite, palem sandstone, and red sandstone. It offers a perfect combination of durability, elegance, and timeless charm. Designed to enhance interior and exterior spaces, our cladding provides a sophisticated natural aesthetic and long-lasting protection against weathering.",
+  "footer_contact": "CONTACT US",
+  "footer_follow": "FOLLOW US",
+  "footer_about": "ABOUT US",
+  "footer_about_text1": "About Mangala Stone",
+  "footer_about_text2": "Our Products",
+
+  "wall1_title": "Andesite Mosaic Wall Cladding",
+  "wall1_desc1": "Key features: Made from natural andesite stone with rugged hand-split texture, durable and weather-resistant.",
+  "wall1_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall1_desc3": "Application: Ideal for both interior and exterior wall cladding applications.",
+
+  "wall2_title": "Mosaic 2 Colors Wall Cladding",
+  "wall2_desc1": "Key features: Blend of Palem Sandstone and Andesite Stone, balanced tones with refined texture.",
+  "wall2_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall2_desc3": "Application: Perfect for modern architectural facades and interiors.",
+
+  "wall3_title": "Mosaic 3 Colors Wall Cladding",
+  "wall3_desc1": "Key features: Soft mix of beige, gray, and muted rose hues adding warmth and sophistication.",
+  "wall3_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall3_desc3": "Application: Ideal for interior and exterior applications.",
+
+  "wall4_title": "Mosaic Tofu Wall Cladding",
+  "wall4_desc1": "Key features: Crafted from Palem Sandstone with smooth natural variation and warm tone.",
+  "wall4_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall4_desc3": "Application: Perfect for clean, minimalist architectural designs.",
+
+  "wall5_title": "Susun Sirih Wall Cladding",
+  "wall5_desc1": "Key features: Made from Palem Sandstone, Elegant texture with warm color tone and clean horizontal arrangement.",
+  "wall5_desc2": "Cutting Size Available (cm): 18×40.",
+  "wall5_desc3": "Application: Excellent for interior feature walls and exterior facades.",
+
+  "wall6_title": "Susun Sirih Color Wall Cladding",
+  "wall6_desc1": "Key features: Combination of Palem Sandstone, Andesite, and Red Sandstone with balanced tones.",
+  "wall6_desc2": "Cutting Size Available (cm): 18×40.",
+  "wall6_desc3": "Application: Adds depth and visual rhythm to modern architecture.",
+
+  "wall7_title": "Susun Sirih Combination Wall Cladding",
+  "wall7_desc1": "Key features: Made from Palem Sandstone in warm tones with rich natural variation.",
+  "wall7_desc2": "Cutting Size Available (cm): 20×40.",
+  "wall7_desc3": "Application: Suitable for both interior and exterior stone designs.",
+
+  
+  "about_hero_title": "ABOUT US",
+  "about_heading1": "About",
+  "about_heading2": "MANGALA STONE",
+  "about_para1": "Mangala Stone is a trusted manufacturer and supplier of premium natural stone products, specializing in the production and supply of Andesite Stone, Palem Sandstone, and Wall Cladding for various applications.",
+  "about_para2": "With over a decade of experience since 2014, we operate two manufacturing sites in Cirebon and Majalengka, West Java where a region renowned for its skilled artisans and rich heritage in stone craftsmanship. By seamlessly blending traditional techniques with modern innovations, we produce natural stones that meet the highest standards of durability, functionality, and aesthetics.",
+  "about_para3": "At Mangala Stone, we believe that natural stone is more than just a building material, it is an essential element that enhances the beauty, longevity, and character of any space. Whether for flooring, wall cladding, landscaping, or bespoke design projects, our products bring elegance and timeless appeal to residential, commercial, and public spaces.",
+  "about_para4": "We are committed to delivering exceptional quality and reliable service, ensuring our clients receive the finest natural stone solutions tailored to their needs. As we continue to grow, Mangala Stone remains dedicated to being a trusted partner in the world of natural stone craftsmanship.",
+    "contact_hero_title": "CONTACT US",
+  "contact_heading1": "Contact Us",
+  "contact_heading2": "GET IN TOUCH",
+
+  "factory_title": "Factory",
+  "factory_1": "Factory 1: Desa Bobos, Kecamatan Dukupuntang, Kabupaten Cirebon, Jawa Barat, Indonesia",
+  "factory_2": "Factory 2: Desa Lengkong Wetan, Kecamatan Sindangwangi, Kabupaten Majalengka, Jawa Barat, Indonesia",
+  "phone": "Phone Number: +6285797895798",
+  "email": "Email: info@mangalastone.com",
+  "hours": "Office Hours: 08:00am - 04:00pm GMT+7",
+
+  "footer_about": "About Mangala Stone",
+  "footer_products": "Our Products"
+  
+
+
+}
+
+
+  
+
+
+
+
+
+
+
