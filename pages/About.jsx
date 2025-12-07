@@ -3,10 +3,14 @@
 // -----------------------------------------
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from "react";
+
+import { FaPlay } from "react-icons/fa";
+
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate, Link } from "react-router-dom";
+
 
 // ---------- Imported Images ----------
 import about from "@/assets/img/about.png";
@@ -29,6 +33,8 @@ const About = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [fullscreenImage, setFullscreenImage] = useState(null); // For popup
   const navigate = useNavigate();
+  const [showVideo, setShowVideo] = useState(false);
+
 
   useEffect(() => {
     AOS.init({ duration: 900, once: true, mirror: false });
@@ -165,6 +171,27 @@ const About = () => {
           </div>
         </div>
       </section>
+{/* ===== BIG CENTER YOUTUBE VIDEO SECTION ===== */}
+<section className="big-video-section" style={{ textAlign: "center", padding: "50px 20px", background: "#f9f9f9" }}>
+  <h2 className="video-main-title" style={{ marginBottom: "30px", fontSize: "2rem", color: "#00525E" }}>
+    Factory Video Tour
+  </h2>
+
+  <div className="big-video-wrapper" style={{ display: "inline-block", maxWidth: "900px", width: "100%" }}>
+    <iframe
+      width="100%"
+      height="500"
+      src="https://www.youtube.com/embed/9hhIpeoseXQ?autoplay=0&start=0&rel=0"
+      title="Factory Video"
+      frameBorder="0"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+      style={{ borderRadius: "10px", boxShadow: "0 4px 20px rgba(0,0,0,0.1)" }}
+    ></iframe>
+  </div>
+</section>
+
+
 
       {/* ---------------- PHOTO GRID ---------------- */}
       <section className="hm-section stones" id="photos">
