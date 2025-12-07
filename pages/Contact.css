@@ -253,6 +253,91 @@ body,
   color: #fff;
 
 }
+/* ===== MAIN ROW LAYOUT ===== */
+.factory-map-row {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 80px 6%;
+  gap: 50px;
+  background: #ffffff;
+}
+
+/* ===== LEFT INFO PANEL ===== */
+.factory-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.factory-label {
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #00525E;
+  margin-bottom: 8px;
+  margin-top: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.factory-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #222;
+  max-width: 420px;
+}
+
+/* ===== RIGHT MAP PANEL ===== */
+.factory-right {
+  width: 60%;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✅ ENSURE MAP IS FULLY CLICKABLE */
+.leaflet-map-container,
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto !important;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .factory-map-row {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .factory-left,
+  .factory-right {
+    width: 100%;
+  }
+
+  .factory-right {
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+/* ===== ICON ROW STYLE ===== */
+.factory-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  font-size: 15px;
+  color: #222;
+}
+
+.factory-icon {
+  font-size: 16px;
+  color: #00525E; /* Elegant brown like your design */
+}
+
 
 /* =====================================================
    🌐 CONTACT INFO SECTION STYLES

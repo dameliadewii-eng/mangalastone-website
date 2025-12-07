@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -41,7 +42,7 @@ const Contact = () => {
       contact_heading2: "GET IN TOUCH",
       factory_title: "Factory",
       factory_1:
-        "Factory 1: Desa Bobos, Kecamatan Dukupuntang, Kabupaten Cirebon, Jawa Barat, Indonesia",
+        "Desa Bobos, Kecamatan Dukupuntang, Kabupaten Cirebon, Jawa Barat, Indonesia",
       factory_2:
         "Factory 2: Desa Lengkong Wetan, Kecamatan Sindangwangi, Kabupaten Majalengka, Jawa Barat, Indonesia",
       phone: "Phone Number: +6285797895798",
@@ -145,16 +146,46 @@ const Contact = () => {
         <h2>{t.contact_heading2}</h2>
       </section>
 
-      {/* ====== FACTORY INFO ====== */}
-      
-      <section className="andesite-intro-text" data-aos="fade-up">
-        <h1>{t.factory_title}</h1>
-        <p>{t.factory_1}</p>
-        <p>{t.factory_2}</p>
-        <p className="rich-text">{t.phone}</p>
-        <p className="rich-text">{t.email}</p>
-        <p className="rich-text">{t.hours}</p>
-      </section>
+
+
+{/* ===== FACTORY INFO + MAP ROW ===== */}
+<section className="factory-map-row" data-aos="fade-up">
+
+  {/* ===== LEFT INFO COLUMN ===== */}
+  <div className="factory-left">
+
+    <h4 className="factory-label">MANGGALA FURNITURE</h4>
+    <p className="factory-text">{t.factory_1}</p>
+
+    <h4 className="factory-label">CONTACT DETAILS</h4>
+
+    {/* ✅ PHONE */}
+    <div className="factory-icon-row">
+      <FaPhoneAlt className="factory-icon" />
+      <span>{t.phone}</span>
+    </div>
+
+    {/* ✅ EMAIL */}
+    <div className="factory-icon-row">
+      <FaEnvelope className="factory-icon" />
+      <span>{t.email}</span>
+    </div>
+
+    {/* ✅ OFFICE HOURS */}
+    <div className="factory-icon-row">
+      <FaClock className="factory-icon" />
+      <span>{t.hours}</span>
+    </div>
+
+  </div>
+
+  {/* ===== RIGHT MAP COLUMN ===== */}
+  <div className="factory-right">
+    <Map />
+  </div>
+
+</section>
+
 
 
 
@@ -286,10 +317,7 @@ const Contact = () => {
     </div>
   </div>
 </section>
-{/* ===== MAP SECTION ===== */}
-<section className="map-section" data-aos="fade-up" style={{ marginTop: "40px" }}>
-  <Map />
-</section>
+
       {/* ===== Footer ===== */}
       <footer className="footer" id="contact">
         <div className="footer-container">

@@ -1,22 +1,3 @@
-// import React from "react";
-// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
-
-// const App = () => {
-
-
-//   return (
-//     <div style={{height:'600px', width:'100%'}}>
-//    <iframe
-//    src="/leaf.html"
-//    style={{ width: "100%", height: "600px", border: "none" }}
-//    title="External HTML"
-//    />
-//    </div>
-//   );
-// };
-
-// export default App;
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -25,15 +6,15 @@ import L from "leaflet";
 // Company Logo
 import logo from "@/assets/img/logo.png";
 
-// Fix Leaflet default marker issue in React
+// ✅ FIX LEAFLET DEFAULT ICON ISSUE (IMPORTANT FOR VERCEL)
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 const Map = () => {
-  // Static company coordinates (you can change anytime)
+  // ✅ COMPANY COORDINATES
   const position = [-6.777559, 108.395361];
 
-  // Custom marker icon
+  // ✅ CUSTOM MARKER ICON
   const customMarker = L.icon({
     iconUrl: markerIcon,
     shadowUrl: markerShadow,
@@ -43,20 +24,25 @@ const Map = () => {
   });
 
   return (
-    <div style={{ width: "100%", height: "600px", marginTop: "40px" }}>
+    <div className="leaflet-map-container">
       <MapContainer
         center={position}
-        zoom={13}
+        zoom={15}
         scrollWheelZoom={true}
-        style={{ width: "100%", height: "100%", borderRadius: "12px" }}
+        dragging={true}
+        style={{
+          width: "100%",
+          height: "100%",
+          borderRadius: "12px",
+        }}
       >
-        {/* Base Map Layer */}
+        {/* ✅ MAP TILE LAYER */}
         <TileLayer
-          attribution='&copy; OpenStreetMap contributors'
+          attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Marker */}
+        {/* ✅ LOCATION MARKER */}
         <Marker position={position} icon={customMarker}>
           <Popup>
             <div
