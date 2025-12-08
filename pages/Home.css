@@ -51,32 +51,29 @@ img { max-width: 100%; display: block; }
    🧭 HEADER — Sticky Navigation Bar
 ----------------------------------------*/
 
-/* ❌ This will cause error:
-@import must be at the very top */
-
-/* ✅ Correct way: place @import at the very top of the file */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 .hm-header {
   position: sticky;
-  
   top: 0;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(18, 32, 38, 0.04);
-  font-family: 'Montserrat', sans-serif; /* Apply Montserrat to header */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header-inner {
   display: flex;
-  /* width: 156px; */
-
   align-items: center;
   justify-content: space-between;
   gap: 18px;
   padding: 14px 20px;
 }
+
+/* ---------------------------------------
+   🖼 LOGO
+----------------------------------------*/
 
 .logo-area {
   display: flex;
@@ -85,37 +82,40 @@ img { max-width: 100%; display: block; }
 }
 
 .logo-img {
-  width: 356px;
-  height: 56px;
+  width: 180px;
+  height: auto;
   object-fit: contain;
-  border-radius: 8px;
-  /* box-shadow: 0 8px 22px rgba(22, 46, 42, 0.06); */
+  border-radius: 6px;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .brand-title {
   font-weight: 800;
   color: var(--brand);
   letter-spacing: 0.6px;
-  font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
 }
 
 .brand-sub {
-  font-size: 12px !important;
+  font-size: 12px;
   color: var(--muted);
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
+
 /* ---------------------------------------
    🔗 NAVIGATION LINKS & DROPDOWNS
 ----------------------------------------*/
-.nav-area { display: flex; align-items: center; gap: 8px; }
+
+.nav-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav-link {
   padding: 8px 12px;
   border-radius: 8px;
@@ -123,11 +123,16 @@ img { max-width: 100%; display: block; }
   color: var(--dark);
   transition: all 0.18s ease;
 }
+
 .nav-link:hover {
   color: var(--brand);
   transform: translateY(-2px);
 }
-.nav-dropdown { position: relative; }
+
+.nav-dropdown {
+  position: relative;
+}
+
 .nav-dropbtn {
   background: transparent;
   border: none;
@@ -137,6 +142,7 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   color: var(--dark);
 }
+
 .nav-dropdown-menu {
   position: absolute;
   top: 100%;
@@ -147,36 +153,111 @@ img { max-width: 100%; display: block; }
   border-radius: 12px;
   padding: 8px;
   display: none;
+  z-index: 99;
 }
-.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
 .nav-dropdown-menu a {
   display: block;
   padding: 10px 12px;
   color: var(--brand);
   border-radius: 8px;
   margin: 4px 0;
+  font-weight: 500;
 }
+
 .nav-dropdown-menu a:hover {
   background: var(--brand);
   color: #fff;
 }
 
 /* ---------------------------------------
-   ⚙️ HEADER ACTIONS — Language, Buttons
+   ⚙️ HEADER ACTIONS — Language
 ----------------------------------------*/
-.actions-area { display: flex; align-items: center; gap: 12px; }
+
+.actions-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .lang-select {
   padding: 8px 10px;
   border-radius: 8px;
   border: 1px solid rgba(18, 32, 38, 0.06);
   background: #fff;
+  font-weight: 500;
 }
-.btn-ghost {
-  padding: 8px 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(44, 120, 108, 0.12);
-  color: var(--brand);
-  font-weight: 700;
+
+/* ---------------------------------------
+   ☰ HAMBURGER BUTTON
+----------------------------------------*/
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* ---------------------------------------
+   ✅ MOBILE RESPONSIVE MENU
+----------------------------------------*/
+
+@media (max-width: 768px) {
+
+  .logo-img {
+    width: 140px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-area {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 30px 0;
+    transition: 0.35s ease-in-out;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 998;
+  }
+
+  .nav-area.mobile-open {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu {
+    display: none;
+  }
+
+  .nav-dropdown-menu a {
+    background: #f7f7f7;
+    margin: 6px 0;
+    text-align: center;
+  }
 }
 
 /* ---------------------------------------
@@ -265,17 +346,17 @@ img { max-width: 100%; display: block; }
    🧱 PROJECT INTRO (Split Layout)
 ----------------------------------------*/
 .split-grid {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* gap: 60px; */
-  /* padding: 50px 8%; */
-  /* max-width: 1000px; */
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 50px 8%;
+  max-width: 1000px; 
   margin: 0 auto;
 }
 .media-img {
   /* flex: 0 0 48%; */
-  height: 900px;
+  height: 600px;
   border-radius: 14px;
   background-size: cover;
   background-position: center;
@@ -303,25 +384,11 @@ img { max-width: 100%; display: block; }
 .project-intro .hm-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 10px;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1800px;
   margin: 0 auto;
 }
-
-/* .project-intro .media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .project-intro .media-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-} */
 
 .project-intro .media-img:hover {
   transform: scale(1.03);
@@ -343,6 +410,42 @@ img { max-width: 100%; display: block; }
   color: #333;
   margin-bottom: 15px;
 }
+
+/* ---------------------------------------
+   PROJECT INTRO — MOBILE FIX (Text First, Image Second)
+----------------------------------------*/
+@media (max-width: 900px) {
+  .split-grid {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    gap: 20px; /* spacing between text and image */
+  }
+
+  .split-grid .text {
+    order: 1; /* text comes first */
+    width: 100%;
+  }
+
+  .split-grid .media2 {
+    order: 2; /* image comes second */
+    width: 100%;
+  }
+
+  .media-img {
+    width: 100%;
+    height: auto; /* make image responsive */
+  }
+
+  .text h2, .text h4 {
+    font-size: 28px; /* adjust for mobile */
+  }
+
+  .rich-text {
+    font-size: 16px; /* adjust for mobile */
+    line-height: 1.5;
+  }
+}
+
 
 /* ------------------ REST OF HOME.CSS (stones, footer, responsive, etc.) ------------------ */
 /* 🪨 STONES GRID SECTION */

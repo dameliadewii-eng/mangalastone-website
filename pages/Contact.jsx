@@ -17,6 +17,9 @@ import about7 from "@/assets/img/about7.png";
 import logo from "@/assets/img/logo.png";
 
 const Contact = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const [productsOpen, setProductsOpen] = useState(false);
+
   const [language, setLanguage] = useState("en");
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -81,53 +84,73 @@ const Contact = () => {
     <div className="hm-root">
       {/* ------------------------------ HEADER ------------------------------ */}
       <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-          {/* --- Logo and Brand --- */}
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            {/* <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">
-                Natural Stone Manufacturer & Distributor
-              </span>
-            </div> */}
-          </div>
+  <div className="hm-container header-inner">
+    {/* --- Logo --- */}
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+    </div>
 
-          {/* --- Navigation Links --- */}
-          <nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-            <Link to="/" className="nav-link">
-              Home
-            </Link>
+    {/* --- Hamburger Button for Mobile --- */}
+    <button
+      className="mobile-menu-btn"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
 
-            <div className="nav-dropdown">
-              <button className="nav-dropbtn">Products ▾</button>
-              <div className="nav-dropdown-menu">
-                <Link to="/andesite">Andesite Stone</Link>
-                <Link to="/palm-sandstone">Palem Sandstone</Link>
-                <Link to="/wall-cladding">Wall Cladding</Link>
-              </div>
-            </div>
+    {/* --- Navigation --- */}
+    <nav
+      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+      aria-label="Main Navigation"
+      data-aos="fade-down"
+    >
+      <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        Home
+      </Link>
 
-            <Link to="/about" className="nav-link">
-              About Us
-            </Link>
-            <Link to="/contact" className="nav-link">
-              Contact Us
-            </Link>
-          </nav>
-
-          <div className="header-actions" data-aos="fade-left">
-            <select
-              aria-label="language"
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
+      <div className="nav-dropdown">
+        <button
+          className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
+          onClick={() => setProductsOpen(!productsOpen)}
+        >
+          Products ▾
+        </button>
+        <div className={`nav-dropdown-menu ${productsOpen ? "open" : ""}`}>
+          <Link to="/andesite" onClick={() => setMobileMenuOpen(false)}>
+            Andesite Stone
+          </Link>
+          <Link to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
+            Palem Sandstone
+          </Link>
+          <Link to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
+            Wall Cladding
+          </Link>
         </div>
-      </header>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        About Us
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        Contact Us
+      </Link>
+    </nav>
+
+    {/* --- Language Selector --- */}
+    <div className="header-actions" data-aos="fade-left">
+      <select
+        aria-label="language"
+        value={language}
+        onChange={(e) => setLanguage(e.target.value)}
+      >
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
+    </div>
+  </div>
+</header>
+
 
       {/* ====== HERO SECTION ====== */}
       <section 

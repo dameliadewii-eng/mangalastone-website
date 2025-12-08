@@ -87,51 +87,83 @@ const PalemStone = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const [productsOpen, setProductsOpen] = useState(false);
 
   return (
     <div className="hm-root">
       {/* ------------------------------ HEADER ------------------------------ */}
-      <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            {/* <div className="brand-text"> */}
-              {/* <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">{t.brandSub}</span> */}
-            {/* </div> */}
-          </div>
+     <header className="hm-header" role="banner">
+  <div className="hm-container header-inner">
+    {/* Logo */}
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+    </div>
 
- {/* Navigation  */}
-<nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-  <Link to="/Home" className="nav-link">{t.navHome}</Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn">
-      {t.navProducts} ▾
+    {/* Hamburger button for mobile */}
+    <button
+      className="mobile-menu-btn"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle menu"
+    >
+      ☰
     </button>
-    <div className="nav-dropdown-menu">
-      <Link to="/andesite">{t.product1}</Link>
-      <Link to="/palm-sandstone">{t.product2}</Link>
-      <Link to="/wall-cladding">{t.product3}</Link>
+
+    {/* Navigation */}
+    <nav
+      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+      aria-label="Main Navigation"
+      data-aos="fade-down"
+    >
+      <Link to="/Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.navHome}
+      </Link>
+
+      <div className="nav-dropdown">
+        <button
+          className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
+          onClick={() => setProductsOpen(!productsOpen)}
+          aria-haspopup="true"
+          aria-expanded={productsOpen}
+        >
+          {t.navProducts} ▾
+        </button>
+
+        <div className={`nav-dropdown-menu ${productsOpen ? "open" : ""}`} role="menu">
+          <Link role="menuitem" to="/andesite" onClick={() => setMobileMenuOpen(false)}>
+            {t.product1}
+          </Link>
+          <Link role="menuitem" to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
+            {t.product2}
+          </Link>
+          <Link role="menuitem" to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
+            {t.product3}
+          </Link>
+        </div>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.navAbout}
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.navContact}
+      </Link>
+    </nav>
+
+    {/* Language selector */}
+    <div className="actions-area" data-aos="fade-left">
+      <select
+        value={language}
+        onChange={(e) => setLanguage(e.target.value)}
+        className="lang-select"
+        aria-label="Select language"
+      >
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
     </div>
   </div>
-
-  <Link to="/about" className="nav-link">{t.navAbout}</Link>
-  <Link to="/contact" className="nav-link">{t.navContact}</Link>
-</nav>
-
-          <div className="actions-area" data-aos="fade-left">
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="lang-select"
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
-        </div>
-      </header>
+</header>
 
       {/* ------------------------------ HERO SECTION ------------------------------ */}
       <section

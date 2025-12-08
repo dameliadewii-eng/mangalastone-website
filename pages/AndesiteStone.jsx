@@ -53,6 +53,9 @@ import en from "@/locales/en.json";
 import id from "@/locales/id.json";
 
 const AndesiteStone = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const [productsOpen, setProductsOpen] = useState(false);
+
   const [language, setLanguage] = useState("en");
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
@@ -98,52 +101,77 @@ const AndesiteStone = () => {
     <div className="hm-root">
       {/* ------------------------------ HEADER ------------------------------ */}
       <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-          {/* Logo */}
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            <div className="brand-text">
-              {/* <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">Natural Stone Manufacturer & Distributor</span> */}
-            </div>
-          </div>
+  <div className="hm-container header-inner">
+    {/* Logo */}
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+    </div>
 
- {/* Navigation  */}
- 
-<nav className="nav-area" aria-label="Main Navigation" data-aos="fade-down">
-
-  <Link to="/Home" className="nav-link">{t.nav.home}</Link>
-
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn" aria-haspopup="true" aria-expanded="false">
-      {t.nav.products} ▾
+    {/* Hamburger button for mobile */}
+    <button
+      className="mobile-menu-btn"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle menu"
+    >
+      ☰
     </button>
 
-    <div className="nav-dropdown-menu" role="menu">
-      <Link role="menuitem" to="/andesite">{t.nav.andesite}</Link>
-      <Link role="menuitem" to="/palm-sandstone">{t.nav.palm}</Link>
-      <Link role="menuitem" to="/wall-cladding">{t.nav.cladding}</Link>
+    {/* Navigation */}
+    <nav
+      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+      aria-label="Main Navigation"
+      data-aos="fade-down"
+    >
+      <Link to="/Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.nav.home}
+      </Link>
+
+      <div className="nav-dropdown">
+        <button
+          className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
+          onClick={() => setProductsOpen(!productsOpen)}
+          aria-haspopup="true"
+          aria-expanded={productsOpen}
+        >
+          {t.nav.products} ▾
+        </button>
+
+        <div className={`nav-dropdown-menu ${productsOpen ? "open" : ""}`} role="menu">
+          <Link role="menuitem" to="/andesite" onClick={() => setMobileMenuOpen(false)}>
+            {t.nav.andesite}
+          </Link>
+          <Link role="menuitem" to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
+            {t.nav.palm}
+          </Link>
+          <Link role="menuitem" to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
+            {t.nav.cladding}
+          </Link>
+        </div>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.nav.about}
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t.nav.contact}
+      </Link>
+    </nav>
+
+    {/* Language selector */}
+    <div className="actions-area" data-aos="fade-left">
+      <select
+        value={language}
+        onChange={handleLanguageChange}
+        aria-label="Select language"
+        className="lang-select"
+      >
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
     </div>
   </div>
+</header>
 
-  <Link to="/about" className="nav-link">{t.nav.about}</Link>
-  <Link to="/contact" className="nav-link">{t.nav.contact}</Link>
-
-</nav>
-          {/* Language selector (keeps same position and behavior) */}
-          <div className="actions-area" data-aos="fade-left">
-            <select
-              value={language}
-              onChange={handleLanguageChange}
-              aria-label="Select language"
-              className="lang-select"
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
-        </div>
-      </header>
 
       {/* ===== Hero Section ===== */}
       <section className="andesite-hero" id="andesite" style={{ backgroundImage: `url(${header_andesite_stone})` }}>

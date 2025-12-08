@@ -67,77 +67,69 @@ const About = () => {
   return (
     <div className="hm-root">
       {/* ---------------- HEADER ---------------- */}
-      <header className="hm-header" role="banner">
-        <div className="hm-container header-inner">
-                    {/* <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            ☰
-          </button> */}
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            {/* <div className="brand-text">
-              <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">I N D O N E S I A</span>
-            </div> */}
-          </div>
+<header className="hm-header" role="banner">
+  <div className="hm-container header-inner">
+    {/* Logo */}
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+    </div>
 
-          {/* <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            ☰
-          </button> */}
+    {/* Mobile menu button */}
+    <button
+      className="mobile-menu-btn"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
 
-          <nav
-            className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
-            aria-label="Main Navigation"
-            data-aos="fade-down"
-          >
-            <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-              {t("nav.home")}
-            </Link>
+    {/* Navigation */}
+    <nav
+      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+      aria-label="Main Navigation"
+      data-aos="fade-down"
+    >
+      <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav.home")}
+      </Link>
 
-            <div className="nav-dropdown">
-              <button className="nav-dropbtn">{t("nav.products")} ▾</button>
-              <div className="nav-dropdown-menu">
-                <Link to="/andesite" onClick={() => setMobileMenuOpen(false)}>
-                  {t("products.andesite")}
-                </Link>
-                <Link to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
-                  {t("products.palm")}
-                </Link>
-                <Link to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
-                  {t("products.cladding")}
-                </Link>
-              </div>
-            </div>
-
-            <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-              {t("nav.about")}
-            </Link>
-
-            <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-              {t("nav.contact")}
-            </Link>
-
-            <div className="actions-area">
-              <select
-                value={language}
-                onChange={handleLanguageChange}
-                aria-label="Select language"
-                className="lang-select"
-              >
-                <option value="en">English</option>
-                <option value="id">Indonesian</option>
-              </select>
-            </div>
-          </nav>
+      <div className="nav-dropdown">
+        <button className="nav-dropbtn">{t("nav.products")} ▾</button>
+        <div className="nav-dropdown-menu">
+          <Link to="/andesite" onClick={() => setMobileMenuOpen(false)}>
+            {t("products.andesite")}
+          </Link>
+          <Link to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
+            {t("products.palm")}
+          </Link>
+          <Link to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
+            {t("products.cladding")}
+          </Link>
         </div>
-      </header>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav.about")}
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav.contact")}
+      </Link>
+
+      <div className="actions-area">
+        <select
+          value={language}
+          onChange={handleLanguageChange}
+          aria-label="Select language"
+          className="lang-select"
+        >
+          <option value="en">English</option>
+          <option value="id">Indonesian</option>
+        </select>
+      </div>
+    </nav>
+  </div>
+</header>
+
 
       {/* ---------------- HERO ---------------- */}
       <section

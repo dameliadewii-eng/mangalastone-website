@@ -109,49 +109,76 @@ const WallCladdingStone = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const [productsOpen, setProductsOpen] = useState(false);
 
   return (
     <div className="hm-root">
       {/* ===== HEADER ===== */}
-      <header className="hm-header">
-        <div className="hm-container header-inner">
-          <div className="logo-area" data-aos="fade-right">
-            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-            <div className="brand-text">
-              {/* <span className="brand-title">MANGALA STONE</span>
-              <span className="brand-sub">{t("header_subtitle")}</span> */}
-            </div>
-          </div>
+     <header className="hm-header">
+  <div className="hm-container header-inner">
+    {/* Logo */}
+    <div className="logo-area" data-aos="fade-right">
+      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+    </div>
 
- {/* Navigation  */}
-<nav className="nav-area" data-aos="fade-down">
-  <Link to="/Home" className="nav-link">{t("nav_home")}</Link>
+    {/* Hamburger button for mobile */}
+    <button
+      className="mobile-menu-btn"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
 
-  <div className="nav-dropdown">
-    <button className="nav-dropbtn">Products ▾</button>
-    <div className="nav-dropdown-menu">
-      <Link to="/andesite">{t("nav_andesite")}</Link>
-      <Link to="/palm-sandstone">{t("nav_palem")}</Link>
-      <Link to="/wall-cladding">{t("nav_wall")}</Link>
+    {/* Navigation */}
+    <nav className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`} data-aos="fade-down">
+      <Link to="/Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav_home")}
+      </Link>
+
+      <div className="nav-dropdown">
+        <button
+          className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
+          onClick={() => setProductsOpen(!productsOpen)}
+        >
+          Products ▾
+        </button>
+        <div className={`nav-dropdown-menu ${productsOpen ? "open" : ""}`}>
+          <Link to="/andesite" onClick={() => setMobileMenuOpen(false)}>
+            {t("nav_andesite")}
+          </Link>
+          <Link to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
+            {t("nav_palem")}
+          </Link>
+          <Link to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
+            {t("nav_wall")}
+          </Link>
+        </div>
+      </div>
+
+      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav_about")}
+      </Link>
+      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+        {t("nav_contact")}
+      </Link>
+    </nav>
+
+    {/* Language selector */}
+    <div className="actions-area">
+      <select
+        onChange={handleLanguageChange}
+        value={i18n.language}
+        className="lang-select"
+        aria-label="Select language"
+      >
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
     </div>
   </div>
-
-  <Link to="/about" className="nav-link">{t("nav_about")}</Link>
-  <Link to="/contact" className="nav-link">{t("nav_contact")}</Link>
-</nav>
-
-          <div className="actions-area">
-            <select
-              onChange={handleLanguageChange}
-              value={i18n.language}
-              className="lang-select"
-            >
-              <option value="en">English</option>
-              <option value="id">Indonesian</option>
-            </select>
-          </div>
-        </div>
-      </header>
+</header>
 
       {/* ===== HERO ===== */}
       <section
