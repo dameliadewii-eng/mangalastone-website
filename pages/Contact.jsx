@@ -42,7 +42,7 @@ const Contact = () => {
       contact_heading2: "GET IN TOUCH",
       factory_title: "Factory",
       factory_1:
-        "Desa Bobos, Kecamatan Dukupuntang, Kabupaten Cirebon, Jawa Barat, Indonesia",
+        "Jalan Raya Imam Bonjol, Sindangwangi, Kabupaten Majalengka, West Java, Indonesia",
       factory_2:
         "Factory 2: Desa Lengkong Wetan, Kecamatan Sindangwangi, Kabupaten Majalengka, Jawa Barat, Indonesia",
       phone: "Phone Number: +6285797895798",
@@ -154,7 +154,7 @@ const Contact = () => {
   {/* ===== LEFT INFO COLUMN ===== */}
   <div className="factory-left">
 
-    <h4 className="factory-label">MANGGALA FURNITURE</h4>
+    <h4 className="factory-label">MANGALA STONE INDONESIA</h4>
     <p className="factory-text">{t.factory_1}</p>
 
     <h4 className="factory-label">CONTACT DETAILS</h4>
@@ -339,14 +339,34 @@ const Contact = () => {
             <p>+62 8579 7895 798</p>
           </div>
 
-          <div className="footer-col">
-            <h3>FOLLOW US</h3>
-            <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
-              <a href="#"><i className="fab fa-tiktok" /></a>
-            </div>
-          </div>
+     <div className="footer-col">
+  <h3>FOLLOW US</h3>
+  <div className="social-icons">
+    <a
+      href="https://www.facebook.com/mangalastone.id" 
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-facebook-f" />
+    </a>
+
+    <a
+      href="https://www.instagram.com/mangalastone.id/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-instagram" />
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@mangalastone.id?_r=1&_t=ZS-91yGu9Agos8"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-tiktok" />
+    </a>
+  </div>
+</div>
 
           <div className="footer-col">
             <h3>ABOUT US</h3>

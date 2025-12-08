@@ -226,15 +226,34 @@ const WallCladdingStone = () => {
             <p>info@mangalastone.com</p>
             <p>+62 8579 7895 798</p>
           </div>
+<div className="footer-col">
+  <h3>FOLLOW US</h3>
+  <div className="social-icons">
+    <a
+      href="https://www.facebook.com/mangalastone.id" 
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-facebook-f" />
+    </a>
 
-          <div className="footer-col">
-            <h3>{t("footer_follow")}</h3>
-            <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f" /></a>
-              <a href="#"><i className="fab fa-instagram" /></a>
-              <a href="#"><i className="fab fa-tiktok" /></a>
-            </div>
-          </div>
+    <a
+      href="https://www.instagram.com/mangalastone.id/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-instagram" />
+    </a>
+
+    <a
+      href="https://www.tiktok.com/@mangalastone.id?_r=1&_t=ZS-91yGu9Agos8"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fab fa-tiktok" />
+    </a>
+  </div>
+</div>
 
           <div className="footer-col">
             <h3>{t("footer_about")}</h3>
