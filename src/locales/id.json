@@ -4,34 +4,67 @@
     "products": "Produk",
     "about": "Tentang Kami",
     "contact": "Hubungi Kami"
+
   },
   "hero": {
-    "title": "BATU MANGALA",
-    "subtitle": "Bawa keindahan alam ke ruang Anda dengan batu alam premium kami",
+    "title": "MANGALA STONE",
+    "subtitle": "Hadirkan keindahan alami ke dalam ruang anda dengan batu alam premium kami",
     "cta": "Hubungi Kami"
+
   },
   "projectIntro": {
-    "heading": "Proyek Anda Dimulai Di Sini",
-    "text1": "Mangala Stone adalah sumber terpercaya Anda untuk batu alam premium, termasuk Batu Andesit, Batu Palem, dan Dinding Cladding.",
-    "text2": "Dengan dua lokasi pabrik di Cirebon dan Majalengka, kami memastikan produk berkualitas tinggi dan pengiriman yang andal.",
-    "text3": "Baik untuk fasad elegan, lanskap bergaya, atau interior abadi, batu kami menggabungkan keindahan autentik dan keahlian.",
-    "text4": "Hubungi kami hari ini untuk mengetahui lebih lanjut bagaimana Mangala Stone dapat menghadirkan sentuhan alam ke ruang Anda."
+       "heading": "Proyek Anda Dimulai Di Sini",
+    "text1": "Mangala Stone adalah pemasok batu alam terpercaya, seperti Batu Andesit, Batu Palem, dan Wall Cladding, yang cocok untuk berbagai desain, baik modern maupun tradisional.",
+    "text2": "Dengan dua pabrik di Cirebon dan Majalengka, kami selalu menjaga kualitas produk dan memastikan pengiriman yang tepat waktu.",
+    "text3": "Jika anda ingin membangun fasad yang elegan, membuat tampilan lanskap yang menarik, atau mempercantik interior, Batu alam kami menawarkan keindahan alami dan kualitas pengerjaan terbaik.",
+    "text4": "Hubungi kami hari ini untuk mengetahui lebih lanjut bagaimana Mangala Stone dapat menghadirkan sentuhan alam yang indah ke dalam proyek Anda."
+
   },
   "products": {
     "heading": "Produk Kami",
+    "mangala": "Tentang Mangala Stone",
+
     "subheading": "Koleksi Batu Alam Kami",
     "andesite": "Batu Andesit",
     "palm": "Batu Palem",
-    "cladding": "Dinding Cladding"
+    "cladding": "Wall Cladding"
+
   },
+  "factory":{
+    "video":"Video Tur Pabrik"
+  },
+  "gallery":{
+  "title":"Galeri",
+"subtitle":"Pabrik & Produksi Kami"
+
+},
   "footer": {
     "contact": "HUBUNGI KAMI",
     "follow": "IKUTI KAMI",
     "about": "TENTANG KAMI",
-    "rights": "Hak cipta © 2025 - Mangala Stone"
+    "rights": "Hak cipta ©️ 2025 - Mangala Stone Indonesia"
+
   },
 
+"indoTrust":{
+"title":"Pemasok Batu Alam Premium Terpercaya di Indonesia",
+"subtitle":"Dengan pengalaman lebih dari satu dekade, Mangala Stone menghadirkan Batu Andesit, Batu Palem, dan Wall Cladding dengan selalu mengutamakan kualitas, ketahanan, dan keindahan alami di setiap produk."
+},
 
+"mangalaChoose":{
+"title":"Mengapa Memilih Mangala Stone?",
+"subtitle1":"Berpengalaman",
+
+"experienced":"Dengan pengalaman lebih dari 10 tahun sejak 2014, kami fokus pada produksi dan penyediaan batu alam berkualitas tinggi.",
+
+"subtitle2":"Harga Kompetitif",
+"competitive":"Sebagai produsen, kami menawarkan harga terbaik dengan kualitas tetap terjaga.",
+"subtitle3":"Pengiriman Tepat Waktu",
+"delivery":"Dengan proses produksi dan logistik yang efisien, kami memastikan pesanan Anda tiba sesuai jadwal."
+
+
+
+},
 
   "andesitePage": {
     "nav": {
@@ -39,116 +72,125 @@
       "products": "Produk",
       "andesite": "Batu Andesit",
       "palm": "Batu Palem",
-      "cladding": "Dinding Cladding",
+      "cladding": "Wall Cladding",
       "about": "Tentang Kami",
       "contact": "Hubungi Kami"
+
     },
     "heroTitle": "BATU ANDESIT",
     "introHeading": "Temukan Keindahan Alami Batu Andesit",
-    "introText": "Batu Andesit adalah batu alam yang tahan lama yang terbentuk dari aktivitas vulkanik, termasuk dalam keluarga batuan beku ekstrusif. Dinamai menurut Pegunungan Andes di Amerika Selatan yang merupakan jajaran pegunungan terpanjang di dunia. Batu ini juga banyak ditemukan di wilayah vulkanik Indonesia. Dikenal karena kekuatan, kepadatan, dan estetika yang abadi, Batu Andesit tahan terhadap pelapukan sehingga ideal untuk aplikasi interior dan eksterior. Tersedia dalam berbagai warna dan tekstur alami, dengan beberapa jenis finishing permukaan untuk menyesuaikan preferensi desain. Dari proyek modern minimalis hingga arsitektur tradisional, Batu Andesit menawarkan keindahan dan fleksibilitas yang tahan lama untuk pelapisan dinding, paving, lanskap, dan kegunaan arsitektur lainnya.",
+    "introText": " Batu Andesit adalah batu alam yang kuat, terbentuk dari aktivitas vulkanik dan termasuk dalam keluarga batuan beku luar. Namanya berasal dari Pegunungan Andes di Amerika Selatan yang merupakan rangakaian pegunungan terpanjang di dunia. Batu ini juga banyak ditemukan di wilayah vulkanik Indonesia. Dikenal karena kekuatan, kepadatan, dan tampilannya yang timeless, Batu Andesit sangat tahan terhadap cuaca sehingga ideal untuk aplikasi interior maupun eksterior. Hadir dalam berbagai warna dan tekstur alami, dengan beberapa pilihan finishing yang dapat disesuaikan. Dari desain minimalis modern hingga arsitektur tradisional, Batu Andesit menawarkan fleksibilitas dan keindahan abadi untuk paving, wall cladding, lanskap, dan aplikasi arsitektur lainnya.",
+
     "stones": {
       "centralNapoli": {
-        "title": "Andesit Central Napoli",
+        "title": "Andesit Polos",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Permukaan polos, warna abu-abu alami, serta daya tahan tinggi untuk penggunaan eksterior",
+          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+          "Finishing: Sawn Cut, Honed, Flamed"
         ]
       },
       "chess": {
-        "title": "Andesit Chess",
+        "title": "Andesit Bintik",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Permukaan dengan bintik alami, Tekstur agak kasar sehingga tidak licin, serta tampilan yang elegan dan modern",
+          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+          "Finishing: Sawn Cut, Honed, Flamed"
         ]
       },
       "flamedPlain": {
-        "title": "Andesit Plain",
+        "title": "Andesit Rata Alam",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+        "Fitur Utama: Permukaan kasar alami, Tampilan batu yang natural, Tahan lama dan tahan cuaca",
+        "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+        "Finishing: Rata Alam (Andesit Polos dan Andesit Bintik)"
         ]
       },
       "flamedSpot": {
-        "title": "Andesit Spot",
+        "title": "Andesit Alur Napoli Tengah",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          
+          "Fitur Utama: Pola alur linear, tekstur berstruktur, tampilan modern dan kokoh",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
       },
       "fullNapoli": {
-        "title": "Andesit Full Napoli",
+        "title": "Andesit Alur Napoli Penuh",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Alur horizontal yang berkesinambungan, tekstur halus dan elegan, serta sangat cocok untuk gaya minimalis",
+           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+      "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
       },
       "fullWorm": {
-        "title": "Andesit Full Worm",
+        "title": "Andesit Alur Catur",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Tekstur pola kotak-kotak, kontras antara permukaan halus dan kasar, serta desain geometris yang dinamis",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+
         ]
       },
       "naturalFlat": {
-        "title": "Andesit Natural Flat",
+        "title": "Andesit Alur Cacing",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Alur linear dan bergelombang, perpaduan gerak dan tekstur yang seimbang, serta estetika alami untuk ruang modern",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Finishing: Rata Alam (Andesit Polos dan Bintik)"
+
         ]
       },
       "straight": {
-        "title": "Andesit Straight",
+               "title": "Andesit Alur Cacing Penuh",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Tekstur menyerupai gelombang, relief berlapis yang menambah kedalaman, serta tampilan elegan dan kontemporer",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+
         ]
       },
       "straightVariation": {
-        "title": "Andesit Straight Variation",
+        "title": "Andesit Alur Bilik",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Pola gelombang mengalir, permainan cahaya dan bayangan yang dinamis, serta tekstur organik yang elegan",
+          "Ukuran Tersedia (cm): 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+
         ]
       },
       "sun": {
-        "title": "Andesit Sun",
+        "title": "Andesit Alur Lurus",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Alur linear yang rata, tampilan modern minimalis, serta tekstur yang bersih dan presisi",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
+
       },
       "wave": {
-        "title": "Andesit Wave",
+        "title": "Andesit Alur Lurus Variasi",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Kedalaman alur yang berselang-seling, tekstur linear dan berdimensi, serta desain yang halus dan modern",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
       },
       "worm": {
-        "title": "Andesit Worm",
+        "title": "Andesit Alur Matahari",
         "descriptions": [
-          "Pola gelombang yang mengalir, permainan cahaya dan bayangan yang dinamis, tekstur organik dan elegan",
-          "Ukuran potongan tersedia (cm): 15×30, 20×40 (Kustomisasi Tersedia)",
-          "Ideal untuk fasad eksternal, pelapis dinding, elemen dekoratif, dan lanskap. Juga cocok untuk aksen interior."
+          "Fitur Utama: Relief diagonal dan berpola grid, simetri geometris, serta pola tegas yang bersifat skulptural",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
+
       }
     },
     "footer": {
       "contact": "HUBUNGI KAMI",
       "follow": "IKUTI KAMI",
       "about": "TENTANG KAMI",
-      "rights": "© 2025 Hak cipta dilindungi - Mangala Stone"
+      "rights": "©️ 2025 Hak cipta dilindungi - Mangala Stone Indonesia"
     },
 
 
@@ -157,15 +199,15 @@
   "nav_products": "Produk",
   "andesite_stone": "Batu Andesit",
   "palem_sandstone": "Batu Palem",
-  "wall_cladding": "Dinding Batu Alam",
+  "wall_cladding": "Wall Batu Alam",
   "nav_about": "Tentang Kami",
   "nav_contact": "Hubungi Kami",
   "palem_stone_title": "BATU PALEM",
   "palem_intro_title": "Temukan Keindahan Alami Batu Palem Sandstone",
-  "palem_intro_text": "Batu Palem adalah batu pasir alami ... nuansa alami.",
-  "palm1_desc": "Warna krem lembut dan beige ... klasik.",
-  "palm2_desc": "Ukuran potongan tersedia (cm): 10×20 ...",
-  "palm3_desc": "Sempurna untuk dinding luar ... dinding aksen.",
+  "palem_intro_text": " Batu Palem adalah batu pasir alami yang ditemukan di daerah pegunungan Bobos, Kabupaten Cirebon. Batu ini memiliki tekstur unik mirip Batu Palimanan tetapi dengan warna berbeda. Jika Palimanan berwarna kekuningan, Batu Palem memiliki nuansa coklat hangat yang cocok untuk estetika natural dan earthy (warna alami seperti tanah).",
+  "palm1_desc": "Fitur Utama: Warna cream-beige lembut, tekstur halus, cocok untuk gaya modern maupun klasik ",
+  "palm2_desc": " Ukuran Tersedia (cm): 10×20, 15×30, 20×20, 20×40, 40×40, 30×60 (Kustomisasi Tersedia)",
+  "palm3_desc": " Aplikasi: Eksterior seperti Wall cladding, fasad, pilar, fitur dekoratif. Interior seperti lantai, dan aksen dinding",
   "contact_us": "HUBUNGI KAMI",
   "follow_us": "IKUTI KAMI",
   "about_us": "TENTANG KAMI",
@@ -176,61 +218,61 @@
   "header_subtitle": "Produsen & Distributor Batu Alam",
   "nav_home": "Beranda",
   "nav_andesite": "Batu Andesit",
-  "nav_palem": "Batu Palem Sandstone",
-  "nav_wall": "Dinding Pelapis",
+  "nav_palem": "Batu Palem",
+  "nav_wall": "Wall Cladding",
   "nav_about": "Tentang Kami",
   "nav_contact": "Hubungi Kami",
-  "hero_title": "PELAPIS DINDING",
-  "intro_heading": "Temukan Keindahan Alami dari Pelapis Dinding",
-  "intro_text": "Pelapis dinding Mangala dibuat dari batu alam berkualitas tinggi seperti batu andesit, palem sandstone, dan batu merah. Menghadirkan perpaduan antara kekuatan, keanggunan, dan keindahan abadi. Dirancang untuk memperindah area interior maupun eksterior, pelapis ini memberikan tampilan alami yang elegan sekaligus perlindungan tahan lama terhadap cuaca.",
+  "hero_title": "WALL CLADDING",
+  "intro_heading": "Temukan Keindahan Alami dari Wall Cladding",
+  "intro_text": " Wall cladding Mangala dibuat dari batu alam berkualitas seperti batu andesit, batu palem, dan batu cupang merah. Menggabungkan durabilitas, keanggunan, dan tampilan timeless. Dirancang untuk mempercantik interior dan eksterior dengan perlindungan jangka panjang.",
   "footer_contact": "HUBUNGI KAMI",
   "footer_follow": "IKUTI KAMI",
   "footer_about": "TENTANG KAMI",
   "footer_about_text1": "Tentang Mangala Stone",
   "footer_about_text2": "Produk Kami",
 
-  "wall1_title": "Pelapis Dinding Mozaik Andesit",
-  "wall1_desc1": "Terbuat dari batu andesit alami dengan tekstur belah tangan yang kuat dan tahan cuaca.",
-  "wall1_desc2": "Ukuran Potong Tersedia (cm): 20×40.",
-  "wall1_desc3": "Ideal untuk aplikasi pelapis dinding interior dan eksterior.",
+  "wall1_title": "Andesit Mozaik Wall Cladding",
+  "wall1_desc1": "Fitur Utama: Terbuat dari Batu Andesit dengan tekstur pecah alami (hand-split), kuat dan tahan cuaca",
+  "wall1_desc2": "Ukuran Tersedia (cm): 20×40",
+  "wall1_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall2_title": "Pelapis Dinding Mozaik 2 Warna",
-  "wall2_desc1": "Kombinasi Batu Palem Sandstone dan Andesit dengan nada seimbang dan tekstur halus.",
-  "wall2_desc2": "Ukuran Potong Tersedia (cm): 20×40.",
-  "wall2_desc3": "Sempurna untuk fasad dan interior bergaya modern.",
+  "wall2_title": "Mozaic 2 Warna Wall Cladding",
+  "wall2_desc1": "Fitur Utama: Kombinasi Batu Palem dan Batu Andesit dengan warna seimbang dan tekstur halus",
+  "wall2_desc2": "Ukuran Tersedia (cm): 20×40",
+  "wall2_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall3_title": "Pelapis Dinding Mozaik 3 Warna",
-  "wall3_desc1": "Perpaduan warna krem, abu-abu, dan merah muda lembut yang menambah kehangatan dan keanggunan.",
-  "wall3_desc2": "Ukuran Potong Tersedia (cm): 20×40.",
-  "wall3_desc3": "Ideal untuk aplikasi dinding dalam maupun luar ruangan.",
+  "wall3_title": "Mozaic 3 Warna Wall Cladding",
+  "wall3_desc1": "Fitur Utama: Perpaduan lembut warna beige, abu-abu, dan rose yang memberi kesan hangat dan elegan. Dibuat dari Batu Palem, Batu Andesit, dan Batu Cupang Merah",
+  "wall3_desc2": "Ukuran Tersedia (cm): 20×40",
+  "wall3_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall4_title": "Pelapis Dinding Mozaik Tofu",
-  "wall4_desc1": "Terbuat dari Batu Palem Sandstone dengan variasi alami yang lembut dan warna hangat.",
-  "wall4_desc2": "Ukuran Potong Tersedia (cm): 20×40.",
-  "wall4_desc3": "Sangat cocok untuk desain arsitektur minimalis yang bersih.",
+  "wall4_title": "Mozaic Tahu Wall Cladding",
+  "wall4_desc1": "Fitur Utama: Terbuat dari Palem Sandstone dengan variasi pola alami yang halus dan warna yang hangat",
+  "wall4_desc2": "Ukuran Tersedia (cm): 20×40",
+  "wall4_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall5_title": "Pelapis Dinding Susun Sirih",
-  "wall5_desc1": "Tekstur elegan dengan susunan horizontal yang rapi dan warna alami yang hangat.",
-  "wall5_desc2": "Ukuran Potong Tersedia (cm): 18×40.",
-  "wall5_desc3": "Cocok untuk dinding aksen interior dan fasad eksterior.",
+  "wall5_title": "Susun Sirih Wall Cladding",
+  "wall5_desc1": "Fitur Utama: Dibuat dari Batu Palem yang memiliki tekstur elegan dengan warna hangat dan susunan horizontal yang rapi",
+  "wall5_desc2": "Ukuran Tersedia (cm): 18×40",
+  "wall5_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall6_title": "Pelapis Dinding Susun Sirih Warna",
-  "wall6_desc1": "Kombinasi Batu Palem Sandstone, Andesit, dan Batu Merah dengan nada warna seimbang.",
-  "wall6_desc2": "Ukuran Potong Tersedia (cm): 18×40.",
-  "wall6_desc3": "Menambah kedalaman dan ritme visual pada desain modern.",
+  "wall6_title": "Susun Sirih Warna Wall Cladding",
+  "wall6_desc1": "Fitur Utama: Kombinasi Batu Palem, Batu Andesit, dan Batu Cupang Merah dengan perpaduan warna seimbang",
+  "wall6_desc2": "Ukuran Tersedia (cm): 18×40",
+  "wall6_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
 
-  "wall7_title": "Pelapis Dinding Susun Sirih Kombinasi",
-  "wall7_desc1": "Terbuat dari Batu Palem Sandstone dengan warna alami yang kaya dan tekstur alami.",
-  "wall7_desc2": "Ukuran Potong Tersedia (cm): 20×40.",
-  "wall7_desc3": "Sangat sesuai untuk desain batu interior maupun eksterior.",
+  "wall7_title": "Susun Sirih Kombinasi Wall Cladding",
+  "wall7_desc1": "Fitur Utama: Terbuat dari Batu Palem dengan warna yang hangat dan variasi pola alami",
+  "wall7_desc2": "Ukuran Tersedia (cm): 20×40",
+  "wall7_desc3": "Aplikasi: Cocok untuk pemasangan dinding interior maupun eksterior",
   
   "about_hero_title": "TENTANG KAMI",
   "about_heading1": "Tentang",
   "about_heading2": "MANGALA STONE",
-  "about_para1": "Mangala Stone adalah produsen dan distributor terpercaya produk batu alam premium, yang mengkhususkan diri dalam produksi dan penyediaan Batu Andesit, Batu Palem Sandstone, dan Wall Cladding untuk berbagai aplikasi.",
-  "about_para2": "Dengan pengalaman lebih dari satu dekade sejak tahun 2014, kami mengoperasikan dua lokasi pabrik di Cirebon dan Majalengka, Jawa Barat — wilayah yang terkenal dengan para pengrajin terampil dan warisan kaya dalam seni pengerjaan batu.",
-  "about_para3": "Dengan menggabungkan teknik tradisional dan inovasi modern, kami menghasilkan batu alam yang memenuhi standar tertinggi dalam hal ketahanan, fungsi, dan estetika.",
-  "about_para4": "Di Mangala Stone, kami percaya bahwa batu alam bukan sekadar bahan bangunan — tetapi elemen penting yang memperindah, memperkuat, dan menambah karakter pada setiap ruang.",
+  "about_para1": "Mangala Stone adalah produsen dan pemasok terpercaya yang menyediakan berbagai produk batu alam berkualitas tinggi. Kami fokus dalam produksi dan penyediaan Batu Andesit, Batu Palem, serta Wall Cladding untuk berbagai jenis kebutuhan dan proyek.",
+  "about_para2": "Dengan pengalaman lebih dari satu dekade sejak 2014, kami mengoperasikan dua lokasi produksi di Cirebon dan Majalengka, Jawa Barat, wilayah yang dikenal dengan para pengrajin terampil dan tradisi panjang dalam kerajinan batu alam. Dengan menggabungkan teknik tradisional dan inovasi modern, kami menghasilkan batu alam yang memenuhi standar tertinggi dalam ketahanan, fungsi, dan estetika.",
+  "about_para3": "Di Mangala Stone, kami percaya bahwa batu alam bukan sekadar bahan bangunan, tetapi elemen penting yang dapat meningkatkan keindahan, ketahanan, dan karakter sebuah ruang. Baik untuk lantai, dinding (wall cladding), taman (landscape), maupun proyek desain khusus, produk kami memberikan sentuhan elegan dan tampilan yang timeless untuk hunian, komersial, hingga ruang publik.",
+  "about_para4": "Kami berkomitmen untuk memberikan kualitas terbaik dan layanan yang dapat diandalkan, sehingga setiap klien mendapatkan solusi batu alam terbaik sesuai kebutuhan mereka. Seiring dengan pertumbuhan kami, Mangala Stone tetap berdedikasi menjadi mitra terpercaya dalam dunia kerajinan batu alam.",
   
   "contact_hero_title": "HUBUNGI KAMI",
   "contact_heading1": "Hubungi Kami",
@@ -245,22 +287,4 @@
 
   "footer_about": "Tentang Mangala Stone",
   "footer_products": "Produk Kami"
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

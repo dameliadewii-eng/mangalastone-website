@@ -112,7 +112,7 @@ const Home = () => {
           className="lang-select"
         >
           <option value="en">English</option>
-          <option value="id">Indonesian</option>
+          <option value="id">Bahasa Indonesia</option>
         </select>
       </div>
     </nav>
@@ -240,7 +240,7 @@ const Home = () => {
         color: "#fff",
       }}
     >
-      Indonesia’s Trusted Source for Premium Natural Stones
+      {t("indoTrust.title")}
     </h2>
 
     <p
@@ -253,9 +253,8 @@ const Home = () => {
         color: "#e0e0e0",
       }}
     >
-      With more than a decade of experience, Mangala Stone delivers Andesite Stone,
-      Palem Sandstone, and Wall Cladding that embody enduring quality and natural
-      beauty.
+          {t("indoTrust.subtitle")}
+
     </p>
 
     {/* Optional: Add a small accent line or icon for visual appeal */}
@@ -300,7 +299,9 @@ const Home = () => {
         fontWeight: "600",
       }}
     >
-      Why Choose Mangala Stone?
+          {t("mangalaChoose.title")}
+
+     
     </h2>
 
     <div
@@ -335,10 +336,11 @@ const Home = () => {
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Experienced</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>          {t("mangalaChoose.subtitle1")}
+</h3>
         <p style={{ color: "#555" }}>
-          With over a decade of expertise since 2014, we specialize in
-          manufacturing and supplying high-quality natural stone.
+         {t("mangalaChoose.experienced")}
+        
         </p>
       </div>
 
@@ -366,10 +368,14 @@ const Home = () => {
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>
+         {t("mangalaChoose.subtitle2")}
+          
+        </h3>
         <p style={{ color: "#555" }}>
-          As a self-owned manufacturer, we offer the best value with
-          competitive prices while maintaining high quality.
+         {t("mangalaChoose.competitive")}
+
+     
         </p>
       </div>
 
@@ -397,8 +403,14 @@ const Home = () => {
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>
+         {t("mangalaChoose.subtitle3")}
+          
+     
+          </h3>
         <p style={{ color: "#555" }}>
+         {t("mangalaChoose.delivery")}
+          
           Our streamlined processes ensure your orders are delivered on
           schedule, every time.
         </p>
@@ -461,11 +473,35 @@ const Home = () => {
     </a>
   </div>
 </div>
-    <div className="footer-col">
-      <h3>{t("footer.about")}</h3>
-      <p>About Mangala Stone</p>
-      <p>Our Products</p>
-    </div>
+   <div className="footer-col">
+  <h3>{t("footer.about")}</h3>
+
+
+  
+  <Link 
+    to="/about" 
+    className="nav-link" 
+    onClick={() => setMobileMenuOpen(false)}
+    style={{ textDecoration: "none", color: "inherit" }} // keeps it looking like a normal <p>
+  >
+    <p>
+         {t("products.mangala")}
+      
+     </p>
+  </Link>
+   <p
+    style={{ cursor: "pointer" }}
+    onClick={() => {
+      const section = document.getElementById("products");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        setMobileMenuOpen(false); // close mobile menu
+      }
+    }}
+  >         {t("products.heading")}
+
+  </p>
+</div>
   </div>
 
   <div className="footer-bottom">

@@ -521,11 +521,13 @@ footer {
 }
 
 .footer-col p {
-  margin: 6px 0;
+  margin: 2px 1px;
   font-size: 16px;
+  font-weight: 100;
   color: #1a1a1a;
-  line-height: 1.6;
+  line-height: 1.4;
 }
+
 
 .social-icons {
   display: flex;

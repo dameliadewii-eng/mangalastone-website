@@ -123,7 +123,7 @@ const About = () => {
           className="lang-select"
         >
           <option value="en">English</option>
-          <option value="id">Indonesian</option>
+          <option value="id">Bahasa Indonesia</option>
         </select>
       </div>
     </nav>
@@ -166,7 +166,8 @@ const About = () => {
 {/* ===== BIG CENTER YOUTUBE VIDEO SECTION ===== */}
 <section className="big-video-section" style={{ textAlign: "center", padding: "50px 20px", background: "#f9f9f9" }}>
   <h2 className="video-main-title" style={{ marginBottom: "30px", fontSize: "2rem", color: "#00525E" }}>
-    Factory Video Tour
+   {t("factory.video")}
+   
   </h2>
 
   <div className="big-video-wrapper" style={{ display: "inline-block", maxWidth: "900px", width: "100%" }}>
@@ -189,8 +190,14 @@ const About = () => {
       <section className="hm-section stones" id="photos">
         <div className="hm-container">
           <div className="section-head" data-aos="fade-up">
-            <h4>Gallery</h4>
-            <h2>Our Factory & Production</h2>
+            <h4>
+   {t("gallery.title")}
+
+              </h4>
+            <h2>
+   {t("gallery.subtitle")}
+              
+            </h2>
           </div>
 
           <div className="stone-grid">

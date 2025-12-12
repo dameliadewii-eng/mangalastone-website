@@ -19,6 +19,8 @@
   },
   "products": {
     "heading": "Our Products",
+    "mangala": "About Mangala Stone",
+
     "subheading": "Our Natural Stone Collection",
     "andesite": "Andesite Stone",
     "palm": "Palem Sandstone",
@@ -30,7 +32,33 @@
     "about": "ABOUT US",
     "rights": "All rights reserved - Mangala Stone"
   },
-  
+  "indoTrust":{
+"title":"Indonesia’s Trusted Source for Premium Natural Stones",
+"subtitle":"With more than a decade of experience, Mangala Stone delivers Andesite Stone, Palem Sandstone, and Wall Cladding that embody enduring quality and natural beauty."
+  },
+
+"gallery":{"title":"Gallery",
+"subtitle":"Our Factory & Production"
+
+},
+"mangalaChoose":{
+"title":"Why Choose Mangala Stone?",
+"subtitle1":"Experienced",
+
+"experienced":"With over a decade of expertise since 2014, we specialize in manufacturing and supplying high-quality natural stone.",
+
+"subtitle2":"Competitive Price",
+"competitive":"As a self-owned manufacturer, we offer the best value with competitive prices while maintaining high quality.",
+"subtitle3":"On-Time Delivery",
+"delivery":"Our streamlined processes ensure your orders are delivered on schedule, every time."
+
+
+
+},
+
+  "factory":{
+    "video":"Factory Video Tour"
+  },
 
   "andesitePage": {
     "nav": {
