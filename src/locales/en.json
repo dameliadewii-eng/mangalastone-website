@@ -1,4 +1,5 @@
 {
+  
   "nav": {
     "home": "Home",
     "products": "Products",
@@ -10,6 +11,7 @@
     "subtitle": "Bring the beauty of nature into your space with our premium natural stones",
     "cta": "Contact Us"
   },
+
   "projectIntro": {
     "heading": "Your Project Starts Here",
     "text1": "Mangala Stone is your trusted source for premium natural stones, including Andesite Stone, Palem Sandstone, and Wall Cladding which perfect for elevating both modern and traditional designs.",
@@ -192,7 +194,7 @@
   "wall_cladding": "Wall Cladding",
   "nav_about": "About Us",
   "nav_contact": "Contact Us",
-  "palem_stone_title": "PALEM STONE",
+  "palem_stone_title": "PALEM SANDSTONE",
   "palem_intro_title": "Discover the Natural Beauty of Palem SandStone",
   "palem_intro_text": "Palem Sandstone is a natural sandstone ... earthy aesthetics.",
   "palm1_desc": "Soft cream and beige hues ... classic styles.",

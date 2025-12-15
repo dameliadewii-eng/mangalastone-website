@@ -172,7 +172,7 @@ const [productsOpen, setProductsOpen] = useState(false);
       >
         <div className="overlay"></div>
         <div className="andesite-hero-content" data-aos="zoom-in">
-          <h1>{t.title}</h1>
+          <h1>PALEM SANDSTONE</h1>
         </div>
       </section>
 
