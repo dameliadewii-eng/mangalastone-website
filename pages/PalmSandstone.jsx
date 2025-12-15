@@ -159,7 +159,7 @@ const [productsOpen, setProductsOpen] = useState(false);
         aria-label="Select language"
       >
         <option value="en">English</option>
-        <option value="id">Indonesian</option>
+        <option value="id">Bahasa Indonesia</option>
       </select>
     </div>
   </div>

@@ -123,7 +123,7 @@ const Home = () => {
       {/* ---------------- HERO ---------------- */}
       <section
         id="home"
-        className="hm-hero"
+        className="hm-hero1"
         style={{
           backgroundImage: `url(${images[currentImage]})`,
           transition: "background-image 1s ease-in-out",
@@ -141,33 +141,42 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ---------------- PROJECT INTRO ---------------- */}
-      <section className="hm-section project-intro">
-        <div className="hm-container split-grid">
-          <div className="media2" data-aos="fade-right">
-            <img src={projectTiles} alt="Project Tiles" className="media-img" />
-          </div>
+   <section className="hm-section project-intro">
+  <div className="hm-container">
+    <div className="project-row" data-aos="fade-up">
+      <div className="project-media" data-aos="fade-right">
+        <img src={projectTiles} alt="Project Tiles" className="project-img" />
+      </div>
 
-          <div className="text" data-aos="fade-left">
-            <h2>{t("projectIntro.heading")}</h2>
-            <p className="rich-text">{t("projectIntro.text1")}</p>
-            <p className="rich-text">{t("projectIntro.text2")}</p>
-            <p className="rich-text">{t("projectIntro.text3")}</p>
-            <p className="rich-text">{t("projectIntro.text4")}</p>
-{/* text add */}
-            {/* <p className="rich-text">{t("projectIntro.text1")}</p>
-            <p className="rich-text">{t("projectIntro.text2")}</p>
-            <p className="rich-text">{t("projectIntro.text3")}</p>
-            <p className="rich-text">{t("projectIntro.text4")}</p>
-            {/* text add */}
-            {/* <p className="rich-text">{t("projectIntro.text1")}</p>
-            <p className="rich-text">{t("projectIntro.text2")}</p>
-            <p className="rich-text">{t("projectIntro.text3")}</p>
-            <p className="rich-text">{t("projectIntro.text4")}</p>  */}
-          </div>
-        </div>
-      </section>
+      <div className="project-text" data-aos="fade-left">
+        <h2>{t("projectIntro.heading")}</h2>
+        <p className="rich-text">{t("projectIntro.text1")}</p>
+        <p className="rich-text">{t("projectIntro.text2")}</p>
+        <p className="rich-text">{t("projectIntro.text3")}</p>
+        <p className="rich-text">{t("projectIntro.text4")}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+{/* ---------------- PROJECT INTRO 2 ----------------
+<section className="hm-section project-intro">
+  <div className="hm-container">
+    <div className="project-row reverse" data-aos="fade-up">
+      <div className="project-media" data-aos="fade-right">
+        <img src={projectTiles} alt="Project Tiles" className="project-img" />
+      </div>
+
+      <div className="project-text" data-aos="fade-left">
+        <h2>{t("projectIntro.heading")}</h2>
+        <p className="rich-text">{t("projectIntro.text1")}</p>
+        <p className="rich-text">{t("projectIntro.text2")}</p>
+        <p className="rich-text">{t("projectIntro.text3")}</p>
+        <p className="rich-text">{t("projectIntro.text4")}</p>
+      </div>
+    </div>
+  </div>
+</section> */}
       {/* ---------------- PRODUCTS ---------------- */}
       <section className="hm-section stones" id="products">
         <div className="hm-container">
@@ -411,8 +420,7 @@ const Home = () => {
         <p style={{ color: "#555" }}>
          {t("mangalaChoose.delivery")}
           
-          Our streamlined processes ensure your orders are delivered on
-          schedule, every time.
+        
         </p>
       </div>
     </div>
@@ -480,7 +488,7 @@ const Home = () => {
   
   <Link 
     to="/about" 
-    className="nav-link" 
+    className="footer-nav-link" 
     onClick={() => setMobileMenuOpen(false)}
     style={{ textDecoration: "none", color: "inherit" }} // keeps it looking like a normal <p>
   >

@@ -118,7 +118,7 @@ const Portfolio = () =>{
         <>
         <Header/>
         <main id="main" data-aos="fade-up">
-        <section className="breadcrumbs">
+        {/* <section className="breadcrumbs">
             <div className="container">
                 <div className="d-flex justify-content-between align-items-center">
                     <h1 style={{color: "black"}}>Portfolio</h1>
@@ -134,7 +134,7 @@ const Portfolio = () =>{
                     </ol>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section id="portfolio" className="portfolio">
         <div className="container" data-aos="fade-up">

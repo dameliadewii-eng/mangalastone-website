@@ -166,7 +166,7 @@ const [productsOpen, setProductsOpen] = useState(false);
         className="lang-select"
       >
         <option value="en">English</option>
-        <option value="id">Indonesian</option>
+        <option value="id">Bahasa Indonesia</option>
       </select>
     </div>
   </div>

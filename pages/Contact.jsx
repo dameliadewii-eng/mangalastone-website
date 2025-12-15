@@ -53,6 +53,10 @@ const [productsOpen, setProductsOpen] = useState(false);
       hours: "Office Hours: 08:00am - 04:00pm GMT+7",
       footer_about: "About Mangala Stone",
       footer_products: "Our Products",
+      chooseMangala: "Why Choose Mangala Stone?",
+      experienced:"With over a decade of expertise since 2014, we specialize in manufacturing and supplying high-quality natural stone.",
+      competitivePrice:"As a self-owned manufacturer, we offer the best value with competitive prices while maintaining high quality.",
+delivery:"Our streamlined processes ensure your orders are delivered on schedule, every time."
     },
     id: {
       contact_hero_title: "HUBUNGI KAMI",
@@ -68,6 +72,11 @@ const [productsOpen, setProductsOpen] = useState(false);
       hours: "Jam Kantor: 08:00 - 16:00 WIB",
       footer_about: "Tentang Mangala Stone",
       footer_products: "Produk Kami",
+      chooseMangala: "Mengapa Memilih Mangala Stone?",
+      experienced:"Dengan pengalaman lebih dari 10 tahun sejak 2014, kami fokus pada produksi dan penyediaan batu alam berkualitas tinggi.",
+      competitivePrice:"Sebagai produsen, kami menawarkan harga terbaik dengan kualitas tetap terjaga.",
+delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesanan Anda tiba sesuai jadwal."
+
     },
   };
 
@@ -234,7 +243,9 @@ const [productsOpen, setProductsOpen] = useState(false);
         fontWeight: "600",
       }}
     >
-      Why Choose Mangala Stone?
+      <span>{t.chooseMangala}</span>
+
+      {/* Why Choose Mangala Stone? */}
     </h2>
 
     <div
