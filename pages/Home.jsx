@@ -457,7 +457,8 @@ const Home = () => {
   <h3>FOLLOW US</h3>
   <div className="social-icons">
     <a
-      href="https://www.facebook.com/mangalastone.id" 
+    
+      href="https://web.facebook.com/profile.php?id=61585420912331" 
       target="_blank"
       rel="noopener noreferrer"
     >
