@@ -154,7 +154,7 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
         onChange={(e) => setLanguage(e.target.value)}
       >
         <option value="en">English</option>
-        <option value="id">Indonesian</option>
+        <option value="id">Bahasa Indonesia</option>
       </select>
     </div>
   </div>
@@ -168,7 +168,7 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
       className="contact-hero" style={{ backgroundImage: `url(${about7})` }}>
        
         <div className="contact-hero-inner" data-aos="zoom-in">
-          {/* <h2>{t.contact_hero_title}</h2> */}
+          <h2>{t.contact_hero_title}</h2>
         </div>
       </section>
 

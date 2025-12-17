@@ -141,7 +141,8 @@ const About = () => {
         }}
       >
         <div className="hero-overlay" />
-        <div className="hm-container hero-inner" data-aos="zoom-in">
+        
+        <div className="hm-container-hero-inner" data-aos="zoom-in">
           <h1>{t("about_hero_title")}</h1>
         </div>
       </section>

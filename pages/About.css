@@ -24,15 +24,13 @@
   text-align: center;
 }
 
-.about-page .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(15, 15, 15, 0.35),
-    rgba(15, 15, 15, 0.55)
-  );
-  z-index: 0;
+.hm-container-hero-inner h1{
+  font-size: 80px;
+  color: #fff;
+
+
+
+
 }
 
 .about-page .hero-inner {
@@ -44,7 +42,13 @@
   padding: 30px;
   border-radius: 12px;
 }
-
+.about-page .hero-inner h1 {
+  margin: 0;
+  font-size: 45px;
+  letter-spacing: 0.4px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 .about-page .hero-inner h1 {
   margin: 0;
   font-size: 45px;
