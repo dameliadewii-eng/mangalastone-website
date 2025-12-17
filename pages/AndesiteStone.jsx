@@ -275,12 +275,26 @@ const [productsOpen, setProductsOpen] = useState(false);
     </a>
   </div>
 </div>
+<div className="footer-col">
+  <h3>{t.footer.about}</h3>
 
-          <div className="footer-col">
+  <p>
+    <Link to="/about" className="footer-link">
+      About Mangala Stone
+    </Link>
+  </p>
+
+  <p>
+    <Link to="/Home" className="footer-link">
+      Our Products
+    </Link>
+  </p>
+</div>
+          {/* <div className="footer-col">
             <h3>{t.footer.about}</h3>
             <p>About Mangala Stone</p>
             <p>Our Products</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-bottom">
@@ -298,3 +312,6 @@ const [productsOpen, setProductsOpen] = useState(false);
 };
 
 export default AndesiteStone;
+
+
+

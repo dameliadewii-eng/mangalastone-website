@@ -282,11 +282,46 @@ const [productsOpen, setProductsOpen] = useState(false);
   </div>
 </div>
 
-          <div className="footer-col">
+
+
+<div className="footer-col">
+            <h3>{t("footer_about")}</h3>
+
+  {/* <h3>{t.about}</h3> */}
+
+  <p>
+    <Link
+      to="/about"
+      className="wnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      {/* {t.about1} */}
+            <p>{t("footer_about_text1")}</p>
+
+    </Link>
+  </p>
+
+  <p>
+    <Link
+      to="/home"
+      className="wnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+            <p>{t("footer_about_text2")}</p>
+
+      {/* {t.about2} */}
+    </Link>
+  </p>
+</div>
+
+
+
+
+          {/* <div className="footer-col">
             <h3>{t("footer_about")}</h3>
             <p>{t("footer_about_text1")}</p>
             <p>{t("footer_about_text2")}</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-bottom">

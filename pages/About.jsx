@@ -276,39 +276,33 @@ const About = () => {
 <div className="footer-col">
   <h3>{t("footer.about")}</h3>
 
+  <p>
+    <Link
+      to="/about"
+      className="aboutnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      About Mangala Stone
+    </Link>
+  </p>
 
-  
-  <Link 
-    to="/about" 
-    className="footer-nav-link" 
-    onClick={() => setMobileMenuOpen(false)}
-    style={{ textDecoration: "none", color: "inherit" }} // keeps it looking like a normal <p>
-  >
-    <p>
-         {t("products.mangala")}
-      
-     </p>
-  </Link>
-   <p
-    style={{ cursor: "pointer" }}
-    onClick={() => {
-      const section = document.getElementById("products");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-        setMobileMenuOpen(false); // close mobile menu
-      }
-    }}
-  >         {t("products.heading")}
-
+  <p>
+    <Link
+      to="/"
+      className="aboutnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      Our Products
+    </Link>
   </p>
 </div>
-  </div>
+  
           {/* <div className="footer-col">
             <h3>{t("footer.about")}</h3>
             <p>About Mangala Stone</p>
             <p>Our Products</p>
-          </div>
-        </div> */}
+          </div> */}
+        </div> 
 
         <div className="footer-bottom">
           <p>© 2025 All rights reserved - Mangala Stone Indonesia</p>

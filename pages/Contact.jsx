@@ -54,17 +54,25 @@ const [productsOpen, setProductsOpen] = useState(false);
       footer_about: "About Mangala Stone",
       footer_products: "Our Products",
       chooseMangala: "Why Choose Mangala Stone?",
-      experienced:"With over a decade of expertise since 2014, we specialize in manufacturing and supplying high-quality natural stone.",
-      competitivePrice:"As a self-owned manufacturer, we offer the best value with competitive prices while maintaining high quality.",
+    subtitle1:"Experienced",
+
+experienced:"With over a decade of expertise since 2014, we specialize in manufacturing and supplying high-quality natural stone.",
+
+subtitle2:"Competitive Price",
+competitive:"As a self-owned manufacturer, we offer the best value with competitive prices while maintaining high quality.",
+subtitle3:"On-Time Delivery",
 delivery:"Our streamlined processes ensure your orders are delivered on schedule, every time."
+ 
     },
     id: {
+subtitle1:"Berpengalaman",
+
       contact_hero_title: "HUBUNGI KAMI",
       contact_heading1: "Hubungi Kami",
       contact_heading2: "HUBUNGI KAMI",
       factory_title: "Pabrik",
       factory_1:
-        "Pabrik 1: Desa Bobos, Kecamatan Dukupuntang, Kabupaten Cirebon, Jawa Barat, Indonesia",
+        "Jalan Raya Imam Bonjol, Sindangwangi, Kabupaten Majalengka, Jawa Barat, Indonesia",
       factory_2:
         "Pabrik 2: Desa Lengkong Wetan, Kecamatan Sindangwangi, Kabupaten Majalengka, Jawa Barat, Indonesia",
       phone: "Nomor Telepon: +6285797895798",
@@ -74,7 +82,9 @@ delivery:"Our streamlined processes ensure your orders are delivered on schedule
       footer_products: "Produk Kami",
       chooseMangala: "Mengapa Memilih Mangala Stone?",
       experienced:"Dengan pengalaman lebih dari 10 tahun sejak 2014, kami fokus pada produksi dan penyediaan batu alam berkualitas tinggi.",
-      competitivePrice:"Sebagai produsen, kami menawarkan harga terbaik dengan kualitas tetap terjaga.",
+      subtitle2:"Harga Kompetitif",
+competitive:"Sebagai produsen, kami menawarkan harga terbaik dengan kualitas tetap terjaga.",
+subtitle3:"Pengiriman Tepat Waktu",
 delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesanan Anda tiba sesuai jadwal."
 
     },
@@ -280,10 +290,19 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Experienced</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>
+          
+          
+          {/* Experienced */}
+          
+      <span>{t.subtitle1}</span>
+          
+          
+          
+          </h3>
         <p style={{ color: "#555" }}>
-          With over a decade of expertise since 2014, we specialize in
-          manufacturing and supplying high-quality natural stone.
+          <span>{t.experienced}</span>
+          
         </p>
       </div>
 
@@ -311,10 +330,17 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>Competitive Price</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>
+          <span>{t.subtitle2}</span>
+          
+          
+          {/* Competitive Price */}
+          </h3>
         <p style={{ color: "#555" }}>
-          As a self-owned manufacturer, we offer the best value with
-          competitive prices while maintaining high quality.
+          <span>{t.competitive}</span>
+
+          {/* As a self-owned manufacturer, we offer the best value with
+          competitive prices while maintaining high quality. */}
         </p>
       </div>
 
@@ -342,10 +368,18 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
             }}
           ></i>
         </div>
-        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>On-Time Delivery</h3>
+        <h3 style={{ marginBottom: "10px", fontWeight: "600" }}>
+          <span>{t.subtitle3}</span>
+          
+          {/* On-Time Delivery */}
+          
+          
+          </h3>
         <p style={{ color: "#555" }}>
-          Our streamlined processes ensure your orders are delivered on
-          schedule, every time.
+          <span>{t.delivery}</span>
+
+          {/* Our streamlined processes ensure your orders are delivered on
+          schedule, every time. */}
         </p>
       </div>
     </div>
@@ -401,12 +435,34 @@ delivery:"Dengan proses produksi dan logistik yang efisien, kami memastikan pesa
     </a>
   </div>
 </div>
+<div className="footer-col">
+  <h3>ABOUT US</h3>
 
-          <div className="footer-col">
+  <p>
+    <Link
+      to="/about"
+      className="contactnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      {t.footer_about}
+    </Link>
+  </p>
+
+  <p>
+    <Link
+      to="/"
+      className="contactnav-link"
+      onClick={() => setMobileMenuOpen(false)}
+    >
+      {t.footer_products}
+    </Link>
+  </p>
+</div>
+          {/* <div className="footer-col">
             <h3>ABOUT US</h3>
             <p>{t.footer_about}</p>
             <p>{t.footer_products}</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-bottom">

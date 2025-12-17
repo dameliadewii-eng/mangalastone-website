@@ -83,36 +83,35 @@
 
     "stones": {
       "centralNapoli": {
-        "title": "Andesit Polos",
+"title": "Andesit Alur Napoli Tengah",
         "descriptions": [
-          "Fitur Utama: Permukaan polos, warna abu-abu alami, serta daya tahan tinggi untuk penggunaan eksterior",
-          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
-          "Finishing: Sawn Cut, Honed, Flamed"
-        ]
-      },
-      "chess": {
-        "title": "Andesit Bintik",
-        "descriptions": [
-          "Fitur Utama: Permukaan dengan bintik alami, Tekstur agak kasar sehingga tidak licin, serta tampilan yang elegan dan modern",
-          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
-          "Finishing: Sawn Cut, Honed, Flamed"
-        ]
-      },
-      "flamedPlain": {
-        "title": "Andesit Rata Alam",
-        "descriptions": [
-        "Fitur Utama: Permukaan kasar alami, Tampilan batu yang natural, Tahan lama dan tahan cuaca",
-        "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
-        "Finishing: Rata Alam (Andesit Polos dan Andesit Bintik)"
-        ]
-      },
-      "flamedSpot": {
-        "title": "Andesit Alur Napoli Tengah",
-        "descriptions": [
-          
           "Fitur Utama: Pola alur linear, tekstur berstruktur, tampilan modern dan kokoh",
           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
           "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+        ]
+      },
+      "chess": {
+ "title": "Andesit Alur Catur",
+        "descriptions": [
+          "Fitur Utama: Tekstur pola kotak-kotak, kontras antara permukaan halus dan kasar, serta desain geometris yang dinamis",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+        ]
+      },
+      "flamedPlain": {
+        "title": "Andesit Polos",
+        "descriptions": [
+        "Fitur Utama: Permukaan polos, warna abu-abu alami, serta daya tahan tinggi untuk penggunaan eksterior",
+        "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+        "Finishing: Sawn Cut, Honed, Flamed"
+        ]
+      },
+      "flamedSpot": {
+"title": "Andesit Bintik",
+        "descriptions": [
+          "Fitur Utama: Permukaan dengan bintik alami, Tekstur agak kasar sehingga tidak licin, serta tampilan yang elegan dan modern",
+          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+          " Finishing: Sawn Cut, Honed, Flamed"
         ]
       },
       "fullNapoli": {
@@ -124,66 +123,61 @@
         ]
       },
       "fullWorm": {
-        "title": "Andesit Alur Catur",
-        "descriptions": [
-          "Fitur Utama: Tekstur pola kotak-kotak, kontras antara permukaan halus dan kasar, serta desain geometris yang dinamis",
-          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
-          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
-
-        ]
-      },
-      "naturalFlat": {
-        "title": "Andesit Alur Cacing",
-        "descriptions": [
-          "Fitur Utama: Alur linear dan bergelombang, perpaduan gerak dan tekstur yang seimbang, serta estetika alami untuk ruang modern",
-          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
-          "Finishing: Rata Alam (Andesit Polos dan Bintik)"
-
-        ]
-      },
-      "straight": {
-               "title": "Andesit Alur Cacing Penuh",
+"title": "Andesit Alur Cacing Penuh",
         "descriptions": [
           "Fitur Utama: Tekstur menyerupai gelombang, relief berlapis yang menambah kedalaman, serta tampilan elegan dan kontemporer",
           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
           "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
-
         ]
       },
-      "straightVariation": {
-        "title": "Andesit Alur Bilik",
+      "naturalFlat": {
+"title": "Andesit Rata Alam",
         "descriptions": [
-          "Fitur Utama: Pola gelombang mengalir, permainan cahaya dan bayangan yang dinamis, serta tekstur organik yang elegan",
-          "Ukuran Tersedia (cm): 15x30, 20x40",
-          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
-
+          "Fitur Utama: Permukaan kasar alami, Tampilan batu yang natural, Tahan lama dan tahan cuaca",
+          "Ukuran Tersedia (cm): 10x10, 10x20, 15x15, 15x30, 20x20, 20x40, 40x40, 30x60, 100x50, 120x60 (Kustomisasi Tersedia)",
+          "Finishing: Rata Alam (Andesit Polos dan Andesit Bintik)"
         ]
       },
-      "sun": {
-        "title": "Andesit Alur Lurus",
+      "straight": {
+              "title": "Andesit Alur Lurus",
         "descriptions": [
           "Fitur Utama: Alur linear yang rata, tampilan modern minimalis, serta tekstur yang bersih dan presisi",
           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
           "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
-
       },
-      "wave": {
-        "title": "Andesit Alur Lurus Variasi",
+      "straightVariation": {
+"title": "Andesit Alur Lurus Variasi",
         "descriptions": [
           "Fitur Utama: Kedalaman alur yang berselang-seling, tekstur linear dan berdimensi, serta desain yang halus dan modern",
           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
           "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
       },
-      "worm": {
-        "title": "Andesit Alur Matahari",
+      "sun": {
+"title": "Andesit Alur Matahari",
         "descriptions": [
           "Fitur Utama: Relief diagonal dan berpola grid, simetri geometris, serta pola tegas yang bersifat skulptural",
           "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
           "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
         ]
 
+      },
+      "wave": {
+"title": "Andesit Alur Bilik",
+        "descriptions": [
+          "Fitur Utama: Pola gelombang mengalir, permainan cahaya dan bayangan yang dinamis, serta tekstur organik yang elegan",
+          "Ukuran Tersedia (cm): 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+        ]
+      },
+      "worm": {
+"title": "Andesit Alur Cacing",
+        "descriptions": [
+          "Fitur Utama: Alur linear dan bergelombang, perpaduan gerak dan tekstur yang seimbang, serta estetika alami untuk ruang modern",
+          "Ukuran Tersedia (cm): 10x20, 15x30, 20x40",
+          "Aplikasi: Penggunaan eksterior seperti wall cladding, fasad, elemen dekoratif, dan lanskap, serta cocok juga untuk aksen interior"
+        ]
       }
     },
     "footer": {
