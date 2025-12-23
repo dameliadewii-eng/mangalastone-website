@@ -234,15 +234,40 @@ img { max-width: 100%; display: block; }
     background: transparent;
   }
 
-  .nav-dropdown:hover .nav-dropdown-menu { display: none; }
+  /* .nav-dropdown:hover .nav-dropdown-menu { display: none; } */
 
   .nav-dropdown-menu a {
     background: #f7f7f7;
     margin: 6px 0;
     text-align: center;
   }
-}
 
+  /* ---------------------------------------
+     🔹 MOBILE DROPDOWN FIX
+  ----------------------------------------*/
+  .nav-dropdown-menu.show {
+    display: block;
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 10px 0;
+  }
+
+  .nav-dropdown-menu.show a {
+    display: block;
+    padding: 10px 12px;
+    margin: 6px 0;
+    text-align: center;
+    color: var(--brand);
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+
+  .nav-dropdown-menu.show a:hover {
+    background: var(--brand);
+    color: #fff;
+  }
+}
 /* ---------------------------------------
    🏔️ HERO SECTION
 ----------------------------------------*/

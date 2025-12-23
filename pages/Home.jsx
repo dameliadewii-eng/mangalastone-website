@@ -16,12 +16,16 @@ import stoneAndesite from "@/assets/webimg/stone-andesite.png";
 import stoneLimestone from "@/assets/webimg/stone-limestone.png";
 import stonePumice from "@/assets/webimg/stone-pumice.png";
 import logo from "@/assets/img/logo.png";
-import guaranteeBg from "@/assets/webimg/guarantee-bg.png"; 
+import guaranteeBg from "@/assets/webimg/guarantee-bg.png";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("en");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // ✅ ONLY NEW STATE (for mobile products dropdown)
+  const [productsOpen, setProductsOpen] = useState(false);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -51,73 +55,124 @@ const Home = () => {
   )}`;
 
   return (
-<div className="hm-root">
- {/* ---------------- HEADER ---------------- */}
-<header className="hm-header" role="banner">
-  <div className="hm-container header-inner">
+    <div className="hm-root">
+      {/* ---------------- HEADER ---------------- */}
+      <header className="hm-header" role="banner">
+        <div className="hm-container header-inner">
+          {/* LOGO */}
+          <div className="logo-area" data-aos="fade-right">
+            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+          </div>
 
-    {/* LOGO */}
-    <div className="logo-area" data-aos="fade-right">
-      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-    </div>
+          {/* HAMBURGER BUTTON — MOBILE ONLY */}
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
 
-    {/* HAMBURGER BUTTON — MOBILE ONLY */}
-    <button
-      className="mobile-menu-btn"
-      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-      aria-label="Toggle menu"
-    >
-      ☰
-    </button>
+          {/* NAVIGATION */}
+          <nav
+            className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+            aria-label="Main Navigation"
+            data-aos="fade-down"
+          >
+            <Link
+              to="/"
+              className="nav-link"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setProductsOpen(false);
+              }}
+            >
+              {t("nav.home")}
+            </Link>
 
-    {/* NAVIGATION */}
-    <nav
-      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
-      aria-label="Main Navigation"
-      data-aos="fade-down"
-    >
-      <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t("nav.home")}
-      </Link>
+            {/* ✅ PRODUCTS DROPDOWN (FIXED FOR MOBILE) */}
+            <div className="nav-dropdown">
+              <button
+                className="nav-dropbtn"
+                aria-haspopup="true"
+                onClick={() => setProductsOpen(!productsOpen)}
+              >
+                {t("nav.products")} ▾
+              </button>
 
-      <div className="nav-dropdown">
-        <button className="nav-dropbtn" aria-haspopup="true">
-          {t("nav.products")} ▾
-        </button>
-        <div className="nav-dropdown-menu" role="menu">
-          <Link to="/andesite" onClick={() => setMobileMenuOpen(false)}>
-            {t("products.andesite")}
-          </Link>
-          <Link to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
-            {t("products.palm")}
-          </Link>
-          <Link to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
-            {t("products.cladding")}
-          </Link>
+              <div
+                className={`nav-dropdown-menu ${
+                  productsOpen ? "show" : ""
+                }`}
+                role="menu"
+              >
+                <Link
+                  to="/andesite"
+                  onClick={() => {
+                    setProductsOpen(false);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  {t("products.andesite")}
+                </Link>
+
+                <Link
+                  to="/palm-sandstone"
+                  onClick={() => {
+                    setProductsOpen(false);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  {t("products.palm")}
+                </Link>
+
+                <Link
+                  to="/wall-cladding"
+                  onClick={() => {
+                    setProductsOpen(false);
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  {t("products.cladding")}
+                </Link>
+              </div>
+            </div>
+
+            <Link
+              to="/about"
+              className="nav-link"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setProductsOpen(false);
+              }}
+            >
+              {t("nav.about")}
+            </Link>
+
+            <Link
+              to="/contact"
+              className="nav-link"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setProductsOpen(false);
+              }}
+            >
+              {t("nav.contact")}
+            </Link>
+
+            <div className="actions-area">
+              <select
+                value={language}
+                onChange={handleLanguageChange}
+                className="lang-select"
+              >
+                <option value="en">English</option>
+                <option value="id">Bahasa Indonesia</option>
+              </select>
+            </div>
+          </nav>
         </div>
-      </div>
-
-      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t("nav.about")}
-      </Link>
-
-      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t("nav.contact")}
-      </Link>
-
-      <div className="actions-area">
-        <select
-          value={language}
-          onChange={handleLanguageChange}
-          className="lang-select"
-        >
-          <option value="en">English</option>
-          <option value="id">Bahasa Indonesia</option>
-        </select>
-      </div>
-    </nav>
-  </div>
-</header>
+      </header>
 
 
       {/* ---------------- HERO ---------------- */}

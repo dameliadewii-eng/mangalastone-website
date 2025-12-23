@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
-
 // Images
 import header_andesite_stone from "@/assets/img/header_andesite_stone.png";
 import logo from "@/assets/img/logo.png";
@@ -48,18 +47,16 @@ import and34 from "@/assets/Andesite/Andesite Worm/and34.png";
 import and35 from "@/assets/Andesite/Andesite Worm/and35.png";
 import and36 from "@/assets/Andesite/Andesite Worm/and36.png";
 
-// translations (simple JSON method)
+// translations
 import en from "@/locales/en.json";
 import id from "@/locales/id.json";
 
 const AndesiteStone = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-const [productsOpen, setProductsOpen] = useState(false);
-
+  const [productsOpen, setProductsOpen] = useState(false);
   const [language, setLanguage] = useState("en");
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
-  // translations object and quick accessor
   const translations = { en, id };
   const t = translations[language].andesitePage;
 
@@ -69,29 +66,22 @@ const [productsOpen, setProductsOpen] = useState(false);
 
   const handleLanguageChange = (e) => setLanguage(e.target.value);
 
-  // stones array (image srcs unchanged). Titles/descriptions drawn from translation JSON.
   const stones = [
-      { key: "flamedPlain", title: "Andesite Plain", imgs: [and7, and8, and9] },
-      { key: "flamedSpot", title: "Andesite Flamed Spot", imgs: [and10, and11, and12] },
-        { key: "naturalFlat", title: "Andesite Natural Flat", imgs: [and19, and20, and21] },
-
+    { key: "flamedPlain", title: "Andesite Plain", imgs: [and7, and8, and9] },
+    { key: "flamedSpot", title: "Andesite Flamed Spot", imgs: [and10, and11, and12] },
+    { key: "naturalFlat", title: "Andesite Natural Flat", imgs: [and19, and20, and21] },
     { key: "centralNapoli", title: "Andesite Central Napoli", imgs: [and1, and2, and3] },
     { key: "fullNapoli", title: "Andesite Full Napoli", imgs: [and13, and14, and15] },
     { key: "chess", title: "Andesite Chess", imgs: [and4, and5, and6] },
-  
-    
     { key: "worm", title: "Andesite Worm", imgs: [and34, and35, and36] },
     { key: "fullWorm", title: "Andesite Full Worm", imgs: [and16, and17, and18] },
-      { key: "wave", title: "Andesite Wave", imgs: [and31, and32, and33] },
+    { key: "wave", title: "Andesite Wave", imgs: [and31, and32, and33] },
     { key: "straight", title: "Andesite Straight", imgs: [and22, and23, and24] },
     { key: "straightVariation", title: "Andesite Straight Variation", imgs: [and25, and26, and27] },
     { key: "sun", title: "Andesite Sun", imgs: [and28, and29, and30] },
-
-    
   ];
 
-  // WhatsApp link (unchanged)
-  const whatsappNumber = "6285797895798"; // without +
+  const whatsappNumber = "6285797895798";
   const whatsappMessage = "Hello! I’d like to know more about Mangala Stone.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
@@ -99,79 +89,74 @@ const [productsOpen, setProductsOpen] = useState(false);
 
   return (
     <div className="hm-root">
-      {/* ------------------------------ HEADER ------------------------------ */}
+      {/* ---------------- HEADER ---------------- */}
       <header className="hm-header" role="banner">
-  <div className="hm-container header-inner">
-    {/* Logo */}
-    <div className="logo-area" data-aos="fade-right">
-      <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
-    </div>
+        <div className="hm-container header-inner">
+          <div className="logo-area" data-aos="fade-right">
+            <img src={logo} alt="Watu Mangala Logo" className="logo-img" />
+          </div>
 
-    {/* Hamburger button for mobile */}
-    <button
-      className="mobile-menu-btn"
-      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-      aria-label="Toggle menu"
-    >
-      ☰
-    </button>
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
 
-    {/* Navigation */}
-    <nav
-      className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
-      aria-label="Main Navigation"
-      data-aos="fade-down"
-    >
-      <Link to="/Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t.nav.home}
-      </Link>
+          <nav
+            className={`nav-area ${mobileMenuOpen ? "mobile-open" : ""}`}
+            aria-label="Main Navigation"
+            data-aos="fade-down"
+          >
+            <Link to="/Home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+              {t.nav.home}
+            </Link>
 
-      <div className="nav-dropdown">
-        <button
-          className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
-          onClick={() => setProductsOpen(!productsOpen)}
-          aria-haspopup="true"
-          aria-expanded={productsOpen}
-        >
-          {t.nav.products} ▾
-        </button>
+            {/* ✅ PRODUCTS DROPDOWN (FIXED) */}
+            <div className="nav-dropdown">
+              <button
+                className={`nav-dropbtn ${productsOpen ? "active" : ""}`}
+                onClick={() => setProductsOpen(!productsOpen)}
+                aria-haspopup="true"
+                aria-expanded={productsOpen}
+              >
+                {t.nav.products} ▾
+              </button>
 
-        <div className={`nav-dropdown-menu ${productsOpen ? "open" : ""}`} role="menu">
-          <Link role="menuitem" to="/andesite" onClick={() => setMobileMenuOpen(false)}>
-            {t.nav.andesite}
-          </Link>
-          <Link role="menuitem" to="/palm-sandstone" onClick={() => setMobileMenuOpen(false)}>
-            {t.nav.palm}
-          </Link>
-          <Link role="menuitem" to="/wall-cladding" onClick={() => setMobileMenuOpen(false)}>
-            {t.nav.cladding}
-          </Link>
+              <div className={`nav-dropdown-menu ${productsOpen ? "show" : ""}`} role="menu">
+                <Link to="/andesite" onClick={() => { setProductsOpen(false); setMobileMenuOpen(false); }}>
+                  {t.nav.andesite}
+                </Link>
+                <Link to="/palm-sandstone" onClick={() => { setProductsOpen(false); setMobileMenuOpen(false); }}>
+                  {t.nav.palm}
+                </Link>
+                <Link to="/wall-cladding" onClick={() => { setProductsOpen(false); setMobileMenuOpen(false); }}>
+                  {t.nav.cladding}
+                </Link>
+              </div>
+            </div>
+
+            <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+              {t.nav.about}
+            </Link>
+            <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
+              {t.nav.contact}
+            </Link>
+          </nav>
+
+          <div className="actions-area" data-aos="fade-left">
+            <select
+              value={language}
+              onChange={handleLanguageChange}
+              className="lang-select"
+            >
+              <option value="en">English</option>
+              <option value="id">Bahasa Indonesia</option>
+            </select>
+          </div>
         </div>
-      </div>
-
-      <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t.nav.about}
-      </Link>
-      <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>
-        {t.nav.contact}
-      </Link>
-    </nav>
-
-    {/* Language selector */}
-    <div className="actions-area" data-aos="fade-left">
-      <select
-        value={language}
-        onChange={handleLanguageChange}
-        aria-label="Select language"
-        className="lang-select"
-      >
-        <option value="en">English</option>
-        <option value="id">Bahasa Indonesia</option>
-      </select>
-    </div>
-  </div>
-</header>
-
+      </header>
 
       {/* ===== Hero Section ===== */}
       <section className="andesite-hero" id="andesite" style={{ backgroundImage: `url(${header_andesite_stone})` }}>
